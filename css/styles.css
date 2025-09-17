@@ -22,16 +22,9 @@ body{
   background:var(--bg);
 }
 
-/* ---- Accessibility helpers ---- */
-.skip-link{
-  position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
-}
-.skip-link:focus{left:16px;top:10px;width:auto;height:auto;background:#fff;padding:8px 12px;border-radius:8px;box-shadow:var(--shadow)}
-
 /* ---- Layout ---- */
-.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.container{max-width:1080px;margin:0 auto;padding:0 32px}
 .section{padding:48px 0}
-.section.alt{background:var(--surface)}
 .grid-2{display:grid;grid-template-columns:1fr;gap:24px}
 .grid-3{display:grid;grid-template-columns:1fr;gap:24px}
 @media(min-width:820px){
@@ -43,15 +36,16 @@ body{
 .site-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--border);z-index:50}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
 .brand{font-weight:700;color:var(--brand);text-decoration:none}
-
-/* Reset bullets and inline layout for nav */
-.nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:16px;align-items:center}
+.nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:6px;align-items:center}
 .nav-menu li{list-style:none;margin:0;padding:0}
-.nav-menu a{color:var(--accent-2);text-decoration:none}
-.nav-menu a:hover{text-decoration:underline}
+.nav-menu a{
+  color:var(--accent-2);
+  text-decoration:none;
+  padding:8px 10px;           /* menu item padding */
+  border-radius:10px;
+}
+.nav-menu a:hover{background:#f3f4f6}
 .nav-menu a.active{font-weight:700;text-decoration:underline}
-
-/* Mobile toggle hidden on desktop */
 .nav-toggle{display:none}
 @media(max-width:800px){
   .nav-toggle{display:inline-block;border:1px solid var(--border);background:#fff;padding:6px 10px;border-radius:10px}
@@ -63,6 +57,7 @@ body{
 .hero{padding:64px 0;background:var(--surface)}
 .hero h1{margin:0 0 8px 0;font-size:34px;line-height:1.15}
 .hero p{color:var(--muted)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
 
 /* ---- Cards / images ---- */
 .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
@@ -85,7 +80,7 @@ body{
 
 /* ---- Footer ---- */
 .site-footer{border-top:1px solid var(--border);padding:20px 0;color:var(--muted);background:#fff}
-.site-footer .small{font-size:14px;color:var(--muted)}
+.footer-row{display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
 
 /* ---- Emergency callout ---- */
 .alert-emergency{
