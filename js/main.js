@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let path = window.location.pathname.split('/').pop();
   if (!path) path = 'index.html';
   document.querySelectorAll('.nav-menu a').forEach(link => {
-    if (link.getAttribute('href') === path) link.classList.add('active');
-    if (path === 'index.html' && link.getAttribute('href') === 'index.html') link.classList.add('active');
+    const href = link.getAttribute('href');
+    if (href === path) link.classList.add('active');
+    if (path === 'index.html' && href === 'index.html') link.classList.add('active');
   });
   // Footer year
   const y = document.getElementById('year');
