@@ -3,25 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Index</title>
+  <title>Dawson — Psychologist</title>
+  <meta name="description" content="Private practice psychology with an integrative, trauma-informed approach.">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="/assets/img/favicon.png">
 </head>
 <body>
-<header>
-  <nav>
-    <a href="/index.html">Home</a> |
-    <a href="/services.html">Services</a> |
-    <a href="/payments-insurance.html">Payments & Insurance</a> |
-    <a href="/about.html">About</a> |
-    <a href="/publications.html">Publications</a> |
-    <a href="/presentations.html">Presentations</a> |
-    <a href="/contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-<h1>Home</h1><p>Welcome to Dawson's clinical practice site.</p></main>
-<footer>
-  <p>&copy; 2025 T. Dawson Woodrum. Informational only; not a provider–client relationship.</p>
-</footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="/">Dawson</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-menu" hidden>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/payments-insurance.html">Payments &amp; Insurance</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="/presentations.html">Presentations</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <h1>Evidence-based therapy with depth.</h1>
+        <p>IFS-informed, Jungian-aware, pragmatic. Sessions online or in person.</p>
+        <div class="cta-row">
+          <a class="btn" href="/contact.html">Book a consult</a>
+          <a class="btn btn-secondary" href="/services.html">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="home-services-heading">
+      <div class="container grid-3">
+        <h2 id="home-services-heading" class="sr-only">Services overview</h2>
+        <article class="card">
+          <h3>Individual Therapy</h3>
+          <p>Focused work on anxiety, depression, and meaning—integrating parts-work and somatic awareness.</p>
+        </article>
+        <article class="card">
+          <h3>Executive Coaching</h3>
+          <p>Clear thinking under pressure. Decision frameworks for founders, clinicians, and creatives.</p>
+        </article>
+        <article class="card">
+          <h3>Assessments</h3>
+          <p>Concise, actionable assessments; collaborative care with your medical team when needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="approach" class="section alt">
+      <div class="container">
+        <h2>Approach</h2>
+        <p>I combine modern clinical research with depth psychology—no dogma, just what works for you.</p>
+        <ul class="list-check">
+          <li>Internal Family Systems (IFS) perspective</li>
+          <li>Trauma-informed, neuroscience-literate</li>
+          <li>Goal-driven with measurable outcomes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About Dawson</h2>
+          <p>Licensed psychologist. Former attorney. I translate complexity into clear next steps.</p>
+          <p>Serving clients across the U.S. (where permitted) via secure telehealth.</p>
+          <p><a class="btn" href="/about.html">Short CV</a> <a class="btn btn-secondary" href="/assets/docs/T_Dawson_Woodrum_Resume.pdf">Full CV (PDF)</a></p>
+        </div>
+        <img src="/assets/img/hero-placeholder.png" alt="Calm studio workspace with soft light" class="rounded shadow responsive">
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tdawson@existenzpsych.com">tdawson@existenzpsych.com</a></p>
+        <p>Phone: <a href="tel:+15412954693">+1 (541) 295‑4693</a></p>
+        <p>Telehealth for clients located in Oregon.</p>
+        <p><a class="btn" href="/contact.html">Secure message / intake</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">
+      <p>&copy; <span id="year"></span> T. Dawson Woodrum. All rights reserved.</p>
+      <p>This website is for informational purposes only and does not constitute a provider–client relationship.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
