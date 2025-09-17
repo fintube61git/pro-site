@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
   const toggle = document.querySelector('.nav-toggle');
@@ -11,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else menu.setAttribute('hidden','');
     });
   }
+
   // Active nav highlighting
   let path = window.location.pathname.split('/').pop();
   if (!path) path = 'index.html';
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (href === path) link.classList.add('active');
     if (path === 'index.html' && href === 'index.html') link.classList.add('active');
   });
+
   // Footer year
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
