@@ -78,3 +78,214 @@ a:hover{text-decoration:underline}
 
 /* Typography */
 h1,h2,h3,h4,h5,h6{font-weight:600;line-height:1.25}
+
+/* === Dark theme support ================================================ */
+/* Base: use variables so colors flip without changing markup */
+:root {
+  color-scheme: light;
+}
+
+/* Respect system preference by default (before user toggle runs) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg: #0b0f14;
+    --text: #e6e9ee;
+    --muted: #a8b0bd;
+    --accent: #8ab4ff;
+    --surface: #121821;
+    --border: #3a475a;
+    color-scheme: dark;
+  }
+}
+
+/* User-selected theme via html[data-theme="dark"] overrides everything */
+html[data-theme="dark"] {
+  --bg: #0b0f14;
+  --text: #e6e9ee;
+  --muted: #a8b0bd;
+  --accent: #8ab4ff;
+  --surface: #121821;
+  --border: #3a475a;
+  color-scheme: dark;
+}
+
+/* Optional: ensure elements that used fixed light backgrounds adapt */
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .site-footer {
+  background: var(--bg);
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] .hero {
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .btn { color: #0b0f14; } /* keep text readable if you later invert buttons */
+
+/* Emergency alert: keep strong contrast in dark mode */
+html[data-theme="dark"] .alert-emergency{
+  background:#2a0e11;
+  border-color:#ff6b6b;
+  border-left-color:#ff6b6b;
+  color:#ffd6d6;
+}
+
+/* === Contact page dark-mode refinements ================================ */
+/* Use variables for card surfaces and borders so they adapt */
+:root {
+  --card-surface: #ffffff;
+  --card-border: #e5e7eb;     /* light slate */
+  --feature-surface: #f7f9ff; /* pale indigo */
+  --feature-border: #b9c6ff;  /* indigo outline */
+}
+
+/* Tie existing elements to the variables (light defaults already match) */
+.feature { background: var(--feature-surface); border-color: var(--feature-border); }
+.contact-block { background: var(--card-surface); border-color: var(--card-border); }
+
+/* Dark theme overrides */
+html[data-theme="dark"] {
+  --card-surface: #121821;     /* same as --surface for cohesion */
+  --card-border: #3a475a;
+  --feature-surface: #18202b;  /* slightly lighter than card for contrast */
+  --feature-border: #475872;
+  --accent: #9ec0ff;           /* small boost for links/buttons in dark */
+}
+
+/* Ensure headings and body text remain readable inside cards/features */
+html[data-theme="dark"] .feature h3,
+html[data-theme="dark"] .contact-block h3 { color: var(--text); }
+html[data-theme="dark"] .feature p,
+html[data-theme="dark"] .contact-block p { color: var(--muted); }
+
+/* Buttons remain high-contrast in dark mode */
+html[data-theme="dark"] .btn { background: var(--accent); color: #0b0f14; }
+html[data-theme="dark"] .btn-secondary { background: #2a3342; color: var(--text); }
+
+/* Optional: lighten the nav underline and footer border in dark */
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .site-footer { border-color: var(--border); }
+
+/* === Contact page dark-mode: stronger readability and consistent tones === */
+/* 1) Make feature tiles and contact cards use consistent dark surfaces */
+html[data-theme="dark"] {
+  --feature-surface: #141a23;  /* darker than before for consistency */
+  --feature-border:  #3e4c61;  /* soft slate-blue border */
+  --card-surface:    #0f141b;  /* slightly darker than feature tiles */
+  --card-border:     #334155;  /* slate border */
+  --muted:           #c7d0dc;  /* raise muted text brightness for readability */
+}
+
+/* 2) Apply surfaces, borders, and text colors explicitly */
+html[data-theme="dark"] .feature {
+  background: var(--feature-surface);
+  border: 1.5px solid var(--feature-border);
+}
+html[data-theme="dark"] .contact-block {
+  background: var(--card-surface);
+  border: 1.5px solid var(--card-border);
+}
+
+/* 3) Ensure headings and body text are readable inside tiles/cards */
+html[data-theme="dark"] .feature h3,
+html[data-theme="dark"] .contact-block h3 {
+  color: var(--text);
+}
+html[data-theme="dark"] .feature p,
+html[data-theme="dark"] .contact-block p,
+html[data-theme="dark"] .contact-block a {
+  color: var(--muted);
+}
+
+/* 4) Buttons: strong contrast on dark surfaces */
+html[data-theme="dark"] .btn {
+  background: var(--accent);
+  color: #0b0f14;           /* dark text on bright accent for clarity */
+  border: 2px solid var(--accent);
+}
+html[data-theme="dark"] .btn-secondary {
+  background: #263041;      /* muted slate button */
+  color: var(--text);
+  border: 2px solid #3a475a;
+}
+
+/* 5) Optional: soften the outer glow by removing any white backgrounds that may linger */
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .site-footer {
+  background: var(--bg);
+  border-color: var(--border);
+}
+
+/* === Mobile refinements (global) ======================================= */
+/* Container/gutters: keep comfortable padding on small screens */
+@media (max-width: 420px) {
+  .container { padding-inline: 20px; }
+}
+
+/* Nav: allow wrapping without crowding; tighter gaps on small screens */
+@media (max-width: 640px) {
+  .nav { gap: 10px; }
+  .nav-menu { gap: 10px; }
+  .nav-menu li a { padding: 8px 10px; }
+}
+
+/* Hero: reduce top/bottom padding, keep readable headings */
+@media (max-width: 640px) {
+  .hero { padding: 40px 0; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero p { font-size: 1rem; }
+  .cta-row { gap: 10px; }
+}
+
+/* Sections: slightly tighter vertical rhythm on phones */
+@media (max-width: 640px) {
+  .section { padding: 36px 0; }
+}
+
+/* Grid utilities: single column and tighter gaps on mobile */
+@media (max-width: 700px) {
+  .grid-2 { grid-template-columns: 1fr; gap: 14px; }
+}
+
+/* Contact page tiles/cards: compact yet readable on phones */
+@media (max-width: 640px) {
+  .feature { padding: 0.6rem 0.8rem; }
+  .feature h3 { font-size: 1rem; }
+  .contact-block { padding: 0.8rem; }
+}
+
+/* Buttons: ensure comfortable tap targets and wrapping */
+@media (max-width: 420px) {
+  .btn, .btn-secondary { width: 100%; text-align: center; }
+}
+
+/* Theme toggle: compact on small screens */
+@media (max-width: 640px) {
+  .theme-toggle { padding: .3rem .5rem; }
+  .theme-toggle .label { display: none; } /* icon-only on mobile */
+}
+
+/* === Neutral slate button (matches Neuvoa style) ======================= */
+.btn-slate {
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  border-radius: 6px;
+  border: 2px solid #3a475a;
+  background: #2a3342;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+}
+.btn-slate:hover,
+.btn-slate:focus {
+  filter: brightness(1.08);
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Dark mode keeps same slate look; no change needed, but ensure borders adapt */
+html[data-theme="dark"] .btn-slate {
+  border-color: #3a475a;
+  background: #2a3342;
+  color: #ffffff;
+}

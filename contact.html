@@ -1,68 +1,147 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="auto">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Dawson</title>
-  <meta name="description" content="Emergency info, services, and scheduling.">
+  <meta name="description" content="Contact for IFS-focused psychotherapy for complex trauma via secure telehealth in Oregon. Emergencies: call 988.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.png">
+  <style>
+    .theme-toggle { display:inline-flex; align-items:center; gap:.5rem; border:1px solid var(--border); background:transparent; color:var(--text); padding:.35rem .55rem; border-radius:10px; cursor:pointer; font:inherit; }
+    .theme-toggle:focus { outline:3px solid var(--accent); outline-offset:2px; }
+    .theme-toggle .icon { font-size:1rem; line-height:1; }
+    /* Compact spacing retained */
+    .page-contact .section { padding-top: 1rem; padding-bottom: 1.25rem; }
+    .page-contact .page-intro { margin-top: 0.25rem; }
+    .page-contact h1 { margin: 0.5rem 0 0.5rem; }
+    .page-contact .lede { font-size: 1.05rem; max-width: 70ch; margin-top: 0.5rem; margin-bottom: 0.75rem; }
+    .feature-row { display:grid; gap:.75rem; margin-top:.5rem; }
+    @media (min-width: 720px) { .feature-row { grid-template-columns: 1fr 1fr; } }
+    .feature { background: var(--feature-surface); border: 2px solid var(--feature-border); border-radius: 10px; padding: .7rem .9rem; }
+    .feature h3 { margin: 0 0 .2rem; }
+    .grid-2 { display:grid; gap:1rem; }
+    @media (min-width: 860px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .contact-block { background: var(--card-surface); border: 2px solid var(--card-border); border-radius:10px; padding:.9rem; }
+    .btn, .btn-secondary { font-weight:800; border-width:3px; }
+    main.section-wrap { padding-top:.25rem; }
+  </style>
 </head>
 <body class="page-contact">
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Primary">
       <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div style="display:flex; align-items:center; gap:.5rem;">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
+          <span class="icon" aria-hidden="true">🌞</span>
+          <span class="label">Light</span>
+        </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      </div>
       <ul id="nav-menu" class="nav-menu" hidden>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="presentations.html">Presentations</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="section">
+  <main id="main" class="section-wrap">
+    <section class="section page-intro">
       <div class="container">
         <h1>Contact</h1>
+
         <div class="alert-emergency" role="note" aria-label="Emergency notice">
           <strong>Emergencies:</strong> If you are in crisis or experiencing an emergency, call <strong>988</strong> or your local emergency number, or go to the nearest emergency room.
         </div>
 
-        <h2 id="services">Services</h2>
-        <p>I provide trauma-informed psychotherapy that integrates Internal Family Systems (IFS), stabilization and somatic awareness, ACT, and depth-aware perspectives. Work is paced for safety and clarity, then depth as helpful.</p>
+        <p class="lede">
+          IFS‑focused psychotherapy for complex trauma via secure telehealth in Oregon.
+          You set the pace—collaborative, steady, consent‑led.
+        </p>
 
-        <div class="grid-3" aria-label="Formats">
-          <article class="card"><h3>Individual therapy</h3><p>Focused one-to-one sessions tailored to your goals.</p></article>
-          <article class="card"><h3>Telehealth</h3><p>Secure video sessions for clients located in Oregon.</p></article>
+        <div class="feature-row" aria-label="Formats">
+          <article class="feature">
+            <h3>Individual therapy</h3>
+            <p>Focused one‑to‑one sessions tailored to your goals and timing.</p>
+          </article>
+          <article class="feature">
+            <h3>Telehealth</h3>
+            <p>Secure video sessions for adults located anywhere in Oregon.</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <h2 id="scheduling" class="mt-tight">Scheduling</h2>
+    <section class="section">
+      <div class="container">
+        <h2 id="scheduling">Scheduling</h2>
         <div class="grid-2">
-          <div>
+          <div class="contact-block" aria-labelledby="private-pay">
             <h3 id="private-pay">Private pay (Existenz Psychotherapy)</h3>
             <p>Email: <a href="mailto:tdawson@existenzpsych.com">tdawson@existenzpsych.com</a><br>
-               Phone: <a href="tel:+15412954693">+1 (541) 295-4693</a></p>
+               Phone: <a href="tel:+15412954693">+1 (541) 295‑4693</a></p>
+            <p>
+              <a class="btn-slate" href="https://hushforms.com/existenzpsych" target="_blank" rel="noopener">
+                Request consultation
+              </a>
+            </p>
           </div>
-          <div>
+
+          <div class="contact-block" aria-labelledby="insurance">
             <h3 id="insurance">Insurance (Neuvoa Counseling)</h3>
             <p>Scheduling and plan details are managed by Neuvoa Counseling.</p>
-            <p><a class="btn btn-secondary" href="https://neuvoacounseling.com/" target="_blank" rel="noopener">Neuvoa Counseling</a></p>
+            <p>
+              <a class="btn btn-secondary" href="https://neuvoacounseling.com/" target="_blank" rel="noopener">
+                Neuvoa Counseling
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  
   <script src="js/main.js" defer></script>
-<footer class="site-footer">
-  <div class="container footer-row">
-    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship.</p>
-  </div>
-</footer>
+  <script>
+    (function () {
+      const STORAGE_KEY = 'site-theme';
+      const html = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      function getStartingTheme(){
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === 'light' || saved === 'dark') return saved;
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark ? 'dark' : 'light';
+      }
+      function applyTheme(theme){
+        html.setAttribute('data-theme', theme);
+        const label = toggle?.querySelector('.label');
+        const icon = toggle?.querySelector('.icon');
+        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='🌙'); toggle?.setAttribute('aria-label','Switch to light theme'); }
+        else { label && (label.textContent='Light'); icon && (icon.textContent='🌞'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
+      }
+      function setTheme(t){ localStorage.setItem(STORAGE_KEY, t); applyTheme(t); }
+      const start = getStartingTheme(); setTheme(start);
+      if (!localStorage.getItem(STORAGE_KEY) && window.matchMedia){
+        try{
+          const mq = window.matchMedia('(prefers-color-scheme: dark)');
+          mq.addEventListener('change', e => { if (!localStorage.getItem(STORAGE_KEY)) setTheme(e.matches ? 'dark':'light'); });
+        }catch(e){}
+      }
+      toggle?.addEventListener('click', () => {
+        const current = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship.</p>
+    </div>
+  </footer>
 </body>
-</html> 
+</html>
