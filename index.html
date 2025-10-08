@@ -1,132 +1,93 @@
-<!doctype html>
-<html lang="en" data-theme="auto">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T. Dawson Woodrum, PhD — Interdisciplinary Psychologist</title>
-  <meta name="description" content="T. Dawson Woodrum, PhD — Psychologist, researcher, and developer. Experience across software/QA and regulatory, research and teaching, development, and IFS‑informed psychotherapy for complex trauma. CV, publications, and presentations.">
-  <link rel="stylesheet" href="css/styles.v2.css">
-  <link rel="icon" href="assets/img/favicon.png">
-  <style>
-    /* Accessible theme toggle */
-    .theme-toggle { display:inline-flex; align-items:center; gap:.5rem; border:1px solid var(--border); background:transparent; color:var(--text); padding:.35rem .55rem; border-radius:10px; cursor:pointer; font:inherit; }
-    .theme-toggle:focus { outline:3px solid var(--accent); outline-offset:2px; }
-    .theme-toggle .icon { font-size:1rem; line-height:1; }
+  <!-- Charset + responsive -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    /* Hero */
-    .hero { padding: 72px 0 24px; text-align:center; }
-    .hero h1 { margin: 0; font-size: 2.3rem; letter-spacing: -0.02em; }
+  <!-- Page title + description (improves SEO + screen reader context) -->
+  <title>T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer</title>
+  <meta name="description" content="Official site of T. Dawson Woodrum, PhD — psychologist (Oregon #3497), researcher, and developer. IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
 
-    /* Profile summary + buttons */
-    .profile { padding: 18px 0 58px; }
-    .profile .wrap { max-width: 80ch; }
-    .profile p, .profile ul { color: var(--muted); line-height:1.6; }
-    .profile ul { padding-left: 1.1rem; margin: .5rem 0 0; }
-    .lead-in { margin-top: .25rem; }
-    .btnrow { display:flex; gap:.75rem; flex-wrap:wrap; align-items:center; margin-top: 1rem; justify-content:center; }
-    .btnrow a { display:inline-block; padding:.6rem 1rem; border-radius:10px; text-decoration:none; font-weight:600; }
-    /* High-contrast buttons in both themes */
-    .btn-primary { background: var(--accent-strong, #0b66ff); color: #fff; border: 2px solid transparent; }
-    .btn-primary:focus { outline:3px solid var(--accent); outline-offset:2px; }
-    .btn-secondary { background: transparent; color: var(--text); border:2px solid var(--border); }
-    .btn-secondary:hover { background: var(--surface-2, rgba(0,0,0,0.04)); }
-    .btn-secondary:focus { outline:3px solid var(--accent); outline-offset:2px; }
+  <!-- Canonical URL (prevents duplicate indexing of / and /index.html) -->
+  <link rel="canonical" href="https://fintube61git.github.io/pro-site/" />
 
-    @media (max-width: 640px) {
-      .hero { padding: 56px 0 18px; }
-      .hero h1 { font-size: 1.9rem; }
-      .theme-toggle .label { display:none; } /* icon-only toggle on mobile */
-    }
-  </style>
+  <!-- Open Graph (Facebook/LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer" />
+  <meta property="og:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
+  <meta property="og:url" content="https://fintube61git.github.io/pro-site/" />
+  <!-- Replace with a real image when you have one: 1200×630 recommended -->
+  <meta property="og:image" content="https://fintube61git.github.io/pro-site/assets/img/og-default.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer" />
+  <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
+  <meta name="twitter:image" content="https://fintube61git.github.io/pro-site/assets/img/og-default.png" />
+
+  <!-- Favicons (add real files later; safe placeholders for now) -->
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.v2.css" />
 </head>
 <body>
+  <!-- Skip link improves keyboard navigation -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" role="banner">
-    <nav class="nav container" aria-label="Primary">
-      <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
-      <div style="display:flex; align-items:center; gap:.5rem;">
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
-          <span class="icon" aria-hidden="true">🌞</span>
-          <span class="label">Light</span>
-        </button>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
-      </div>
-      <ul id="nav-menu" class="nav-menu" hidden>
-        <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="header-inner container">
+      <h1 class="site-title"><a href="index.html">T. Dawson Woodrum, PhD</a></h1>
+      <!-- JS expects aria-controls to match #site-nav -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main navigation" hidden>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- Add other pages as needed -->
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container">
-        <h1>Psychologist, Researcher, and Developer</h1>
-      </div>
+  <main id="main" class="container section">
+    <h1>Psychologist, Researcher, and Developer</h1>
+
+    <section class="section">
+      <h2>Overview</h2>
+      <p class="lead">IFS-informed psychotherapy for complex trauma; regulatory/QA background; peer-reviewed publications and public speaking; software for IFS exploration.</p>
+      <ul>
+        <li><strong>Clinical:</strong> Psychologist (Oregon License #3497, exp. 10/31/26). IFS-informed psychotherapy; consent-led pacing with safety and stabilization.</li>
+        <li><strong>Regulatory/QA:</strong> 21 CFR Part 11 / GxP, audits, risk, privacy/security (GE Healthcare, Pfizer, consulting).</li>
+        <li><strong>Research & teaching:</strong> Peer-reviewed work on demoralization; CEU trainings; community presentations.</li>
+        <li><strong>Development:</strong> Desktop tooling for IFS exploration (Windows).</li>
+      </ul>
     </section>
 
-    <section class="profile">
-      <div class="container">
-        <div class="wrap">
-          <h2>Welcome</h2>
-          <p class="lead-in">Here is a quick snapshot of my interdisciplinary focus:</p>
-          <ul>
-            <li>Software/QA and regulatory: 21 CFR Part 11/GxP audits, risk, privacy, security—biotech, pharma, medical devices (GE Healthcare, Pfizer, consulting)</li>
-            <li>Research and teaching: peer‑reviewed publications on demoralization; multi‑session CEU trainings and community presentations for medical and mental health settings; undergraduate psychology instruction</li>
-            <li>Development: built a Windows app to support IFS exploration</li>
-            <li>Psychologist (Oregon License #3497, exp. 10/31/26): IFS‑informed psychotherapy for complex trauma; consent‑led pacing with safety and stabilization</li>
-          </ul>
-
-          <div class="btnrow" aria-label="Professional materials">
-            <a class="btn-primary" href="assets/docs/T_Dawson_Woodrum_Resume.pdf" target="_blank" rel="noopener">Full CV</a>
-            <a class="btn-secondary" href="assets/docs/Publications_Full.pdf" target="_blank" rel="noopener">Publications</a>
-            <a class="btn-secondary" href="assets/docs/Presentations_Full.pdf" target="_blank" rel="noopener">Presentations</a>
-          </div>
-        </div>
+    <section class="section">
+      <h2>Documents</h2>
+      <div class="button-row">
+        <a class="button" href="assets/docs/T_Dawson_Woodrum_Resume.pdf" target="_blank" rel="noopener">Full CV</a>
+        <a class="button outline" href="assets/docs/Publications_Full.pdf" target="_blank" rel="noopener">Publications</a>
+        <a class="button outline" href="assets/docs/Presentations_Full.pdf" target="_blank" rel="noopener">Presentations</a>
       </div>
+      <p class="form-help mt-2">These open as PDFs in a new tab. If you see an older version, refresh with <code>Ctrl+F5</code>.</p>
     </section>
   </main>
 
-  <script src="js/main.js" defer></script>
-  <script>
-    (function () {
-      const STORAGE_KEY = 'site-theme';
-      const html = document.documentElement;
-      const toggle = document.getElementById('theme-toggle');
-      function getStartingTheme(){
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved === 'light' || saved === 'dark') return saved;
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        return prefersDark ? 'dark' : 'light';
-      }
-      function applyTheme(theme){
-        html.setAttribute('data-theme', theme);
-        const label = toggle?.querySelector('.label');
-        const icon = toggle?.querySelector('.icon');
-        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='🌙'); toggle?.setAttribute('aria-label','Switch to light theme'); }
-        else { label && (label.textContent='Light'); icon && (icon.textContent='🌞'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
-      }
-      function setTheme(t){ localStorage.setItem(STORAGE_KEY, t); applyTheme(t); }
-      const start = getStartingTheme(); setTheme(start);
-      if (!localStorage.getItem(STORAGE_KEY) && window.matchMedia){
-        try{
-          const mq = window.matchMedia('(prefers-color-scheme: dark)');
-          mq.addEventListener('change', e => { if (!localStorage.getItem(STORAGE_KEY)) setTheme(e.matches ? 'dark':'light'); });
-        }catch(e){}
-      }
-      toggle?.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-        setTheme(current === 'dark' ? 'light' : 'dark');
-      });
-    })();
-  </script>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship.</p>
+  <footer>
+    <div class="footer-inner container">
+      <nav aria-label="Footer navigation" class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>&copy; <span id="year"></span> T. Dawson Woodrum. This website is for informational purposes only and does not constitute a provider–client relationship.</p>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
