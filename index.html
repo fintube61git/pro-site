@@ -5,19 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Page title + description (improves SEO + screen reader context) -->
+  <!-- Title + description -->
   <title>T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer</title>
   <meta name="description" content="Official site of T. Dawson Woodrum, PhD — psychologist (Oregon #3497), researcher, and developer. IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
 
-  <!-- Canonical URL (prevents duplicate indexing of / and /index.html) -->
+  <!-- Canonical -->
   <link rel="canonical" href="https://fintube61git.github.io/pro-site/" />
 
-  <!-- Open Graph (Facebook/LinkedIn) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer" />
   <meta property="og:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
   <meta property="og:url" content="https://fintube61git.github.io/pro-site/" />
-  <!-- Replace with a real image when you have one: 1200×630 recommended -->
   <meta property="og:image" content="https://fintube61git.github.io/pro-site/assets/img/og-default.png" />
 
   <!-- Twitter -->
@@ -26,28 +25,29 @@
   <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
   <meta name="twitter:image" content="https://fintube61git.github.io/pro-site/assets/img/og-default.png" />
 
-  <!-- Favicons (add real files later; safe placeholders for now) -->
+  <!-- Favicon (optional) -->
   <link rel="icon" href="assets/favicon.ico" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.v2.css" />
+  <!-- IMPORTANT: use your original stylesheet to restore look/spacing -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Skip link improves keyboard navigation -->
+  <!-- Skip link -->
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header>
     <div class="header-inner container">
       <h1 class="site-title"><a href="index.html">T. Dawson Woodrum, PhD</a></h1>
-      <!-- JS expects aria-controls to match #site-nav -->
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" aria-label="Main navigation" hidden>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <!-- Add other pages as needed -->
-        </ul>
+
+      <!-- Theme toggle placeholder (keeps your original layout slot) -->
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">🌞 Light</button>
+
+      <!-- RESTORED: hooks your CSS/JS expect -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" type="button">Menu</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -73,7 +73,7 @@
         <a class="button outline" href="assets/docs/Publications_Full.pdf" target="_blank" rel="noopener">Publications</a>
         <a class="button outline" href="assets/docs/Presentations_Full.pdf" target="_blank" rel="noopener">Presentations</a>
       </div>
-      <p class="form-help mt-2">These open as PDFs in a new tab. If you see an older version, refresh with <code>Ctrl+F5</code>.</p>
+      <p class="form-help mt-2">These open as PDFs in a new tab. If you see an older version, refresh with <kbd>Ctrl</kbd>+<kbd>F5</kbd>.</p>
     </section>
   </main>
 
@@ -87,7 +87,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Keep your existing JS -->
   <script src="js/main.js" defer></script>
 </body>
 </html>
