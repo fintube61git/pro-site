@@ -12,14 +12,12 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://fintube61git.github.io/pro-site/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Twitter (replace image when you have one) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer" />
   <meta property="og:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
   <meta property="og:url" content="https://fintube61git.github.io/pro-site/" />
   <meta property="og:image" content="https://fintube61git.github.io/pro-site/assets/img/og-default.png" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer" />
   <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV." />
@@ -28,8 +26,8 @@
   <!-- Favicon (optional) -->
   <link rel="icon" href="assets/favicon.ico" />
 
-  <!-- IMPORTANT: use your original stylesheet to restore look/spacing -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- IMPORTANT: use your v2 stylesheet -->
+  <link rel="stylesheet" href="css/styles.v2.css" />
 </head>
 <body>
   <!-- Skip link -->
@@ -39,10 +37,10 @@
     <div class="header-inner container">
       <h1 class="site-title"><a href="index.html">T. Dawson Woodrum, PhD</a></h1>
 
-      <!-- Theme toggle placeholder (keeps your original layout slot) -->
+      <!-- Keep your theme toggle pill -->
       <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">🌞 Light</button>
 
-      <!-- RESTORED: hooks your CSS/JS expect -->
+      <!-- Hooks your JS expects -->
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" type="button">Menu</button>
       <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
         <a href="index.html">Home</a>
@@ -87,7 +85,7 @@
     </div>
   </footer>
 
-  <!-- Keep your existing JS -->
+  <!-- Keep your existing JS (expects .nav-toggle / #nav-menu / .nav-menu a) -->
   <script src="js/main.js" defer></script>
 </body>
 </html>
