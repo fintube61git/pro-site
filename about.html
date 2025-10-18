@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Ã¢â‚¬â€ T. Dawson Woodrum, PhD</title>
-  <meta name="description" content="How I practice clinical psychology: IFSÃ¢â‚¬â€˜informed care for complex trauma with safety first, consentÃ¢â‚¬â€˜driven pacing, and collaborative decisions.">
+  <title>About — T. Dawson Woodrum, PhD</title>
+  <meta name="description" content="How I practice clinical psychology: IFS‑informed care for complex trauma with safety first, consent‑driven pacing, and collaborative decisions.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
@@ -13,12 +13,12 @@
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="About Ã¢â‚¬â€ T. Dawson Woodrum, PhD">
+  <meta property="og:title" content="About — T. Dawson Woodrum, PhD">
   <meta property="og:description" content="IFS-informed psychotherapy for complex trauma with safety, consent, and collaboration at the core.">
   <meta property="og:url" content="https://tdawsonwoodrum.com/about.html">
   <meta property="og:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Ã¢â‚¬â€ T. Dawson Woodrum, PhD">
+  <meta name="twitter:title" content="About — T. Dawson Woodrum, PhD">
   <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma with safety, consent, and collaboration at the core.">
   <meta name="twitter:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
 
@@ -32,7 +32,24 @@
   </script>
 
   <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"T. Dawson Woodrum, PhD","jobTitle":"Licensed Psychologist","description":"IFS-informed psychotherapist specializing in complex trauma; developer of mental health software; regulatory/QA expert in medical devices and pharmaceuticals.","url":"https://tdawsonwoodrum.com","address":{"@type":"PostalAddress","addressLocality":"Eugene, Oregon"},"license":"Oregon License #3497","sameAs":["https://www.psychologytoday.com/profile/944087"]}</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "T. Dawson Woodrum, PhD",
+    "jobTitle": "Licensed Psychologist",
+    "description": "IFS-informed psychotherapist specializing in complex trauma; developer of mental health software; regulatory/QA expert in medical devices and pharmaceuticals.",
+    "url": "https://tdawsonwoodrum.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Eugene, Oregon"
+    },
+    "license": "Oregon License #3497",
+    "sameAs": [
+      "https://www.psychologytoday.com/profile/944087"
+    ]
+  }
+  </script>
 
   <style>
     /* Accessible theme toggle */
@@ -68,7 +85,7 @@
       <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
       <div style="display:flex; align-items:center; gap:.5rem;">
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
-          <span class="icon" aria-hidden="true">Ã°Å¸Å’Å¾</span>
+          <span class="icon" aria-hidden="true">🌞</span>
           <span class="label">Light</span>
         </button>
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
@@ -88,7 +105,7 @@
         <div class="grid-2">
           <div>
             <h1>My approach to care</h1>
-            <p>I use an IFSÃ¢â‚¬â€˜informed approach to complex trauma. Safety and stabilization come first. You set the pace, and we make decisions together with your consent at every step.</p>
+            <p>I use an IFS‑informed approach to complex trauma. Safety and stabilization come first. You set the pace, and we make decisions together with your consent at every step.</p>
           </div>
 
           <aside class="badge-panel" aria-label="Profiles and certifications">
@@ -98,7 +115,7 @@
             <div class="badge-stack">
               <!-- Official Psychology Today verified seal (script renders the badge). No extra PT button or image. -->
               <div class="pt-badge">
-                <a href="https://www.psychologytoday.com/profile/944087" class="sx-verified-seal" aria-label="Verified profile on Psychology Today"></a>
+                <a href="https://www.psychologytoday.com/profile/944087" class="sx-verified-seal"></a>
                 <script type="text/javascript"
                   src="https://member.psychologytoday.com/verified-seal.js"
                   data-badge="13"
@@ -132,8 +149,8 @@
         html.setAttribute('data-theme', theme);
         const label = toggle?.querySelector('.label');
         const icon = toggle?.querySelector('.icon');
-        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='Ã°Å¸Å’â„¢'); toggle?.setAttribute('aria-label','Switch to light theme'); }
-        else { label && (label.textContent='Light'); icon && (icon.textContent='Ã°Å¸Å’Å¾'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
+        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='🌙'); toggle?.setAttribute('aria-label','Switch to light theme'); }
+        else { label && (label.textContent='Light'); icon && (icon.textContent='🌞'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
       }
       function setTheme(t){ localStorage.setItem(STORAGE_KEY, t); applyTheme(t); }
       const start = getStartingTheme(); setTheme(start);
@@ -152,7 +169,7 @@
 
   <footer class="site-footer">
   <div class="container footer-row">
-    <p>Ã‚Â© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a providerÃ¢â‚¬â€œclient relationship. <a href="privacy.html">Privacy Policy</a></p>
+    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
   </div>
 </footer>
 </body>
