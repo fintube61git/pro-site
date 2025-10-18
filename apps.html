@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IFS Parts Explorer App – Dawson Woodrum, PhD</title>
-  <meta name="description" content="Download the IFS Parts Explorer desktop app for Windows, macOS, and Linux—built by a trauma-informed psychologist and developer.">
+  <title>IFS Parts Explorer App â€“ Dawson Woodrum, PhD</title>
+  <meta name="description" content="Download the IFS Parts Explorer desktop app for Windows, macOS, and Linuxâ€”built by a trauma-informed psychologist and developer.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
@@ -13,7 +13,7 @@
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="IFS Parts Explorer App – Dawson Woodrum, PhD">
+  <meta property="og:title" content="IFS Parts Explorer App â€“ Dawson Woodrum, PhD">
   <meta property="og:description" content="A privacy-first desktop tool for Internal Family Systems (IFS) parts exploration. Free, open-source, and offline-first.">
   <meta property="og:url" content="https://tdawsonwoodrum.com/apps.html">
   <meta property="og:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
@@ -32,26 +32,7 @@
   </script>
 
   <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "IFS Parts Explorer",
-    "operatingSystem": "Windows, macOS, Linux",
-    "applicationCategory": "HealthApplication",
-    "author": {
-      "@type": "Person",
-      "name": "T. Dawson Woodrum, PhD",
-      "url": "https://tdawsonwoodrum.com"
-    },
-    "description": "A desktop application for exploring Internal Family Systems (IFS) parts. Runs locally with no cloud storage. Designed for clinicians and clients practicing IFS.",
-    "downloadUrl": "https://github.com/fintube61git/ifs-parts-flutter/releases/latest",
-    "offers": {
-      "@type": "Offer",
-      "price": "0"
-    }
-  }
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"IFS Parts Explorer","operatingSystem":"Windows, macOS, Linux","applicationCategory":"HealthApplication","author":{"@type":"Person","name":"T. Dawson Woodrum, PhD","url":"https://tdawsonwoodrum.com"},"description":"A desktop application for exploring Internal Family Systems (IFS) parts. Runs locally with no cloud storage. Designed for clinicians and clients practicing IFS.","downloadUrl":"https://github.com/fintube61git/ifs-parts-flutter/releases/latest","offers":{"@type":"Offer","price":"0"}}</script>
 
   <style>
     .theme-toggle{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);background:transparent;color:var(--text);padding:.35rem .55rem;border-radius:10px;cursor:pointer;font:inherit}
@@ -69,7 +50,7 @@
       <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
       <div style="display:flex;align-items:center;gap:.5rem;">
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
-          <span class="icon" aria-hidden="true">🌞</span>
+          <span class="icon" aria-hidden="true">ðŸŒž</span>
           <span class="label">Light</span>
         </button>
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
@@ -89,12 +70,12 @@
         <h1>IFS Parts Explorer App</h1>
 
         <p class="lead">
-          A free, open-source desktop application for exploring Internal Family Systems (IFS) parts—designed with privacy, consent, and clinical integrity in mind.
+          A free, open-source desktop application for exploring Internal Family Systems (IFS) partsâ€”designed with privacy, consent, and clinical integrity in mind.
         </p>
 
         <h2>Features</h2>
         <ul>
-          <li>Runs entirely on your device—no internet required after download</li>
+          <li>Runs entirely on your deviceâ€”no internet required after download</li>
           <li>No data leaves your computer unless you choose to export it</li>
           <li>Simple interface for mapping and dialoguing with parts</li>
           <li>Available for Windows, macOS, and Linux</li>
@@ -109,7 +90,7 @@
           The app is open-source and licensed for personal, educational, and clinical use. Not a substitute for therapy.
         </p>
 
-        <p><a href="index.html">← Back to home</a></p>
+        <p><a href="index.html">â† Back to home</a></p>
       </div>
     </section>
   </main>
@@ -130,8 +111,8 @@
         html.setAttribute('data-theme',theme);
         const label=toggle?.querySelector('.label');
         const icon=toggle?.querySelector('.icon');
-        if(theme==='dark'){label&&(label.textContent='Dark');icon&&(icon.textContent='🌙');toggle?.setAttribute('aria-label','Switch to light theme');}
-        else{label&&(label.textContent='Light');icon&&(icon.textContent='🌞');toggle?.setAttribute('aria-label','Switch to dark theme');}
+        if(theme==='dark'){label&&(label.textContent='Dark');icon&&(icon.textContent='ðŸŒ™');toggle?.setAttribute('aria-label','Switch to light theme');}
+        else{label&&(label.textContent='Light');icon&&(icon.textContent='ðŸŒž');toggle?.setAttribute('aria-label','Switch to dark theme');}
       }
       function setTheme(t){localStorage.setItem(STORAGE_KEY,t);applyTheme(t);}
       const start=getStartingTheme();setTheme(start);
@@ -150,7 +131,7 @@
 
 <footer class="site-footer">
   <div class="container footer-row">
-    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
+    <p>Â© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a providerâ€“client relationship. <a href="privacy.html">Privacy Policy</a></p>
   </div>
 </footer>
 </body>
