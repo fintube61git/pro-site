@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFS Parts Explorer App – Dawson Woodrum, PhD</title>
+  <meta name="description" content="Download the IFS Parts Explorer desktop app for Windows, macOS, and Linux—built by a trauma-informed psychologist and developer.">
+  <link rel="stylesheet" href="css/styles.v2.css">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://tdawsonwoodrum.com/apps.html">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IFS Parts Explorer App – Dawson Woodrum, PhD">
+  <meta property="og:description" content="A privacy-first desktop tool for Internal Family Systems (IFS) parts exploration. Free, open-source, and offline-first.">
+  <meta property="og:url" content="https://tdawsonwoodrum.com/apps.html">
+  <meta property="og:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IFS Parts Explorer App">
+  <meta name="twitter:description" content="A privacy-first desktop tool for Internal Family Systems (IFS) parts exploration. Free, open-source, and offline-first.">
+  <meta name="twitter:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TZ12XRFQ9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1TZ12XRFQ9');
+  </script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "IFS Parts Explorer",
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "HealthApplication",
+    "author": {
+      "@type": "Person",
+      "name": "T. Dawson Woodrum, PhD",
+      "url": "https://tdawsonwoodrum.com"
+    },
+    "description": "A desktop application for exploring Internal Family Systems (IFS) parts. Runs locally with no cloud storage. Designed for clinicians and clients practicing IFS.",
+    "downloadUrl": "https://github.com/fintube61git/ifs-parts-flutter/releases/latest",
+    "offers": {
+      "@type": "Offer",
+      "price": "0"
+    }
+  }
+  </script>
+
+  <style>
+    .theme-toggle{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);background:transparent;color:var(--text);padding:.35rem .55rem;border-radius:10px;cursor:pointer;font:inherit}
+    .theme-toggle:focus{outline:3px solid var(--accent);outline-offset:2px}
+    .theme-toggle .icon{font-size:1rem;line-height:1}
+    .app-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+    .app-note{color:var(--muted,#6b7280);font-size:.95rem;margin-top:.5rem}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
+      <div style="display:flex;align-items:center;gap:.5rem;">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
+          <span class="icon" aria-hidden="true">🌞</span>
+          <span class="label">Light</span>
+        </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      </div>
+      <ul id="nav-menu" class="nav-menu" hidden>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="apps.html" aria-current="page">Apps</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>IFS Parts Explorer App</h1>
+
+        <p class="lead">
+          A free, open-source desktop application for exploring Internal Family Systems (IFS) parts—designed with privacy, consent, and clinical integrity in mind.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+          <li>Runs entirely on your device—no internet required after download</li>
+          <li>No data leaves your computer unless you choose to export it</li>
+          <li>Simple interface for mapping and dialoguing with parts</li>
+          <li>Available for Windows, macOS, and Linux</li>
+        </ul>
+
+        <h2>Download</h2>
+        <p>All versions are hosted on GitHub:</p>
+        <div class="app-links">
+          <a class="btn-slate" href="https://github.com/fintube61git/ifs-parts-flutter/releases/latest" target="_blank" rel="noopener">Download for Windows, Mac, or Linux</a>
+        </div>
+        <p class="app-note">
+          The app is open-source and licensed for personal, educational, and clinical use. Not a substitute for therapy.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    (function(){
+      const STORAGE_KEY='site-theme';
+      const html=document.documentElement;
+      const toggle=document.getElementById('theme-toggle');
+      function getStartingTheme(){
+        const saved=localStorage.getItem(STORAGE_KEY);
+        if(saved==='light'||saved==='dark')return saved;
+        const prefersDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return prefersDark?'dark':'light';
+      }
+      function applyTheme(theme){
+        html.setAttribute('data-theme',theme);
+        const label=toggle?.querySelector('.label');
+        const icon=toggle?.querySelector('.icon');
+        if(theme==='dark'){label&&(label.textContent='Dark');icon&&(icon.textContent='🌙');toggle?.setAttribute('aria-label','Switch to light theme');}
+        else{label&&(label.textContent='Light');icon&&(icon.textContent='🌞');toggle?.setAttribute('aria-label','Switch to dark theme');}
+      }
+      function setTheme(t){localStorage.setItem(STORAGE_KEY,t);applyTheme(t);}
+      const start=getStartingTheme();setTheme(start);
+      if(!localStorage.getItem(STORAGE_KEY)&&window.matchMedia){
+        try{
+          const mq=window.matchMedia('(prefers-color-scheme: dark)');
+          mq.addEventListener('change',e=>{if(!localStorage.getItem(STORAGE_KEY))setTheme(e.matches?'dark':'light');});
+        }catch(e){}
+      }
+      toggle?.addEventListener('click',()=>{
+        const current=html.getAttribute('data-theme')==='dark'?'dark':'light';
+        setTheme(current==='dark'?'light':'dark');
+      });
+    })();
+  </script>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+</body>
+</html>

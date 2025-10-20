@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="auto">
 <head>
   <meta charset="utf-8">
@@ -28,10 +28,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-1TZ12XRFQ9', {
-      anonymize_ip: true,
-      send_page_view: true
-    });
+    gtag('config', 'G-1TZ12XRFQ9');
   </script>
 
   <!-- JSON-LD Structured Data -->
@@ -73,7 +70,7 @@
     .grid-2 { display:grid; gap:1rem; }
     @media (min-width: 860px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
     .contact-block { background: var(--card-surface); border: 2px solid var(--card-border); border-radius:10px; padding:.9rem; }
-    .btn-slate, .btn-secondary { font-weight:800; border-width:3px; }
+    .btn, .btn-secondary { font-weight:800; border-width:3px; }
     main.section-wrap { padding-top:.25rem; }
   </style>
 </head>
@@ -109,14 +106,14 @@
         </div>
 
         <p class="lede">
-          IFS-focused psychotherapy for complex trauma via secure telehealth in Oregon.
-          You set the pace—collaborative, steady, consent-led.
+          IFS‑focused psychotherapy for complex trauma via secure telehealth in Oregon.
+          You set the pace—collaborative, steady, consent‑led.
         </p>
 
         <div class="feature-row" aria-label="Formats">
           <article class="feature">
             <h3>Individual therapy</h3>
-            <p>Focused one-to-one sessions tailored to your goals and timing.</p>
+            <p>Focused one‑to‑one sessions tailored to your goals and timing.</p>
           </article>
           <article class="feature">
             <h3>Telehealth</h3>
@@ -133,7 +130,7 @@
           <div class="contact-block" aria-labelledby="private-pay">
             <h3 id="private-pay">Private pay (Existenz Psychotherapy)</h3>
             <p>Email: <a href="mailto:tdawson@existenzpsych.com">tdawson@existenzpsych.com</a><br>
-               Phone: <a href="tel:+15412954693">+1 (541) 295–4693</a></p>
+               Phone: <a href="tel:+15412954693">+1 (541) 295‑4693</a></p>
             <p>
               <a class="btn-slate" href="https://hushforms.com/existenzpsych" target="_blank" rel="noopener">
                 Request consultation
@@ -145,7 +142,7 @@
             <h3 id="insurance">Insurance (Neuvoa Counseling)</h3>
             <p>Scheduling and plan details are managed by Neuvoa Counseling.</p>
             <p>
-              <a class="btn-secondary" href="https://neuvoacounseling.com" target="_blank" rel="noopener">
+              <a class="btn btn-secondary" href="https://neuvoacounseling.com" target="_blank" rel="noopener">
                 Neuvoa Counseling
               </a>
             </p>
@@ -171,15 +168,8 @@
         html.setAttribute('data-theme', theme);
         const label = toggle?.querySelector('.label');
         const icon = toggle?.querySelector('.icon');
-        if (theme === 'dark') {
-          label && (label.textContent = 'Light');
-          icon && (icon.textContent = '☀️');
-          toggle?.setAttribute('aria-label', 'Switch to light theme');
-        } else {
-          label && (label.textContent = 'Dark');
-          icon && (icon.textContent = '🌙');
-          toggle?.setAttribute('aria-label', 'Switch to dark theme');
-        }
+        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='🌙'); toggle?.setAttribute('aria-label','Switch to light theme'); }
+        else { label && (label.textContent='Light'); icon && (icon.textContent='🌞'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
       }
       function setTheme(t){ localStorage.setItem(STORAGE_KEY, t); applyTheme(t); }
       const start = getStartingTheme(); setTheme(start);
@@ -196,10 +186,10 @@
     })();
   </script>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
-    </div>
-  </footer>
+ <footer class="site-footer">
+  <div class="container footer-row">
+    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
 </body>
 </html>
