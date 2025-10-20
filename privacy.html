@@ -6,7 +6,7 @@
   <title>Privacy Policy — T. Dawson Woodrum, PhD</title>
   <meta name="description" content="Privacy policy for tdawsonwoodrum.com, covering GA4 usage, local app data, and HIPAA-compliant contact methods.">
   <link rel="stylesheet" href="css/styles.v2.css">
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://tdawsonwoodrum.com/privacy.html">
@@ -59,17 +59,17 @@
       <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
       <div style="display:flex; align-items:center; gap:.5rem;">
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
-          <span class="icon" aria-hidden="true">☀️</span>
+          <span class="icon" aria-hidden="true">🌞</span>
           <span class="label">Light</span>
         </button>
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
       </div>
       <ul id="nav-menu" class="nav-menu" hidden>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="apps.html">Apps</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="apps.html">Apps</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
     </nav>
   </header>
 
@@ -123,15 +123,8 @@
         html.setAttribute('data-theme', theme);
         const label = toggle?.querySelector('.label');
         const icon = toggle?.querySelector('.icon');
-        if (theme === 'dark') {
-          label && (label.textContent = 'Light');
-          icon && (icon.textContent = '☀️');
-          toggle?.setAttribute('aria-label', 'Switch to light theme');
-        } else {
-          label && (label.textContent = 'Dark');
-          icon && (icon.textContent = '🌙');
-          toggle?.setAttribute('aria-label', 'Switch to dark theme');
-        }
+        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='🌙'); toggle?.setAttribute('aria-label','Switch to light theme'); }
+        else { label && (label.textContent='Light'); icon && (icon.textContent='🌞'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
       }
       function setTheme(t){ localStorage.setItem(STORAGE_KEY, t); applyTheme(t); }
       const start = getStartingTheme(); setTheme(start);
