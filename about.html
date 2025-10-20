@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="auto">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — T. Dawson Woodrum, PhD</title>
-  <meta name="description" content="Learn about T. Dawson Woodrum, PhD, licensed psychologist in Oregon, specializing in IFS-informed psychotherapy for complex trauma.">
+  <meta name="description" content="How I practice clinical psychology: IFS‑informed care for complex trauma with safety first, consent‑driven pacing, and collaborative decisions.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
@@ -14,9 +14,13 @@
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="About — T. Dawson Woodrum, PhD">
-  <meta property="og:description" content="Psychologist, researcher, and developer specializing in IFS-informed therapy for complex trauma.">
+  <meta property="og:description" content="IFS-informed psychotherapy for complex trauma with safety, consent, and collaboration at the core.">
   <meta property="og:url" content="https://tdawsonwoodrum.com/about.html">
   <meta property="og:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About — T. Dawson Woodrum, PhD">
+  <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma with safety, consent, and collaboration at the core.">
+  <meta name="twitter:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TZ12XRFQ9"></script>
@@ -24,10 +28,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-1TZ12XRFQ9', {
-      anonymize_ip: true,
-      send_page_view: true
-    });
+    gtag('config', 'G-1TZ12XRFQ9');
   </script>
 
   <!-- JSON-LD Structured Data -->
@@ -36,23 +37,44 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "T. Dawson Woodrum, PhD",
-    "url": "https://tdawsonwoodrum.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/tdawsonwoodrum/"
-    ],
     "jobTitle": "Licensed Psychologist",
+    "description": "IFS-informed psychotherapist specializing in complex trauma; developer of mental health software; regulatory/QA expert in medical devices and pharmaceuticals.",
+    "url": "https://tdawsonwoodrum.com",
     "address": {
-      "streetAddress": "Oregon",
-      "addressCountry": "US"
+      "@type": "PostalAddress",
+      "addressLocality": "Eugene, Oregon"
     },
-    "description": "IFS-informed psychotherapist specializing in complex trauma. Developer of mental health software. Former regulatory/QA professional in pharmaceutical and medical device industries."
+    "license": "Oregon License #3497",
+    "sameAs": [
+      "https://www.psychologytoday.com/profile/944087"
+    ]
   }
   </script>
 
   <style>
+    /* Accessible theme toggle */
     .theme-toggle { display:inline-flex; align-items:center; gap:.5rem; border:1px solid var(--border); background:transparent; color:var(--text); padding:.35rem .55rem; border-radius:10px; cursor:pointer; font:inherit; }
     .theme-toggle:focus { outline:3px solid var(--accent); outline-offset:2px; }
     .theme-toggle .icon { font-size:1rem; line-height:1; }
+
+    /* Layout */
+    .grid-2 { display:grid; gap:1.25rem; }
+    @media (min-width: 860px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+    /* Badge column */
+    .badge-panel { padding-top: 6px; }
+    .badge-panel h2 { margin-bottom: .6rem; }
+
+    /* PT badge and certification */
+    .badge-stack { display:flex; flex-direction:column; align-items:flex-start; gap:14px; }
+    .pt-badge { margin: 0; line-height: 1; }
+    .pt-note { font-size: .95rem; color: var(--muted); margin: .25rem 0 .5rem; }
+    .pt-badge .sx-verified-seal { display:inline-block; transform-origin:left top; }
+    @media (max-width: 600px) { 
+      .pt-badge .sx-verified-seal { transform: scale(0.96); } 
+    }
+
+    .cert-badge { display:block; width:200px; max-width:100%; height:auto; border-radius:8px; }
   </style>
 </head>
 <body>
@@ -70,7 +92,7 @@
       </div>
       <ul id="nav-menu" class="nav-menu" hidden>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="about.html" aria-current="page">About</a></li>
         <li><a href="apps.html">Apps</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -78,44 +100,35 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container">
-        <h1>About</h1>
-        <p>IFS-informed psychotherapy for complex trauma | Software development | Regulatory/QA background</p>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <div class="grid">
+        <div class="grid-2">
           <div>
-            <h2>My approach to care</h2>
-            <p>I use an IFS-informed approach to complex trauma. Safety and stabilization come first. You set the pace, and we make decisions together with your consent at every step.</p>
+            <h1>My approach to care</h1>
+            <p>I use an IFS‑informed approach to complex trauma. Safety and stabilization come first. You set the pace, and we make decisions together with your consent at every step.</p>
           </div>
-          <div>
+
+          <aside class="badge-panel" aria-label="Profiles and certifications">
             <h2>Profile and certification</h2>
-            <p>The verified Psychology Today badge below loads from Psychology Today and may not display when offline.</p>
-           <div class="badge">
-  <a href="https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-phd-eugene-or/1066974" target="_blank" rel="noopener noreferrer">
-    <script type="text/javascript" src="//embed.psychologytoday.com/badge/1066974.js"></script>
-  </a>
-  <img src="assets/img/zy32naec0wujz5cl8d2g.png" alt="Certified Clinical Trauma Professional Level II" width="180">
-</div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <p class="pt-note">The verified Psychology Today badge below loads from Psychology Today and may not display when offline.</p>
 
-    <section class="section">
-      <div class="container">
-        <h2>Credentials & Background</h2>
-        <ul>
-          <li><strong>Licensed Psychologist</strong> (Oregon License #3497, expires 10/31/26)</li>
-          <li><strong>IFS-informed psychotherapy</strong> for complex trauma</li>
-          <li><strong>Software Development</strong>: Flutter app for IFS parts exploration (Windows, Mac, Linux)</li>
-          <li><strong>Regulatory/QA</strong>: 21 CFR Part 11 / GxP, audits, risk, privacy/security (GE Healthcare, Pfizer, consulting)</li>
-          <li><strong>Research & Teaching</strong>: Peer-reviewed work on demoralization; CEU trainings; community and professional presentations</li>
-        </ul>
+            <div class="badge-stack">
+              <!-- Official Psychology Today verified seal (script renders the badge). No extra PT button or image. -->
+              <div class="pt-badge">
+                <a href="https://www.psychologytoday.com/profile/944087" class="sx-verified-seal"></a>
+                <script type="text/javascript"
+                  src="https://member.psychologytoday.com/verified-seal.js"
+                  data-badge="13"
+                  data-id="944087"
+                  data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xMy9wcm9maWxlLzk0NDA4Nz9jYWxsYmFjaz1zeGNhbGxiYWNr">
+                </script>
+              </div>
+
+              <!-- Single certification badge image -->
+              <img class="cert-badge" src="assets/img/zy32naec0wujz5cl8d2g.png" alt="Certification badge">
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
   </main>
@@ -136,15 +149,8 @@
         html.setAttribute('data-theme', theme);
         const label = toggle?.querySelector('.label');
         const icon = toggle?.querySelector('.icon');
-        if (theme === 'dark') {
-          label && (label.textContent = 'Light');
-          icon && (icon.textContent = '☀️');
-          toggle?.setAttribute('aria-label', 'Switch to light theme');
-        } else {
-          label && (label.textContent = 'Dark');
-          icon && (icon.textContent = '🌙');
-          toggle?.setAttribute('aria-label', 'Switch to dark theme');
-        }
+        if (theme === 'dark') { label && (label.textContent='Dark'); icon && (icon.textContent='🌙'); toggle?.setAttribute('aria-label','Switch to light theme'); }
+        else { label && (label.textContent='Light'); icon && (icon.textContent='🌞'); toggle?.setAttribute('aria-label','Switch to dark theme'); }
       }
       function setTheme(t){ localStorage.setItem(STORAGE_KEY, t); applyTheme(t); }
       const start = getStartingTheme(); setTheme(start);
@@ -162,9 +168,9 @@
   </script>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
-    </div>
-  </footer>
+  <div class="container footer-row">
+    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
 </body>
 </html>
