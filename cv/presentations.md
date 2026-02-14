@@ -1,0 +1,24 @@
+- Woodrum, T.D., (January 2026) The Psychologist's Compass: Navigating Gender Affirming Care in a Post Colonial, Politicized Word, Online interactive training for graduate students at Fielding Graduate University, Santa Barbara, CA.
+- Woodrum, T.D., (October 2025) An Introduction to Internal Family Systems (IFS).  Online interactive training for clinicians at Neuvoa Counseling, Eugene OR.
+- Woodrum, T.D., (September 2023 – November 2023) A four part online continuing interactive education on provision of gender affirming care for medical and mental health professionals in Oregon.
+- Woodrum, T.D., (July 2023). Transgender 101 for Cascade Manor. Live interactive training or residents of a continuing care retirement community, Eugene, OR.
+- Woodrum, T.D., (September 2022). Transgender 101 for Cascade Manor. Live interactive training for residents of a continuing care retirement community, Eugene, OR.
+- Woodrum, T.D., and Reveles, A. (September 2021). Transgender 101 for Strong Integrated Behavioral Health. Online interactive training with case studies and breakout groups for clinicians and staff, Eugene, OR.
+- Falkenstein, C. and Woodrum, T. D. (March 2021). HIPPA Basic Training for Strong Integrated Behavioral Health. Online interactive training with case studies and breakout groups for clinicians and staff, Eugene, OR.
+- Woodrum, T. D. (2020, March/April/May). COVID-19: Promoting and Maintaining Mental Health During a Pandemic. Presentation at various student, faculty, and staff meetings at Oregon State University, Corvallis, OR.
+- Woodrum, T. D. (2020, January). Transgender 101 for Oregon State University Counseling and Psychological Services practicum students. Presentation at a training seminar at Oregon State University, Corvallis, OR.
+- Woodrum, T. D. (2019, January). Animal-assisted therapy with individuals and groups. Presentation at the annual meeting ofthe Georgia College Counseling Association, St. Simons Island, GA.
+- Woodrum, T. D. (2019, January). Transgender 101 for student leaders. Presentation to Piedmont Student Leadership Institute, Demorest, GA.
+- Woodrum, T. D. (2018, November). Animal-assisted therapy with individuals and groups. Presentation to the members of the Athens Area Psychological Association, Athens GA.
+- Woodrum, T. D. (2018, October). Animal-assisted therapy with individuals and groups. Presentation to the local members of the Georgia College Counseling Association, Demorest GA.
+- Woodrum, T. D. (2018, August). Lysergic acid diethylamide-25: Past and present research. Presentation at the 126th Annual Convention of the American Psychological Association, San Francisco, CA.
+- Woodrum, T. D. (2018, September). Transgender 101 for Rape Response Inc. Online interactive training with case studies and breakout groups for first responders and support staff of the Rape Response organization, Gainesville, GA.
+- Woodrum, T. D. (2018, September). Facilitator for presentation and open discussion of psychoeducational materials from the American Foundation for Suicide Prevention to resident advisors and students at Piedmont College, Demorest, GA.
+- Woodrum, T. D., (2018, July). Gendered violence: The transgender / gender diverse experience. Guest lecture to the Fielding Graduate University summer session course PSY-736 Special Topics: Sexual and Gendered Violence, Chicago, IL.
+- Hildebrandt, T., McGuire, L. J., Porter, G., Rogers, K., Roshell, S., & Woodrum, T.D. (2018, July). Queer eracism: The people behind the LGBTQ+ acronym. Online panel discussion sponsored by Fielding Graduate University.
+- Woodrum, T. D. (2018, April). The Thematic Apperception Test: Overview and a related clinical case. Presentation to the Fielding Graduate University Cluster, Atlanta, GA.
+- Mizock, L., Woodrum, T. D., Riley, J., Sotilleo, El, Yuen, N., & Ormerod, A. (2017, June). Trans-forming research into social justice– reflective experiences of research practicum. Student and faculty special topics research presentation at Fielding Graduate University national session, Alexandria, VA.
+- Woodrum, T. D. (2017, May). Transgender 101 for college staff. Presentation to Piedmont College Student Life staff, resident directors, and resident advisors, Clayton, GA.
+- Woodrum, T. D. (2017, May). Transgender 101 for college students. Presentation to Piedmont College students, Demorest, GA.
+- Woodrum, T. D. (2017, January). Transgender 101 for healthcare professionals. Presentation to North Central Mental HealthCenter physicians, nurses, psychologists, social workers, case workers and staff, San Diego, CA.
+- Sotilleo, E. A., Yuen, N., Riley, J., Woodrum, T. D., Mizock, L., & Ormerod, A.J. (2016, July). Work stigma among transgender and gender nonconforming individuals at work. Poster session at Fielding Graduate University summer session, Chicago, IL.
