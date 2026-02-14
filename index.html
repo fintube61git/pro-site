@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T. Dawson Woodrum, PhD â€” Psychologist, Researcher, Developer</title>
+  <title>T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer</title>
   <meta name="description" content="IFS-informed psychotherapy for complex trauma; regulatory/QA background; peer-reviewed publications and presentations; software for IFS exploration.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -13,12 +13,12 @@
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="T. Dawson Woodrum, PhD â€” Psychologist, Researcher, Developer">
+  <meta property="og:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer">
   <meta property="og:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV.">
   <meta property="og:url" content="https://www.tdawsonwoodrum.com/">
   <meta property="og:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="T. Dawson Woodrum, PhD â€” Psychologist, Researcher, Developer">
+  <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer">
   <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV.">
   <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
 
@@ -31,7 +31,7 @@
     gtag('config', 'G-1TZ12XRFQ9');
   </script>
 
-  <!-- JSON-LD Structured Data â€“ Valid Schema.org Psychologist -->
+  <!-- JSON-LD Structured Data – Valid Schema.org Psychologist -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -67,7 +67,7 @@
       <a class="brand" href="index.html">T. Dawson Woodrum, PhD</a>
       <div style="display:flex;align-items:center;gap:.5rem;">
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-live="polite">
-          <span class="icon" aria-hidden="true">Light</span>
+          <span class="icon" aria-hidden="true"></span>
           <span class="label">Light</span>
         </button>
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
@@ -124,8 +124,8 @@
         html.setAttribute('data-theme',theme);
         const label=toggle?.querySelector('.label');
         const icon=toggle?.querySelector('.icon');
-        if(theme==='dark'){label&&(label.textContent='Dark');icon&&(icon.textContent='Dark');toggle?.setAttribute('aria-label','Switch to light theme');}
-        else{label&&(label.textContent='Light');icon&&(icon.textContent='Light');toggle?.setAttribute('aria-label','Switch to dark theme');}
+        if(theme==='dark'){label&&(label.textContent='Dark');icon&&(icon.textContent='');toggle?.setAttribute('aria-label','Switch to light theme');}
+        else{label&&(label.textContent='Light');icon&&(icon.textContent='');toggle?.setAttribute('aria-label','Switch to dark theme');}
       }
       function setTheme(t){localStorage.setItem(STORAGE_KEY,t);applyTheme(t);}
       const start=getStartingTheme();setTheme(start);
@@ -144,7 +144,7 @@
 
 <footer class="site-footer">
   <div class="container footer-row">
-    <p>Â© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a providerâ€“client relationship. <a href="privacy.html">Privacy Policy</a></p>
+    <p>© <span id="year"></span> T. Dawson Woodrum. All rights reserved. This website is for informational purposes only and does not constitute a provider–client relationship. <a href="privacy.html">Privacy Policy</a></p>
   </div>
 </footer>
 </body>
