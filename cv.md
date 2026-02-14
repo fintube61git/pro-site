@@ -1,4 +1,4 @@
-﻿<a id="cv"></a>
+<a id="cv"></a>
 
 <!--
 IMPORTANT:
@@ -17,7 +17,7 @@ group and solo outpatient practices. I have also taught various undergraduate ps
 clinician, I spent over 15 years in the biotechnology, pharmaceutical, and medical device industries, focusing on electronic
 data integrity auditing, software quality assurance, regulatory strategy, privacy, and information security.
 
-RECENT ACCOMPLISHMENTS
+## RECENT ACCOMPLISHMENTS
 
 Developed a Flutter app to provide visual exploration of IFS parts using images & questions (Windows, macOS, Linux).
 Co-developed and presented a four-hour CEU course on gender-affirming care for healthcare professionals.
@@ -27,7 +27,7 @@ Successfully provided evidence-based psychotherapy in-person and via telehealth 
 Taught undergraduate psychology courses across several domains.
 Promoted use of animal-assisted therapy (canine) culminating in adoption of this new offering to clients.
 
-CORE COMPETENCIES
+## CORE COMPETENCIES
 
 - Trauma Informed Stabilization Treatment
 - Internal Family Systems
@@ -47,25 +47,25 @@ CORE COMPETENCIES
 - Risk Analysis 
 - Electronic Health Recordkeeping Systems and Communication Platforms (TherapyNotes, Zoom, Doxyme, Jitsi Meet, AdvancedMD, Valant, Centricity, Titanium, Cerner, Acuity)
 
-LEADERSHIP PRINCIPLES
+## LEADERSHIP PRINCIPLES
 
 Ethical - Collegial- Communicative - Innovative - Data-driven - Accountable
 
-EDUCATION AND CERTIFICATIONS
+## EDUCATION AND CERTIFICATIONS
 
-PhD Psychology (Clinical Psychology â€“ APA accredited) 2020 Fielding Graduate University, Santa Barbara, CA
+PhD Psychology (Clinical Psychology - APA accredited) 2020 Fielding Graduate University, Santa Barbara, CA
 
-MA (Clinical Psychology â€“ APA accredited) 2017 Fielding Graduate University, Santa Barbara, CA
+MA (Clinical Psychology - APA accredited) 2017 Fielding Graduate University, Santa Barbara, CA
 
 JD (Law) 1991 The University of Michigan Law School, Ann Arbor, MI
 
-LICENSURE
+## LICENSURE
 
 Oregon Psychologist License 3497 (Issued 22FEB2022; Expires 31OCT2026)
 
 NPI: 1154872562
 
-PROFESSIONAL WORK EXPERIENCE
+## PROFESSIONAL WORK EXPERIENCE
 
 Licensed Psychologist (Solo practitioner and 1099 Contractor) 
 July 2022-present Existenz Psychotherapy, LLC Eugene Oregon
@@ -98,7 +98,7 @@ October 2020-January 2022 Strong Integrated Behavioral Health, Eugene, Oregon
 - Participated in rotating weekly consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
 
 APA Internship (1500 supervised hours) 
-August 2019 â€“ August 2020 OSU Counseling & Psych Svcs, Corvallis, Oregon
+August 2019 - August 2020 OSU Counseling & Psych Svcs, Corvallis, Oregon
 
 - Conducted intake assessments, formulated case conceptualizations, determined DSM-diagnoses, and developed treatment plans for undergraduate and graduate college students.
 
@@ -115,7 +115,7 @@ August 2019 â€“ August 2020 OSU Counseling & Psych Svcs, Corvallis, Oregon
 - Participated in regularly scheduled interdisciplinary consultation meetings with student health services psychiatrists, physician assistants, and nurse practitioners.
 
 Clinical Practicum (161 supervised hours) 
-June 2018 â€“ May 2019 Sydney Felker-Ross, PhD LLC, Athens, GA
+June 2018 - May 2019 Sydney Felker-Ross, PhD LLC, Athens, GA
 
 - Conducted intake assessments, formulated case conceptualizations, and developed treatment plans for adult clients.
 
@@ -126,7 +126,7 @@ June 2018 â€“ May 2019 Sydney Felker-Ross, PhD LLC, Athens, GA
 - Provided outreach training to local clinicians on Canine Assisted Therapy.
 
 Clinical Practicum (1124 supervised hours) 
-August 2017 â€“ May 2019 Piedmont College Counseling Ctr, Demorest, GA
+August 2017 - May 2019 Piedmont College Counseling Ctr, Demorest, GA
 
 - Conducted intake assessments, formulated case conceptualizations, and developed treatment plans.
 
@@ -139,7 +139,7 @@ August 2017 â€“ May 2019 Piedmont College Counseling Ctr, Demorest, GA
 - Member of Transgender Inclusivity Committee tasked with developing policies, procedures, and workflows.
 
 Clinical Practicum (559 supervised hours) 
-November 2016 â€“ July 2017 North Central Behavioral Health, San Diego, CA
+November 2016 - July 2017 North Central Behavioral Health, San Diego, CA
 
 - Conducted intake assessments, formulated case conceptualizations, and developed treatment plans for adult clients in an urban county mental health clinic focusing on seriously mentally ill and homeless adult populations.
 
@@ -152,17 +152,18 @@ November 2016 â€“ July 2017 North Central Behavioral Health, San Diego, CA
 - Participated in interdisciplinary consultation meetings with psychiatrists, physician assistants, and nurse practitioners.
 
 Research Practicum (200 direct hours) 
-May 2015 â€“ May 2019 Fielding Graduate University, Santa Barbara, CA
+May 2015 - May 2019 Fielding Graduate University, Santa Barbara, CA
 
 - Reviewed literature addressing qualitative research methods, reflexivity and employment-related discrimination and stigma experienced by persons identifying as transgender or gender diverse.
 
 - Met with fellow researchers to reach consensus on common themes and reflexivity-related concerns.
 
 - Drafted language for sections of posters, presentations, and publications.
-TEACHING EXPERIENCE
+
+## TEACHING EXPERIENCE
 
 Adjunct Professor, Psychology 
-August 2017 â€“ May 2019 Piedmont College, Demorest GA
+August 2017 - May 2019 Piedmont College, Demorest GA
 
 - Developed course syllabi, lectures, assignments and tests for undergraduate courses in Psychology of Childhood & Early Adolescence (Fall 2017), Cognitive Psychology (Fall 2017), Theories of Learning (Spring 2018), Personality (Spring 2018),Abnormal Psychology (Fall 2018), Human Growth and Development (Fall 2018), Human Sexuality (Spring 2019), and Introduction to Counseling (Spring 2019).
 
@@ -172,12 +173,12 @@ August 2017 â€“ May 2019 Piedmont College, Demorest GA
 - Provided academic advising to undergraduate Psychology students.
 - Completed student mid-term evaluations and submitted final grades.
 
-Other Healthcare IT-related Experience
+### Other Healthcare IT-related Experience
 
 Independent Contractor, micro1
 Jan 2026 - Feb 2026
 
-- Contributed to advanced human data initiatives at a leading AI lab, aimed at improving the safety of AI models on mental healthâ€“related questions.  Responsibilities included evaluating the accuracy and quality of model-generated responses and recommending improvements.
+- Contributed to advanced human data initiatives at a leading AI lab, aimed at improving the safety of AI models on mental health-related questions.  Responsibilities included evaluating the accuracy and quality of model-generated responses and recommending improvements.
 
 Independent Consultant 
 (Intermittent) July 2009 - Present
@@ -187,14 +188,14 @@ Independent Consultant
 - Assist start-up companies develop regulatory strategies for health information technologies.
 
 Quality and Regulatory Management Executive 
-Dec 2010 â€“ March 2014 GE Healthcare, Waukesha WI 
+Dec 2010 - March 2014 GE Healthcare, Waukesha WI 
 
 - Collaborated with software engineers on developing efficient processes to build in quality for medical device software.
 - Completed General Electric Management Development Course.
 - Supported implementation of Sunshine Act requirements across organizational QRM units.
 
 Senior Director, Worldwide Technology Policy and Information Security 
-Jan 2007 â€“ June 2009 Pfizer, New York, NY
+Jan 2007 - June 2009 Pfizer, New York, NY
 
 - Developed and maintained IT policies, procedures, control frameworks (security, privacy, SDLC).
 - Information security program management (awareness, enforcement, information security officer network).
@@ -212,10 +213,10 @@ Jan 2007 â€“ June 2009 Pfizer, New York, NY
 
 - Internal Family Systems Level 1 training (in process, estimated completion March 2026)
 - Gottman Method Couples Therapy - Level 1 Clinical Training (2018)
-- Collaborative Assessment & Management of Suicidality (CAMS) â€“ Book & Online Course (2019, 2022)
-- White Ally Toolkit Training â€“ Dr. David Campt, PhD (2019)
+- Collaborative Assessment & Management of Suicidality (CAMS) - Book & Online Course (2019, 2022)
+- White Ally Toolkit Training - Dr. David Campt, PhD (2019)
 
-PROFESSIONAL MEMBERSHIPS AND CERTIFICATIONS
+## PROFESSIONAL MEMBERSHIPS AND CERTIFICATIONS
 
 Certified Clinical Trauma Professional Level 2 (CCTP-II) 
 
@@ -227,18 +228,18 @@ Oregon Psychological Association
 
 Psi Chi Honor Society
 
-RECOMMENDATIONS
+## REFERENCES
 
-â€œI was consistently impressed with Dawsonâ€™s authoritative knowledge and excellent consultation skills regarding dissociative disorders and religious trauma. I have benefited many times from his ability to listen for complexities, ask insightful questions,and offer suggestions that furthered my own thinking about a challenging clinical question or dilemma.â€
+"I was consistently impressed with Dawson's authoritative knowledge and excellent consultation skills regarding dissociative disorders and religious trauma. I have benefited many times from his ability to listen for complexities, ask insightful questions,and offer suggestions that furthered my own thinking about a challenging clinical question or dilemma."
 Zia Sichi, PsyD|Psychologist and Holistic Health Coach, Prior Supervisor at Strong Integrated Behavioral Health
 
-â€œDawson connected well with his clients and provided excellent care using evidence-based interventions in support of their therapeutic journey and goals. Dawson also provided animal-assisted therapy (canine) based on each client's needs and comfort levelâ€.
+"Dawson connected well with his clients and provided excellent care using evidence-based interventions in support of their therapeutic journey and goals. Dawson also provided animal-assisted therapy (canine) based on each client's needs and comfort level".
 Marceline Bamba, PhD Associate Director of Clinical Services, Oregon State University CAPS, Prior Supervisor
 
 "Dawson masterfully weaves together the art and science of psychotherapy, fostering a counseling environment of authenticity, empathy, and trust that is palpable."
 Fernando Frias, PsyD Licensed Psychologist Oregon State University CAPS, Prior Supervisor
 
-â€œDawson and I connected while we were exploring regulatory requirements for our virtual reality exposure therapy product in the USA. Dawson has been extremely helpful as his unique skill set provides several different perspectives, not only as a psychologist, but also as a software developer and quality assurance professionalâ€.
+"Dawson and I connected while we were exploring regulatory requirements for our virtual reality exposure therapy product in the USA. Dawson has been extremely helpful as his unique skill set provides several different perspectives, not only as a psychologist, but also as a software developer and quality assurance professional".
 Adam Hutchison, Founder oVRcome 
 
 
