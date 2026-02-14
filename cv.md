@@ -8,7 +8,7 @@ Use tools/build_cv_html.ps1 to expand includes first.
 
 T. Dawson Woodrum, PhD
 
-Available via Telehealth | +1 541-215-4693 | dawson@tdawsonwoodrum.com | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
+Available via Telehealth | +1 541-215-4693 | <mailto:dawson@tdawsonwoodrum.com> | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
 
 ---
 I am a licensed psychologist providing trauma-informed, evidence-based psychotherapy to individuals and groups. My
