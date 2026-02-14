@@ -1,3 +1,9 @@
 # Local maintenance artifacts (do not commit)
 MAINTENANCE-HANDOFF.md
 backup_html/
+# Local CV extraction helpers (do not commit)
+_build_cv_md.py
+_extract_cv.py
+_old_cv_from_git.pdf
+cv_extracted_from_old_pdf.txt
+cv.html
