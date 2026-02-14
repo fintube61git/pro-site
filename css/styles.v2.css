@@ -13,6 +13,8 @@ body{
   line-height:1.6;color:var(--text);background:var(--bg);
 }
 
+html, body { overflow-y: auto; }
+
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
