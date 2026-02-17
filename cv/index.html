@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV | T. Dawson Woodrum, PhD</title>
+  <meta name="description" content="Curriculum vitae rendered from markdown.">
+  <link rel="stylesheet" href="../css/styles.v2.css">
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main id="main" class="section">
+    <div class="container">
+      <article id="cv-content" aria-live="polite">Loading CV...</article>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (function () {
+      function slugify(text) {
+        return text
+          .toLowerCase()
+          .trim()
+          .replace(/<[^>]*>/g, "")
+          .replace(/&[a-z0-9#]+;/gi, "")
+          .replace(/[^a-z0-9\s-]/g, "")
+          .replace(/\s+/g, "-")
+          .replace(/-+/g, "-");
+      }
+
+      function makeRenderer() {
+        const renderer = new marked.Renderer();
+        const seen = Object.create(null);
+
+        renderer.heading = function (token) {
+          const text = token.text || "";
+          const base = slugify(token.raw || text) || "section";
+          const count = seen[base] || 0;
+          seen[base] = count + 1;
+          const id = count ? base + "-" + count : base;
+          return "<h" + token.depth + ' id="' + id + '">' + text + "</h" + token.depth + ">\n";
+        };
+
+        return renderer;
+      }
+
+      async function renderCv() {
+        const root = document.getElementById("cv-content");
+        try {
+          const res = await fetch("/cv.md", { cache: "no-store" });
+          if (!res.ok) throw new Error("Failed to fetch /cv.md (" + res.status + ")");
+          const md = await res.text();
+          marked.setOptions({ gfm: true, breaks: false, renderer: makeRenderer() });
+          root.innerHTML = marked.parse(md);
+
+          if (location.hash) {
+            const id = decodeURIComponent(location.hash.slice(1));
+            const target = document.getElementById(id);
+            if (target) target.scrollIntoView();
+          }
+        } catch (err) {
+          root.textContent = "Could not load CV markdown.";
+          console.error(err);
+        }
+      }
+
+      renderCv();
+    })();
+  </script>
+</body>
+</html>
