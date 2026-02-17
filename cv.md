@@ -19,13 +19,8 @@ data integrity auditing, software quality assurance, regulatory strategy, privac
 
 ## RECENT ACCOMPLISHMENTS
 
-Developed a Flutter app to provide visual exploration of IFS parts using images & questions (Windows, macOS, Linux).
-Co-developed and presented a four-hour CEU course on gender-affirming care for healthcare professionals.
-Developed a repeatable process for collaborating with executive management to develop gender-affirming training.
-Published research advocating for the inclusion of demoralization as a specifier within formal nosological systems.
-Successfully provided evidence-based psychotherapy in-person and via telehealth across multiple settings.
-Taught undergraduate psychology courses across several domains.
-Promoted use of animal-assisted therapy (canine) culminating in adoption of this new offering to clients.
+Developed IFS System Manager - a visual mapping tool for therapists and individuals to explore internal parts and their relationships using IFS-informed concepts. Designed for privacy, it functions without user accounts or cloud storage, ensuring all data remains strictly local to the user's device. The interface provides a low-distraction environment optimized for both private reflection and collaborative screen-sharing during online sessions. The tech stack includes Next.js, TypeScript, and Tailwind CSS deployed on Vercel.
+Developed IFS Parts Journal - a private desktop application for Windows, macOS, and Linux that uses 99 specialized cards to help individuals visually explore their internal system. To ensure absolute privacy, the tool operates entirely offline with no data collection, keeping all personal reflections securely on the user’s own device. A modern web version is currently in development to provide easier access through a browser and is scheduled for release in Q2 2026. The tech stack includes Flutter and Dart, while the upcoming web transition utilizes Next.js, TypeScript, and Tailwind CSS.
 
 ## CORE COMPETENCIES
 
