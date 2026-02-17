@@ -29,36 +29,82 @@
           .replace(/-+/g, "-");
       }
 
-      function makeRenderer() {
-        const renderer = new marked.Renderer();
+      function applyHeadingIds(root) {
         const seen = Object.create(null);
-
-        renderer.heading = function (token) {
-          const text = token.text || "";
-          const base = slugify(token.raw || text) || "section";
+        const headings = root.querySelectorAll("h1, h2, h3, h4, h5, h6");
+        headings.forEach(function (h) {
+          if (h.id) return;
+          const base = slugify(h.textContent || "") || "section";
           const count = seen[base] || 0;
           seen[base] = count + 1;
-          const id = count ? base + "-" + count : base;
-          return "<h" + token.depth + ' id="' + id + '">' + text + "</h" + token.depth + ">\n";
-        };
+          h.id = count ? base + "-" + count : base;
+        });
+      }
 
-        return renderer;
+      function applyKnownSectionIds(root) {
+        const headings = root.querySelectorAll("h1, h2, h3, h4, h5, h6");
+        headings.forEach(function (h) {
+          const t = (h.textContent || "").trim().toLowerCase();
+          if (t === "publications") h.id = "publications";
+          if (t === "presentations") h.id = "presentations";
+        });
+      }
+
+      function scrollToHash() {
+        if (!location.hash) return;
+        const id = decodeURIComponent(location.hash.slice(1));
+        const target = document.getElementById(id);
+        if (target) target.scrollIntoView();
       }
 
       async function renderCv() {
         const root = document.getElementById("cv-content");
         try {
-          const res = await fetch("/cv.md", { cache: "no-store" });
-          if (!res.ok) throw new Error("Failed to fetch /cv.md (" + res.status + ")");
-          const md = await res.text();
-          marked.setOptions({ gfm: true, breaks: false, renderer: makeRenderer() });
-          root.innerHTML = marked.parse(md);
-
-          if (location.hash) {
-            const id = decodeURIComponent(location.hash.slice(1));
-            const target = document.getElementById(id);
-            if (target) target.scrollIntoView();
+          async function fetchText(path) {
+            const res = await fetch(path, { cache: "no-store" });
+            if (!res.ok) throw new Error("Failed to fetch " + path + " (" + res.status + ")");
+            return res.text();
           }
+
+          async function fetchFromCandidates(paths) {
+            let lastErr = null;
+            for (const p of paths) {
+              try {
+                return await fetchText(p);
+              } catch (err) {
+                lastErr = err;
+              }
+            }
+            throw lastErr || new Error("Unable to fetch from candidates.");
+          }
+
+          const includePattern = /^\s*\{\{<\s*include\s+([^>\r\n]+)\s*>\}\}\s*$/;
+          const md = await fetchFromCandidates(["/cv.md", "../cv.md"]);
+          const lines = md.split(/\r?\n/);
+          const expanded = [];
+
+          for (const line of lines) {
+            const m = line.match(includePattern);
+            if (!m) {
+              expanded.push(line);
+              continue;
+            }
+
+            const relPath = m[1].trim().replace(/\\/g, "/");
+            const includeText = await fetchFromCandidates([
+              "/" + relPath.replace(/^\/+/, ""),
+              "../" + relPath.replace(/^\/+/, "")
+            ]);
+            expanded.push(includeText);
+          }
+
+          const expandedMd = expanded.join("\n");
+          marked.setOptions({ gfm: true, breaks: false });
+          root.innerHTML = marked.parse(expandedMd);
+          applyHeadingIds(root);
+          applyKnownSectionIds(root);
+          scrollToHash();
+          setTimeout(scrollToHash, 120);
         } catch (err) {
           root.textContent = "Could not load CV markdown.";
           console.error(err);
@@ -66,6 +112,7 @@
       }
 
       renderCv();
+      window.addEventListener("hashchange", scrollToHash);
     })();
   </script>
 </body>
