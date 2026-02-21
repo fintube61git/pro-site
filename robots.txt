@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cv.html
+
+Sitemap: https://www.tdawsonwoodrum.com/sitemap.xml
