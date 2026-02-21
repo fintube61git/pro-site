@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IFS Parts Explorer App – Dawson Woodrum, PhD</title>
-  <meta name="description" content="Download the IFS Parts Explorer desktop app for Windows, macOS, and Linux—built by a trauma-informed psychologist and developer.">
+  <title>Apps — Parts Journal and Parts Mapper</title>
+  <meta name="description" content="External tools for understanding internal systems: Parts Journal (ip-journal.live) and Parts Mapper (ip-mapper.com). Free, web-based, and self-directed.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://tdawsonwoodrum.com/apps.html">
+  <link rel="canonical" href="https://www.tdawsonwoodrum.com/apps.html">
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="IFS Parts Explorer App – Dawson Woodrum, PhD">
-  <meta property="og:description" content="A privacy-first desktop tool for Internal Family Systems (IFS) parts exploration. Free, open-source, and offline-first.">
-  <meta property="og:url" content="https://tdawsonwoodrum.com/apps.html">
-  <meta property="og:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
+  <meta property="og:title" content="Apps — Parts Journal and Parts Mapper">
+  <meta property="og:description" content="External tools for understanding internal systems. Free, web-based, and intentionally self-directed.">
+  <meta property="og:url" content="https://www.tdawsonwoodrum.com/apps.html">
+  <meta property="og:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IFS Parts Explorer App">
-  <meta name="twitter:description" content="A privacy-first desktop tool for Internal Family Systems (IFS) parts exploration. Free, open-source, and offline-first.">
-  <meta name="twitter:image" content="https://tdawsonwoodrum.com/assets/img/og-default.png">
+  <meta name="twitter:title" content="Apps — Parts Journal and Parts Mapper">
+  <meta name="twitter:description" content="External tools for understanding internal systems. Free, web-based, and intentionally self-directed.">
+  <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
+  <link rel="preload" as="image" href="assets/img/apps-tools-hero.png">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TZ12XRFQ9"></script>
@@ -28,28 +29,84 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-1TZ12XRFQ9');
+    gtag('config', 'G-1TZ12XRFQ9', {
+      anonymize_ip: true,
+      send_page_view: true
+    });
   </script>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "IFS Parts Explorer",
-    "operatingSystem": "Windows, macOS, Linux",
-    "applicationCategory": "HealthApplication",
-    "author": {
-      "@type": "Person",
-      "name": "T. Dawson Woodrum, PhD",
-      "url": "https://tdawsonwoodrum.com"
-    },
-    "description": "A desktop application for exploring Internal Family Systems (IFS) parts. Runs locally with no cloud storage. Designed for clinicians and clients practicing IFS.",
-    "downloadUrl": "https://github.com/fintube61git/ifs-parts-flutter/releases/latest",
-    "offers": {
-      "@type": "Offer",
-      "price": "0"
-    }
+    "@type": "ItemList",
+    "name": "Internal Parts Tools",
+    "itemListElement": [
+      {
+        "@type": "SoftwareApplication",
+        "position": 1,
+        "name": "Parts Journal",
+        "url": "https://ip-journal.live",
+        "creator": { "@id": "https://www.tdawsonwoodrum.com/#person" },
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "position": 2,
+        "name": "Parts Mapper",
+        "url": "https://ip-mapper.com",
+        "creator": { "@id": "https://www.tdawsonwoodrum.com/#person" },
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0" }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.tdawsonwoodrum.com/apps.html#webpage",
+    "url": "https://www.tdawsonwoodrum.com/apps.html",
+    "name": "Apps — Parts Journal and Parts Mapper",
+    "description": "External tools for understanding internal systems: Parts Journal and Parts Mapper.",
+    "about": { "@id": "https://www.tdawsonwoodrum.com/#person" },
+    "isPartOf": { "@id": "https://www.tdawsonwoodrum.com/#website" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are these tools therapy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Parts Journal and Parts Mapper are self-directed tools and are not therapy, diagnosis, or clinical guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do these tools collect personal data or telemetry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. These web apps do not collect personal data or usage telemetry."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is my work stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your work is not sent to a server, and you only save or export anything if you choose to do so on your own device."
+        }
+      }
+    ]
   }
   </script>
 
@@ -57,8 +114,34 @@
     .theme-toggle{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);background:transparent;color:var(--text);padding:.35rem .55rem;border-radius:10px;cursor:pointer;font:inherit}
     .theme-toggle:focus{outline:3px solid var(--accent);outline-offset:2px}
     .theme-toggle .icon{font-size:1rem;line-height:1}
-    .app-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
-    .app-note{color:var(--muted,#6b7280);font-size:.95rem;margin-top:.5rem}
+    .apps-section{padding-top:42px}
+    .apps-intro{max-width:72ch}
+    .apps-intro h1{margin:0 0 .35rem;font-size:clamp(1.7rem,2.6vw,2.25rem);line-height:1.2}
+    .apps-intro p{margin:.55rem 0}
+    .app-hero{margin:.9rem 0 1.1rem}
+    .app-hero img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
+    .app-caption{color:var(--muted,#6b7280);font-size:.95rem;margin:.45rem 0 0}
+    .apps-grid{display:grid;gap:1rem;margin-top:1.25rem}
+    @media (min-width:860px){.apps-grid{grid-template-columns:1fr 1fr;align-items:stretch}}
+    .app-card{border:1px solid var(--border);border-radius:12px;padding:1rem;background:var(--surface);display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+    .app-card-journal{border-left:4px solid #4f7ea7}
+    .app-card-mapper{border-left:4px solid #7b6aa6}
+    .app-card h2{margin:0 0 .3rem;font-size:1.3rem;line-height:1.25}
+    .app-url{font-size:.84rem;color:var(--muted,#6b7280);text-transform:uppercase;letter-spacing:.04em;font-weight:700;margin:.05rem 0 .55rem}
+    .app-card p{max-width:64ch}
+    .app-card ul{margin-bottom:1rem;line-height:1.55}
+    .app-link-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:auto}
+    .faq-wrap{margin-top:1.4rem}
+    .faq-wrap h2{margin-bottom:.55rem}
+    .faq-item{border:1px solid var(--border);border-radius:10px;padding:.75rem .9rem;background:var(--surface);margin-bottom:.6rem}
+    .faq-item h3{margin:.1rem 0 .35rem;font-size:1rem}
+    .faq-item p{margin:0}
+    @media (max-width:700px){
+      .apps-section{padding-top:34px}
+      .apps-intro{max-width:none}
+      .app-card{padding:.9rem}
+      .app-card p{max-width:none}
+    }
   </style>
 </head>
 <body>
@@ -84,31 +167,75 @@
   </header>
 
   <main id="main">
-    <section class="section">
+    <section class="section apps-section">
       <div class="container">
-        <h1>IFS Parts Explorer App</h1>
+        <div class="apps-intro">
+          <h1>External tools for understanding internal systems</h1>
+          <p class="lead">Some inner experiences are best met one part at a time. Others only make sense when seen as a system.</p>
 
-        <p class="lead">
-          A free, open-source desktop application for exploring Internal Family Systems (IFS) parts—designed with privacy, consent, and clinical integrity in mind.
-        </p>
+          <figure class="app-hero">
+            <img src="assets/img/apps-tools-hero.png" alt="A notebook and tablet connected by circular light trails, representing movement between part-level reflection and system-level mapping." width="500" height="333" fetchpriority="high" decoding="async">
+            <figcaption class="app-caption">Parts Journal and Parts Mapper are designed as companion tools: one for direct contact, one for system visibility.</figcaption>
+          </figure>
 
-        <h2>Features</h2>
-        <ul>
-          <li>Runs entirely on your device—no internet required after download</li>
-          <li>No data leaves your computer unless you choose to export it</li>
-          <li>Simple interface for mapping and dialoguing with parts</li>
-          <li>Available for Windows, macOS, and Linux</li>
-        </ul>
-
-        <h2>Download</h2>
-        <p>All versions are hosted on GitHub:</p>
-        <div class="app-links">
-          <a class="btn-slate" href="https://github.com/fintube61git/ifs-parts-flutter/releases/latest" target="_blank" rel="noopener">Download for Windows, Mac, or Linux</a>
+          <p>These tools are for individual, self-directed exploration. They are not therapy, diagnosis, or clinical guidance.</p>
+          <p>They can also support collaboration in treatment: you can share what you map or journal with your therapist, and therapists may invite clients to use them between sessions.</p>
+          <p>These web apps do not collect personal data or usage telemetry. Your work is not sent to a server, and you only save or export anything if you choose to do so on your own device.</p>
+          <p>They are free and web-based. For clinical care, see <a href="contact.html">Contact</a>. For data handling details, see the <a href="privacy.html">Privacy Policy</a>.</p>
         </div>
-        <p class="app-note">
-          The app is open-source and licensed for personal, educational, and clinical use. Not a substitute for therapy.
-        </p>
 
+        <div class="apps-grid">
+          <article class="app-card app-card-journal" aria-labelledby="journal-title">
+            <h2 id="journal-title">Get to know the parts</h2>
+            <p class="app-url">ip-journal.live</p>
+            <p>Parts Journal supports moment-to-moment contact with what is present right now.</p>
+            <p>Using image prompts, the 6 Fs, and a brief Self-energy check, the journal helps slow attention and support unblending. Parts can be noticed as living experiences rather than analyzed or managed.</p>
+            <p>The journal does not interpret or direct outcomes. It provides structure for noticing and relating.</p>
+            <p>Privacy by default: no telemetry is collected, and any saved work remains under your control on your device.</p>
+            <p><strong>Use the journal when:</strong></p>
+            <ul>
+              <li>something feels activated or unclear</li>
+              <li>you want to slow down and listen</li>
+              <li>the goal is contact, not explanation</li>
+            </ul>
+            <div class="app-link-row">
+              <a class="btn-slate" href="https://ip-journal.live" target="_blank" rel="noopener noreferrer" title="Parts Journal: self-directed tool for noticing and unblending in real time">Visit ip-journal.live</a>
+            </div>
+          </article>
+
+          <article class="app-card app-card-mapper" aria-labelledby="mapper-title">
+            <h2 id="mapper-title">Understand the system</h2>
+            <p class="app-url">ip-mapper.com</p>
+            <p>Parts Mapper supports seeing how internal parts relate across time.</p>
+            <p>It lets you externalize an internal system: naming parts, mapping relationships, and observing patterns or polarizations that emerge beyond any single moment.</p>
+            <p>The mapper does not diagnose or prescribe. It offers structure and visibility so patterns can be observed rather than inferred.</p>
+            <p>Privacy by default: no telemetry is collected, and any saved work remains under your control on your device.</p>
+            <p><strong>Use the mapper when:</strong></p>
+            <ul>
+              <li>the same dynamics repeat</li>
+              <li>multiple parts are involved</li>
+              <li>you want a system-level view</li>
+            </ul>
+            <div class="app-link-row">
+              <a class="btn-slate" href="https://ip-mapper.com" target="_blank" rel="noopener noreferrer" title="Parts Mapper: self-directed tool for mapping internal part relationships over time">Visit ip-mapper.com</a>
+            </div>
+          </article>
+        </div>
+        <section class="faq-wrap" aria-labelledby="apps-faq-title">
+          <h2 id="apps-faq-title">Frequently asked questions</h2>
+          <article class="faq-item">
+            <h3>Are these tools therapy?</h3>
+            <p>No. Parts Journal and Parts Mapper are self-directed tools and are not therapy, diagnosis, or clinical guidance.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Do these tools collect personal data or telemetry?</h3>
+            <p>No. These web apps do not collect personal data or usage telemetry.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Where is my work stored?</h3>
+            <p>Your work is not sent to a server, and you only save or export anything if you choose to do so on your own device.</p>
+          </article>
+        </section>
       </div>
     </section>
   </main>

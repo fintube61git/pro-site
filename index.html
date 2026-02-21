@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer</title>
-  <meta name="description" content="IFS-informed psychotherapy for complex trauma; regulatory/QA background; peer-reviewed publications and presentations; software for IFS exploration.">
+  <title>T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools</title>
+  <meta name="description" content="IFS-informed psychotherapy for complex trauma, self-directed tools for internal parts and systems exploration, research and teaching, and regulatory/QA experience in healthcare environments.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
@@ -13,13 +13,13 @@
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer">
-  <meta property="og:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV.">
+  <meta property="og:title" content="T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools">
+  <meta property="og:description" content="IFS-informed psychotherapy, self-directed tools for internal systems exploration, research and teaching, and regulatory/QA background.">
   <meta property="og:url" content="https://www.tdawsonwoodrum.com/">
   <meta property="og:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Psychologist, Researcher, Developer">
-  <meta name="twitter:description" content="IFS-informed psychotherapy for complex trauma; publications, presentations, and full CV.">
+  <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools">
+  <meta name="twitter:description" content="IFS-informed psychotherapy, self-directed tools for internal systems exploration, research and teaching, and regulatory/QA background.">
   <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
 
   <!-- Google Analytics 4 -->
@@ -28,7 +28,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-1TZ12XRFQ9');
+    gtag('config', 'G-1TZ12XRFQ9', {
+      anonymize_ip: true,
+      send_page_view: true
+    });
   </script>
 
   <!-- JSON-LD Structured Data – Valid Schema.org Psychologist -->
@@ -36,6 +39,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Psychologist",
+    "@id": "https://www.tdawsonwoodrum.com/#person",
     "name": "T. Dawson Woodrum, PhD",
     "url": "https://www.tdawsonwoodrum.com/",
     "mainEntityOfPage": {
@@ -47,7 +51,40 @@
       "addressLocality": "Oregon"
     },
     "license": "Oregon License #3497",
-    "description": "Licensed psychologist offering IFS-informed psychotherapy for complex trauma. Also develops mental health software and has regulatory/QA experience in pharmaceutical and medical device industries."
+    "description": "Licensed psychologist offering IFS-informed psychotherapy for complex trauma, self-directed tools for internal parts and systems exploration, and regulatory/QA experience in healthcare environments.",
+    "areaServed": "Oregon",
+    "knowsAbout": [
+      "Internal Family Systems",
+      "Complex trauma psychotherapy",
+      "Parts Journal",
+      "Parts Mapper",
+      "Regulatory quality systems"
+    ],
+    "sameAs": [
+      "https://www.psychologytoday.com/profile/944087"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.tdawsonwoodrum.com/#website",
+    "url": "https://www.tdawsonwoodrum.com/",
+    "name": "T. Dawson Woodrum, PhD",
+    "publisher": { "@id": "https://www.tdawsonwoodrum.com/#person" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.tdawsonwoodrum.com/#webpage",
+    "url": "https://www.tdawsonwoodrum.com/",
+    "name": "T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools",
+    "description": "IFS-informed psychotherapy, self-directed tools, research and teaching, and regulatory/QA experience.",
+    "about": { "@id": "https://www.tdawsonwoodrum.com/#person" },
+    "isPartOf": { "@id": "https://www.tdawsonwoodrum.com/#website" }
   }
   </script>
 
@@ -56,10 +93,23 @@
     .theme-toggle:focus{outline:3px solid var(--accent);outline-offset:2px}
     .theme-toggle .icon{font-size:1rem;line-height:1}
     .doc-buttons{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+    .page-home .doc-buttons .btn-slate{min-height:48px;display:inline-flex;align-items:center}
     .doc-note{color:var(--muted,#6b7280);font-size:.95rem;margin-top:.35rem}
+    .page-home main .container > p{margin:.7rem 0 1rem}
+    .page-home main .container > p,
+    .page-home main .container > h2{max-width:72ch}
+    .page-home main .container > h2{font-size:clamp(1.6rem,2.2vw,2rem);line-height:1.2;letter-spacing:-0.01em}
+    .page-home .rhythm-compact{margin:.45rem 0 .7rem;line-height:1.45}
+    .page-home h2#documents{margin-top:1.2rem}
+    @media (max-width:640px){
+      .page-home .doc-buttons{gap:.6rem}
+      .page-home .doc-buttons .btn-slate{padding:.65rem .95rem}
+      .page-home main .container > p,
+      .page-home main .container > h2{max-width:none}
+    }
   </style>
 </head>
-<body>
+<body class="page-home">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -84,20 +134,25 @@
   <main id="main">
     <section class="section">
       <div class="container">
-        <h1>Psychologist, Researcher, and Developer</h1>
+        <h1>Clinical psychology and self-directed tools</h1>
 
-        <h2>Overview</h2>
         <p class="lead">
-          IFS-informed psychotherapy for complex trauma; software development; regulatory/QA background in pharmaceutical and medical device industries; peer-reviewed publications and public speaking.
+          I provide IFS-informed psychotherapy for complex trauma and build free, self-directed web tools for exploring internal parts and systems. My work also includes peer-reviewed research, professional education, and experience in regulatory and quality systems within highly regulated healthcare environments.
         </p>
-        <ul>
-          <li><strong>Clinical:</strong> Psychologist (Oregon License #3497, exp. 10/31/26). IFS-informed psychotherapy; consent-led pacing with safety and stabilization.</li>
-          <li><strong>Software Development:</strong> Flutter app for IFS parts exploration (Windows, Mac, and Linux).</li>
-          <li><strong>Regulatory/QA:</strong> 21 CFR Part 11 / GxP, audits, risk, privacy/security (GE Healthcare, Pfizer, consulting).</li>
-          <li><strong>Research &amp; Teaching:</strong> Peer-reviewed work on demoralization; CEU trainings; community and professional presentations.</li>
-        </ul>
-
-        <h2>Documents</h2>
+        <p>
+          Across this work, the aim is to externalize internal experience: supporting contact with what is present in the moment and understanding how those experiences function within a larger internal system.
+        </p>
+        <h2>Clinical psychology</h2>
+        <p>
+          Licensed psychologist in Oregon (License #3497, exp. 10/31/26). I provide IFS-informed psychotherapy with consent-led pacing, safety, and stabilization. Clinical care is distinct from the tools below.
+        </p>
+        <h2>Self-directed tools</h2>
+        <p>
+          Creator of <a href="https://ip-journal.live" target="_blank" rel="noopener noreferrer" title="Parts Journal: self-directed tool for noticing and unblending in real time">Parts Journal</a> and <a href="https://ip-mapper.com" target="_blank" rel="noopener noreferrer" title="Parts Mapper: self-directed tool for mapping internal part relationships over time">Parts Mapper</a>, free web-based tools designed for different levels of internal exploration.
+        </p>
+        <p>For a full overview of how each tool is used, including privacy and non-clinical boundaries, visit the <a href="apps.html">Apps</a> page.</p>
+        <h2 id="documents">Documents</h2>
+        <p>For publications, presentations, and full credentials, see:</p>
         <div class="doc-buttons">
           <a class="btn-slate" href="cv/#cv" target="_blank" rel="noopener">Full CV</a>
           <a class="btn-slate" href="cv/#publications" target="_blank" rel="noopener">Publications</a>
