@@ -59,10 +59,52 @@ class WebsiteIntegrityTests(unittest.TestCase):
                 self.assertIn("anonymize_ip: true", text, f"{page} missing anonymize_ip")
                 self.assertIn("send_page_view: true", text, f"{page} missing send_page_view")
 
-    def test_about_page_uses_official_psychology_today_script(self) -> None:
+    def test_about_page_is_professional_only(self) -> None:
         text = read_text(REPO_ROOT / "about.html")
+        self.assertNotIn("https://member.psychologytoday.com/verified-seal.js", text)
+        self.assertNotIn("assets/img/zy32naec0wujz5cl8d2g.png", text)
+        self.assertNotIn("My approach to care", text)
+
+    def test_home_page_is_professional_hook_not_clinical_intake(self) -> None:
+        text = read_text(REPO_ROOT / "index.html")
+        self.assertIn("Psychology, technology, and practical implementation", text)
+        self.assertIn("What I Work On", text)
+        self.assertIn("Responsible AI in Clinical Contexts", text)
+        self.assertIn("Privacy-Conscious Practice Tools", text)
+        self.assertIn("Speaking and Team Training", text)
+        self.assertNotIn("IFS-informed psychotherapy for complex trauma", text)
+        self.assertNotIn("Licensed psychologist in Oregon (License #3497", text)
+
+    def test_professional_privacy_page_matches_current_contact_model(self) -> None:
+        text = read_text(REPO_ROOT / "privacy.html")
+        self.assertIn("Professional Contact", text)
+        self.assertIn("dawson@tdawsonwoodrum.com", text)
+        self.assertIn("Psychology Today", text)
+        self.assertNotIn("Contact Form", text)
+        self.assertNotIn("web forms", text)
+
+    def test_practice_index_uses_official_psychology_today_script(self) -> None:
+        text = read_text(REPO_ROOT / "practice" / "index.html")
         self.assertIn("https://member.psychologytoday.com/verified-seal.js", text)
-        self.assertNotIn("embed.psychologytoday.com", text)
+        self.assertIn("/assets/img/zy32naec0wujz5cl8d2g.png", text)
+
+    def test_about_first_licensed_psychologist_mention_includes_license(self) -> None:
+        text = read_text(REPO_ROOT / "about.html")
+        self.assertIn(
+            "licensed psychologist in Oregon (License #3497, exp. 10/31/26)",
+            text,
+        )
+
+    def test_practice_first_psychologist_mention_includes_license(self) -> None:
+        text = read_text(REPO_ROOT / "practice" / "index.html")
+        self.assertIn(
+            "T. Dawson Woodrum, PhD, Psychologist",
+            text,
+        )
+        self.assertIn(
+            "Oregon License #3497, exp. 10/31/26",
+            text,
+        )
 
     def test_critical_css_selectors_exist(self) -> None:
         css = read_text(REPO_ROOT / "css" / "styles.v2.css")
@@ -83,13 +125,26 @@ class WebsiteIntegrityTests(unittest.TestCase):
         )
         self.assertNotIn("https://hushforms.com/existenzpsych", practice_contact)
 
-    def test_main_contact_stays_separate_from_practice_pt_flow(self) -> None:
+    def test_main_contact_is_email_only_and_non_clinical(self) -> None:
         main_contact = read_text(REPO_ROOT / "contact.html")
-        self.assertIn("https://hushforms.com/existenzpsych", main_contact)
-        self.assertNotIn(
+        self.assertIn("mailto:dawson@tdawsonwoodrum.com", main_contact)
+        self.assertIn("AI in Clinical Practice", main_contact)
+        self.assertIn("Development of Online Practice Tools", main_contact)
+        self.assertIn("Speaking and Training", main_contact)
+        self.assertNotIn("Scheduling", main_contact)
+        self.assertNotIn("Private pay", main_contact)
+        self.assertNotIn("Insurance (Neuvoa Counseling)", main_contact)
+        self.assertNotIn("https://hushforms.com/existenzpsych", main_contact)
+        self.assertIn(
             "https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-eugene-or/944087",
             main_contact,
         )
+
+    def test_cv_contact_line_has_no_phone_number(self) -> None:
+        cv_source = read_text(REPO_ROOT / "cv.md")
+        self.assertNotIn("Available via Telehealth | +1 541", cv_source)
+        self.assertNotIn("| +1 541-", cv_source)
+        self.assertIn("mailto:dawson@tdawsonwoodrum.com", cv_source)
 
 
 class CvWorkflowTests(unittest.TestCase):

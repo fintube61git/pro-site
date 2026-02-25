@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools</title>
-  <meta name="description" content="IFS-informed psychotherapy for complex trauma, self-directed tools for internal parts and systems exploration, research and teaching, and regulatory/QA experience in healthcare environments.">
+  <title>T. Dawson Woodrum, PhD — Psychology, Technology, and Practical Implementation</title>
+  <meta name="description" content="Professional work at the intersection of psychology, healthcare technology, and practical implementation: responsible AI, privacy-conscious tools, and speaking/training.">
   <link rel="stylesheet" href="css/styles.v2.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
@@ -13,13 +13,13 @@
 
   <!-- Open Graph / Social Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools">
-  <meta property="og:description" content="IFS-informed psychotherapy, self-directed tools for internal systems exploration, research and teaching, and regulatory/QA background.">
+  <meta property="og:title" content="T. Dawson Woodrum, PhD — Psychology, Technology, and Practical Implementation">
+  <meta property="og:description" content="Professional work in responsible AI, privacy-conscious practice tools, and healthcare technology implementation.">
   <meta property="og:url" content="https://www.tdawsonwoodrum.com/">
   <meta property="og:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools">
-  <meta name="twitter:description" content="IFS-informed psychotherapy, self-directed tools for internal systems exploration, research and teaching, and regulatory/QA background.">
+  <meta name="twitter:title" content="T. Dawson Woodrum, PhD — Psychology, Technology, and Practical Implementation">
+  <meta name="twitter:description" content="Professional work in responsible AI, privacy-conscious practice tools, and healthcare technology implementation.">
   <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
 
   <!-- Google Analytics 4 -->
@@ -34,14 +34,15 @@
     });
   </script>
 
-  <!-- JSON-LD Structured Data – Valid Schema.org Psychologist -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Psychologist",
+    "@type": "Person",
     "@id": "https://www.tdawsonwoodrum.com/#person",
     "name": "T. Dawson Woodrum, PhD",
     "url": "https://www.tdawsonwoodrum.com/",
+    "jobTitle": "Psychologist and Healthcare Technology Consultant",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.tdawsonwoodrum.com/"
@@ -50,15 +51,12 @@
       "@type": "PostalAddress",
       "addressLocality": "Oregon"
     },
-    "license": "Oregon License #3497",
-    "description": "Licensed psychologist offering IFS-informed psychotherapy for complex trauma, self-directed tools for internal parts and systems exploration, and regulatory/QA experience in healthcare environments.",
-    "areaServed": "Oregon",
+    "description": "Professional work at the intersection of psychology, healthcare technology, and practical implementation.",
     "knowsAbout": [
-      "Internal Family Systems",
-      "Complex trauma psychotherapy",
-      "Parts Journal",
-      "Parts Mapper",
-      "Regulatory quality systems"
+      "Responsible AI in clinical contexts",
+      "Privacy-conscious practice tools",
+      "Healthcare technology implementation",
+      "Training and speaking"
     ],
     "sameAs": [
       "https://www.psychologytoday.com/profile/944087"
@@ -81,8 +79,8 @@
     "@type": "WebPage",
     "@id": "https://www.tdawsonwoodrum.com/#webpage",
     "url": "https://www.tdawsonwoodrum.com/",
-    "name": "T. Dawson Woodrum, PhD — Clinical Psychology and Self-Directed Tools",
-    "description": "IFS-informed psychotherapy, self-directed tools, research and teaching, and regulatory/QA experience.",
+    "name": "T. Dawson Woodrum, PhD — Psychology, Technology, and Practical Implementation",
+    "description": "Professional work in responsible AI, privacy-conscious practice tools, and healthcare technology implementation.",
     "about": { "@id": "https://www.tdawsonwoodrum.com/#person" },
     "isPartOf": { "@id": "https://www.tdawsonwoodrum.com/#website" }
   }
@@ -92,7 +90,11 @@
     .theme-toggle{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--border);background:transparent;color:var(--text);padding:.35rem .55rem;border-radius:10px;cursor:pointer;font:inherit}
     .theme-toggle:focus{outline:3px solid var(--accent);outline-offset:2px}
     .theme-toggle .icon{font-size:1rem;line-height:1}
-    .doc-buttons{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+    .work-grid{display:grid;gap:.75rem;margin-top:.4rem}
+    @media (min-width:760px){.work-grid{grid-template-columns:1fr 1fr 1fr}}
+    .work-card{background:var(--feature-surface);border:2px solid var(--feature-border);border-radius:10px;padding:.75rem .9rem}
+    .work-card h3{margin:0 0 .25rem}
+    .doc-buttons{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.35rem}
     .page-home .doc-buttons .btn-slate{min-height:48px;display:inline-flex;align-items:center}
     .doc-note{color:var(--muted,#6b7280);font-size:.95rem;margin-top:.35rem}
     .page-home main .container > p{margin:.7rem 0 1rem}
@@ -100,7 +102,7 @@
     .page-home main .container > h2{max-width:72ch}
     .page-home main .container > h2{font-size:clamp(1.6rem,2.2vw,2rem);line-height:1.2;letter-spacing:-0.01em}
     .page-home .rhythm-compact{margin:.45rem 0 .7rem;line-height:1.45}
-    .page-home h2#documents{margin-top:1.2rem}
+    .page-home h2#documents{margin-top:1.1rem}
     @media (max-width:640px){
       .page-home .doc-buttons{gap:.6rem}
       .page-home .doc-buttons .btn-slate{padding:.65rem .95rem}
@@ -134,24 +136,31 @@
   <main id="main">
     <section class="section">
       <div class="container">
-        <h1>Clinical psychology and self-directed tools</h1>
+        <h1>Psychology, technology, and practical implementation</h1>
 
         <p class="lead">
-          I provide IFS-informed psychotherapy for complex trauma and build free, self-directed web tools for exploring internal parts and systems. My work also includes peer-reviewed research, professional education, and experience in regulatory and quality systems within highly regulated healthcare environments.
+          Psychology, technology, and practical implementation.
         </p>
         <p>
-          Across this work, the aim is to externalize internal experience: supporting contact with what is present in the moment and understanding how those experiences function within a larger internal system.
+          I work at the intersection of behavioral health expertise and healthcare technology execution, helping clinicians, teams, and organizations build workflows and tools that are useful, ethical, and deployable in real environments.
         </p>
-        <h2>Clinical psychology</h2>
-        <p>
-          Licensed psychologist in Oregon (License #3497, exp. 10/31/26). I provide IFS-informed psychotherapy with consent-led pacing, safety, and stabilization. Clinical care is distinct from the tools below.
-        </p>
-        <h2>Self-directed tools</h2>
-        <p>
-          Creator of <a href="https://ip-journal.live" target="_blank" rel="noopener noreferrer" title="Parts Journal: self-directed tool for noticing and unblending in real time">Parts Journal</a> and <a href="https://ip-mapper.com" target="_blank" rel="noopener noreferrer" title="Parts Mapper: self-directed tool for mapping internal part relationships over time">Parts Mapper</a>, free web-based tools designed for different levels of internal exploration.
-        </p>
-        <p>For a full overview of how each tool is used, including privacy and non-clinical boundaries, visit the <a href="apps.html">Apps</a> page.</p>
-        <h2 id="documents">Documents</h2>
+        <h2>What I Work On</h2>
+        <div class="work-grid" aria-label="Professional focus areas">
+          <article class="work-card">
+            <h3>Responsible AI in Clinical Contexts</h3>
+            <p>Consultation on integrating AI into care-adjacent workflows with clear boundaries, risk awareness, and practical utility.</p>
+          </article>
+          <article class="work-card">
+            <h3>Privacy-Conscious Practice Tools</h3>
+            <p>Design and implementation guidance for reflective tools that prioritize data minimization and real-world usability.</p>
+          </article>
+          <article class="work-card">
+            <h3>Speaking and Team Training</h3>
+            <p>Focused talks and trainings for clinical, academic, and healthcare technology audiences.</p>
+          </article>
+        </div>
+
+        <h2 id="documents">Selected Work</h2>
         <p>For publications, presentations, and full credentials, see:</p>
         <div class="doc-buttons">
           <a class="btn-slate" href="cv/#cv" target="_blank" rel="noopener">Full CV</a>
