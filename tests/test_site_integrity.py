@@ -75,6 +75,22 @@ class WebsiteIntegrityTests(unittest.TestCase):
         self.assertIn("hidden", js)
         self.assertIn("year", js)
 
+    def test_practice_contact_uses_psychology_today(self) -> None:
+        practice_contact = read_text(REPO_ROOT / "practice" / "contact.html")
+        self.assertIn(
+            "https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-eugene-or/944087",
+            practice_contact,
+        )
+        self.assertNotIn("https://hushforms.com/existenzpsych", practice_contact)
+
+    def test_main_contact_stays_separate_from_practice_pt_flow(self) -> None:
+        main_contact = read_text(REPO_ROOT / "contact.html")
+        self.assertIn("https://hushforms.com/existenzpsych", main_contact)
+        self.assertNotIn(
+            "https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-eugene-or/944087",
+            main_contact,
+        )
+
 
 class CvWorkflowTests(unittest.TestCase):
     def test_canonical_cv_sources_exist(self) -> None:
