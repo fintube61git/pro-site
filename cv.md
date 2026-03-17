@@ -19,9 +19,9 @@ data integrity auditing, software quality assurance, regulatory strategy, privac
 
 ## RECENT ACCOMPLISHMENTS
 
-Developed IFS System Manager - a visual mapping tool for therapists and individuals to explore internal parts and their relationships using IFS-informed concepts. Designed for privacy, it functions without user accounts or cloud storage, ensuring all data remains strictly local to the user's device. The interface provides a low-distraction environment optimized for both private reflection and collaborative screen-sharing during online sessions. The tech stack includes Next.js, TypeScript, and Tailwind CSS deployed on Vercel.
+Developed IP Mapper (Internal Process Mapper) — a privacy-first visual mapping tool for exploring internal components and their relationships. No user accounts or cloud storage; all data remains local to the user's device. Provides a low-distraction environment for private reflection and collaborative screen-sharing during online sessions. Tech stack: React 19, TypeScript, Tailwind CSS, React Flow, deployed on Vercel.
 
-Developed IFS Parts Journal - a private desktop application for Windows, macOS, and Linux that uses 99 specialized cards to help individuals visually explore their internal system. To ensure absolute privacy, the tool operates entirely offline with no data collection, keeping all personal reflections securely on the user’s own device. A modern web version is currently in development to provide easier access through a browser and is scheduled for release in Q2 2026. The tech stack includes Flutter and Dart, while the upcoming web transition utilizes Next.js, TypeScript, and Tailwind CSS.
+Developed IP Journal (Internal Process Journal) — a privacy-first web-based reflective journaling tool using image prompts and structured discovery questions to support differentiated observation of internal experience. No data collection; all work remains on the user’s device. Tech stack: React, TypeScript, Tailwind CSS, deployed on Vercel.
 
 ## CORE COMPETENCIES
 
@@ -207,7 +207,7 @@ Jan 2007 - June 2009 Pfizer, New York, NY
 
 ## PROFESSIONAL DEVELOPMENT
 
-- Internal Family Systems Level 1 training (in process, estimated completion March 2026)
+- Internal Family Systems (IFS) Level 1 Training, IFS Institute (completed March 2026)
 - Gottman Method Couples Therapy - Level 1 Clinical Training (2018)
 - Collaborative Assessment & Management of Suicidality (CAMS) - Book & Online Course (2019, 2022)
 - White Ally Toolkit Training - Dr. David Campt, PhD (2019)
