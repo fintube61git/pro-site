@@ -89,7 +89,7 @@ These domains are intentionally co-located and should remain so.
 - Registrar: Squarespace (Account B)
 - DNS authority: Squarespace
 - Hosting: (current production host; do not change without approval)
-- Function: Parts Mapper application
+- Function: IP Mapper application
 - Notes:
   - No redirects unless explicitly specified
   - Treat as active application domain
@@ -100,7 +100,7 @@ These domains are intentionally co-located and should remain so.
 - Registrar: Squarespace (Account B)
 - DNS authority: Squarespace
 - Hosting: (current production host; do not change without approval)
-- Function: Parts Journal application
+- Function: IP Journal application
 - Notes:
   - No redirects unless explicitly specified
   - Treat as active application domain
