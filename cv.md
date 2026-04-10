@@ -6,9 +6,12 @@ Do NOT run pandoc directly on this file.
 Use tools/build_cv_html.ps1 to expand includes first.
 -->
 
-T. Dawson Woodrum, PhD
+# T. Dawson Woodrum, PhD
 
-Professional inquiries: <mailto:dawson@tdawsonwoodrum.com> | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
+**Professional inquiries:** <mailto:dawson@tdawsonwoodrum.com> | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
+
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6878--4257-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-6878-4257)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-Profile-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/T-Dawson-Woodrum)
 
 ---
 I am a licensed psychologist providing trauma-informed, evidence-based psychotherapy to individuals and groups. My
