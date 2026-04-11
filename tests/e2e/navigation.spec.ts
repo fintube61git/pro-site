@@ -27,7 +27,7 @@ test("top navigation routes to primary pages", async ({ page }) => {
   await openNavIfCollapsed();
   await primaryNav.getByRole("link", { name: "Apps" }).click();
   await expect(page).toHaveURL(/apps\.html$/);
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("External tools for understanding internal systems");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Tools for Psychological Exploration and Self-Understanding");
 
   await openNavIfCollapsed();
   await primaryNav.getByRole("link", { name: "Contact" }).click();
@@ -39,12 +39,12 @@ test("home links to cv sections", async ({ page }) => {
   await page.goto("/index.html");
 
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Psychology, technology, and practical implementation",
+    "Research, Theory, and Applied Psychological Science",
   );
   await expect(page.getByRole("heading", { level: 2, name: "What I Work On" })).toBeVisible();
-  await expect(page.getByText("Responsible AI in Clinical Contexts")).toBeVisible();
-  await expect(page.getByText("Privacy-Conscious Practice Tools")).toBeVisible();
-  await expect(page.getByText("Speaking and Team Training")).toBeVisible();
+  await expect(page.getByText("Legal-Psychological Research")).toBeVisible();
+  await expect(page.getByText("Psychological Technology and Assessment Tools")).toBeVisible();
+  await expect(page.getByText("Clinical Practice")).toBeVisible();
   await expect(page.getByText("IFS-informed psychotherapy for complex trauma")).toHaveCount(0);
 
   const cvLink = page.getByRole("link", { name: "Full CV" });
