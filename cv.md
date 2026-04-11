@@ -10,10 +10,10 @@ Use tools/build_cv_html.ps1 to expand includes first.
 
 **Professional inquiries:** <mailto:dawson@tdawsonwoodrum.com> | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
 
-Google Scholar: https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en
-ResearchGate: https://www.researchgate.net/profile/T-Dawson-Woodrum
-ORCID: https://orcid.org/0000-0002-6878-4257
-LinkedIn: http://www.linkedin.com/in/tdawsonwoodrum
+- Google Scholar: https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en
+- ResearchGate: https://www.researchgate.net/profile/T-Dawson-Woodrum
+- ORCID: https://orcid.org/0000-0002-6878-4257
+- LinkedIn: http://www.linkedin.com/in/tdawsonwoodrum
 
 ---
 I am a licensed psychologist, researcher, and legal-psychological theorist with doctoral training in clinical psychology and a JD from the University of Michigan Law School. My primary focus is developing formal, mechanism-level frameworks for analyzing coercive influence — integrating complex adaptive systems theory with behavioral science to generate evidentiary tools applicable in legal, forensic, and policy contexts. Before becoming a clinician, I spent over 15 years in the biotechnology, pharmaceutical, and medical device industries as a regulatory affairs executive, focusing on electronic data integrity, software quality assurance, regulatory strategy, privacy, and information security. I maintain a limited clinical practice through Existenz Psychotherapy.
