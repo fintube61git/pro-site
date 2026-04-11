@@ -10,41 +10,44 @@ Use tools/build_cv_html.ps1 to expand includes first.
 
 **Professional inquiries:** <mailto:dawson@tdawsonwoodrum.com> | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
 
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6878--4257-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-6878-4257)
-[![ResearchGate](https://img.shields.io/badge/ResearchGate-Profile-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/T-Dawson-Woodrum)
+Google Scholar: https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en
+ResearchGate: https://www.researchgate.net/profile/T-Dawson-Woodrum
+ORCID: https://orcid.org/0000-0002-6878-4257
+LinkedIn: http://www.linkedin.com/in/tdawsonwoodrum
 
 ---
-I am a licensed psychologist providing trauma-informed, evidence-based psychotherapy to individuals and groups. My
-experience spans community mental health clinics, university counseling centers, behavioral health organizations, and both
-group and solo outpatient practices. I have also taught various undergraduate psychology courses. Before becoming a
-clinician, I spent over 15 years in the biotechnology, pharmaceutical, and medical device industries, focusing on electronic
-data integrity auditing, software quality assurance, regulatory strategy, privacy, and information security.
+I am a licensed psychologist, researcher, and legal-psychological theorist with doctoral training in clinical psychology and a JD from the University of Michigan Law School. My primary focus is developing formal, mechanism-level frameworks for analyzing coercive influence — integrating complex adaptive systems theory with behavioral science to generate evidentiary tools applicable in legal, forensic, and policy contexts. Before becoming a clinician, I spent over 15 years in the biotechnology, pharmaceutical, and medical device industries as a regulatory affairs executive, focusing on electronic data integrity, software quality assurance, regulatory strategy, privacy, and information security. I maintain a limited clinical practice through Existenz Psychotherapy.
 
 ## RECENT ACCOMPLISHMENTS
 
-Developed IP Mapper (Internal Process Mapper) — a privacy-first visual mapping tool for exploring internal components and their relationships. No user accounts or cloud storage; all data remains local to the user's device. Provides a low-distraction environment for private reflection and collaborative screen-sharing during online sessions. Tech stack: React 19, TypeScript, Tailwind CSS, React Flow, deployed on Vercel.
+Developed IP Mapper (Internal Perspective Mapper) — a privacy-first visual mapping tool for exploring internal components and their relationships, grounded in complex adaptive systems theory. No user accounts or cloud storage; all data remains local to the user’s device. Tech stack: React 19, TypeScript, Tailwind CSS, React Flow, deployed on Vercel.
 
-Developed IP Journal (Internal Process Journal) — a privacy-first web-based reflective journaling tool using image prompts and structured discovery questions to support differentiated observation of internal experience. No data collection; all work remains on the user’s device. Tech stack: React, TypeScript, Tailwind CSS, deployed on Vercel.
+Developed IP Journal (Internal Perspective Journal) — a privacy-first web-based reflective tool using structured discovery prompts to support differentiated observation of internal experience, grounded in complex adaptive systems theory. No data collection; all work remains on the user’s device. Tech stack: React, TypeScript, Tailwind CSS, deployed on Vercel.
 
 ## CORE COMPETENCIES
 
+### Research, Legal, and Technical Competencies
+- Legal-psychological framework development and forensic application
+- Complex adaptive systems theory and behavioral science integration
+- Regulatory strategy and compliance (21 CFR 11, GxP, HIPAA)
+- IT policy, information security, and privacy framework development
+- Quantitative and qualitative data analysis (Excel, SAS, SPSS, R)
+- Survey design (Qualtrics)
+- Software development (React, TypeScript, Tailwind CSS, Vercel)
+- AI safety evaluation and model quality assessment
+- Risk analysis and policy development
+
+### Clinical Competencies
 - Trauma Informed Stabilization Treatment
 - Internal Family Systems
 - Humanistic Existential Psychotherapy
-- Acceptance & Commitment Therapy
+- Acceptance and Commitment Therapy
 - Mindfulness-based Therapy
 - Somatic Trauma Therapy
 - Solution-Focused Therapy
 - Motivational Interviewing
-- Gender-affirming care & surgical readiness assessment
-- Quantitative and Qualitative Data Analysis (Excel, SAS, SPSS,R)
-- Survey Design (Qualtrics)
-- Influencer/Educator (NotebookLM, Word, Power Point, Excel, Canvas, LaunchPad, WebAdvisor,Navigator2)
-- Mentor - Subject Matter Expertise and Career Development
-- Policy Development 
-- Procedural Workflow
-- Risk Analysis 
-- Electronic Health Recordkeeping Systems and Communication Platforms (TherapyNotes, Zoom, Doxyme, Jitsi Meet, AdvancedMD, Valant, Centricity, Titanium, Cerner, Acuity)
+- Gender-affirming care and surgical readiness assessment
+- Electronic health recordkeeping systems (TherapyNotes, AdvancedMD, Valant, Centricity, Cerner)
 
 ## LEADERSHIP PRINCIPLES
 
@@ -62,9 +65,34 @@ JD (Law) 1991 The University of Michigan Law School, Ann Arbor, MI
 
 Oregon Psychologist License 3497 (Issued 22FEB2022; Expires 31OCT2026)
 
-NPI: 1154872562
 
 ## PROFESSIONAL WORK EXPERIENCE
+
+Independent Contractor, micro1
+Jan 2026 - Feb 2026
+
+- Contributed to advanced human data initiatives at a leading AI lab, aimed at improving the safety of AI models on mental health-related questions.  Responsibilities included evaluating the accuracy and quality of model-generated responses and recommending improvements.
+
+Independent Consultant 
+(Intermittent) July 2009 - Present
+
+- Conducted audits of software vendors and contract research organizations (21 CFR 11, GxP and HIPPA).
+- Mapped emerging IT-impacting regulations against existing control and privacy frameworks.
+- Assist start-up companies develop regulatory strategies for health information technologies.
+
+Quality and Regulatory Management Executive 
+Dec 2010 - March 2014 GE Healthcare, Waukesha WI 
+
+- Collaborated with software engineers on developing efficient processes to build in quality for medical device software.
+- Completed General Electric Management Development Course.
+- Supported implementation of Sunshine Act requirements across organizational QRM units.
+
+Senior Director, Worldwide Technology Policy and Information Security 
+Jan 2007 - June 2009 Pfizer, New York, NY
+
+- Developed and maintained IT policies, procedures, control frameworks (security, privacy, SDLC).
+- Information security program management (awareness, enforcement, information security officer network).
+- Proactively monitored IT-impacting regulations and best practices and inform executive management re risk.
 
 Licensed Psychologist (Solo practitioner and 1099 Contractor) 
 July 2022-present Existenz Psychotherapy, LLC Eugene Oregon
@@ -172,34 +200,6 @@ August 2017 - May 2019 Piedmont College, Demorest GA
 - Provided academic advising to undergraduate Psychology students.
 - Completed student mid-term evaluations and submitted final grades.
 
-### Other Healthcare IT-related Experience
-
-Independent Contractor, micro1
-Jan 2026 - Feb 2026
-
-- Contributed to advanced human data initiatives at a leading AI lab, aimed at improving the safety of AI models on mental health-related questions.  Responsibilities included evaluating the accuracy and quality of model-generated responses and recommending improvements.
-
-Independent Consultant 
-(Intermittent) July 2009 - Present
-
-- Conducted audits of software vendors and contract research organizations (21 CFR 11, GxP and HIPPA).
-- Mapped emerging IT-impacting regulations against existing control and privacy frameworks.
-- Assist start-up companies develop regulatory strategies for health information technologies.
-
-Quality and Regulatory Management Executive 
-Dec 2010 - March 2014 GE Healthcare, Waukesha WI 
-
-- Collaborated with software engineers on developing efficient processes to build in quality for medical device software.
-- Completed General Electric Management Development Course.
-- Supported implementation of Sunshine Act requirements across organizational QRM units.
-
-Senior Director, Worldwide Technology Policy and Information Security 
-Jan 2007 - June 2009 Pfizer, New York, NY
-
-- Developed and maintained IT policies, procedures, control frameworks (security, privacy, SDLC).
-- Information security program management (awareness, enforcement, information security officer network).
-- Proactively monitored IT-impacting regulations and best practices and inform executive management re risk.
-
 ## PUBLICATIONS
 
 {{< include cv/publications.md >}}
@@ -229,17 +229,21 @@ Psi Chi Honor Society
 
 ## REFERENCES
 
-"I was consistently impressed with Dawson's authoritative knowledge and excellent consultation skills regarding dissociative disorders and religious trauma. I have benefited many times from his ability to listen for complexities, ask insightful questions,and offer suggestions that furthered my own thinking about a challenging clinical question or dilemma."
-Zia Sichi, PsyD|Psychologist and Holistic Health Coach, Prior Supervisor at Strong Integrated Behavioral Health
+*On regulatory strategy and health technology development:*
+Adam Hutchison | Founder, oVRcome
+"Dawson and I connected while we were exploring regulatory requirements for our virtual reality exposure therapy product in the USA. Dawson has been extremely helpful as his unique skill set provides several different perspectives, not only as a psychologist, but also as a software developer and quality assurance professional."
 
-"Dawson connected well with his clients and provided excellent care using evidence-based interventions in support of their therapeutic journey and goals. Dawson also provided animal-assisted therapy (canine) based on each client's needs and comfort level".
-Marceline Bamba, PhD Associate Director of Clinical Services, Oregon State University CAPS, Prior Supervisor
+*On clinical-forensic consultation and specialized knowledge:*
+Zia Sichi, PsyD | Psychologist and Holistic Health Coach
+"I was consistently impressed with Dawson's authoritative knowledge and excellent consultation skills regarding dissociative disorders and religious trauma. I have benefited many times from his ability to listen for complexities, ask insightful questions, and offer suggestions that furthered my own thinking about a challenging clinical question or dilemma."
 
+*On evidence-based clinical practice and client outcomes:*
+Marceline Bamba, PhD | Associate Director of Clinical Services, Oregon State University CAPS
+"Dawson connected well with his clients and provided excellent care using evidence-based interventions in support of their therapeutic journey and goals. Dawson also provided animal-assisted therapy (canine) based on each client's needs and comfort level."
+
+*On integrative practice and therapeutic environment:*
+Fernando Frias, PsyD | Licensed Psychologist, Oregon State University CAPS
 "Dawson masterfully weaves together the art and science of psychotherapy, fostering a counseling environment of authenticity, empathy, and trust that is palpable."
-Fernando Frias, PsyD Licensed Psychologist Oregon State University CAPS, Prior Supervisor
-
-"Dawson and I connected while we were exploring regulatory requirements for our virtual reality exposure therapy product in the USA. Dawson has been extremely helpful as his unique skill set provides several different perspectives, not only as a psychologist, but also as a software developer and quality assurance professional".
-Adam Hutchison, Founder oVRcome 
 
 
 
