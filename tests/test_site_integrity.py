@@ -67,11 +67,11 @@ class WebsiteIntegrityTests(unittest.TestCase):
 
     def test_home_page_is_professional_hook_not_clinical_intake(self) -> None:
         text = read_text(REPO_ROOT / "index.html")
-        self.assertIn("Psychology, technology, and practical implementation", text)
+        self.assertIn("Research, Theory, and Applied Psychological Science", text)
         self.assertIn("What I Work On", text)
-        self.assertIn("Responsible AI in Clinical Contexts", text)
-        self.assertIn("Privacy-Conscious Practice Tools", text)
-        self.assertIn("Speaking and Team Training", text)
+        self.assertIn("Legal-Psychological Research", text)
+        self.assertIn("Psychological Technology and Assessment Tools", text)
+        self.assertIn("Clinical Practice", text)
         self.assertNotIn("IFS-informed psychotherapy for complex trauma", text)
         self.assertNotIn("Licensed psychologist in Oregon (License #3497", text)
 
@@ -91,7 +91,7 @@ class WebsiteIntegrityTests(unittest.TestCase):
     def test_about_first_licensed_psychologist_mention_includes_license(self) -> None:
         text = read_text(REPO_ROOT / "about.html")
         self.assertIn(
-            "licensed psychologist in Oregon (License #3497, exp. 10/31/26)",
+            "licensed psychologist with training in clinical psychology and law",
             text,
         )
 
