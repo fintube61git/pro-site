@@ -1,4 +1,5 @@
-- Woodrum, T.D., (January 2026) The Psychologist's Compass: Navigating Gender Affirming Care in a Post Colonial, Politicized Word, Online interactive training for graduate students at Fielding Graduate University, Santa Barbara, CA.
+- Woodrum, T.D., (April 2026) The Architecture of Demoralization: Connecting Fourth-Generation Warfare, Systemic Subversion, and the Clinical Crisis in Vulnerable Populations. Online presentation to the Program in Psychiatry and the Law, Harvard Medical School.
+- Woodrum, T.D., (January 2026) The Psychologist's Compass: Navigating Gender Affirming Care in a Post Colonial, Politicized World, Online interactive training for graduate students at Fielding Graduate University, Santa Barbara, CA.
 - Woodrum, T.D., (October 2025) An Introduction to Internal Family Systems (IFS).  Online interactive training for clinicians at Neuvoa Counseling, Eugene OR.
 - Woodrum, T.D., (September 2023 – November 2023) A four part online continuing interactive education on provision of gender affirming care for medical and mental health professionals in Oregon.
 - Woodrum, T.D., (July 2023). Transgender 101 for Cascade Manor. Live interactive training or residents of a continuing care retirement community, Eugene, OR.
