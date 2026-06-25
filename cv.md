@@ -8,21 +8,20 @@ Use tools/build_cv_html.ps1 to expand includes first.
 
 # T. Dawson Woodrum, PhD
 
-**Professional inquiries:** <mailto:dawson@tdawsonwoodrum.com> | [LinkedIn](http://www.linkedin.com/in/tdawsonwoodrum)
+**Professional inquiries:** [dawson@tdawsonwoodrum.com](mailto:dawson@tdawsonwoodrum.com) | [LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum)
 
-- Google Scholar: https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en
-- ResearchGate: https://www.researchgate.net/profile/T-Dawson-Woodrum
-- ORCID: https://orcid.org/0000-0002-6878-4257
-- LinkedIn: http://www.linkedin.com/in/tdawsonwoodrum
+- [Google Scholar](https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en)
+- [ResearchGate](https://www.researchgate.net/profile/T-Dawson-Woodrum)
+- [ORCID](https://orcid.org/0000-0002-6878-4257)
+- [LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum)
 
 ---
 I am a licensed psychologist, researcher, and legal-psychological theorist with doctoral training in clinical psychology and a JD from the University of Michigan Law School. My primary focus is developing formal, mechanism-level frameworks for analyzing coercive influence — integrating complex adaptive systems theory with behavioral science to generate evidentiary tools applicable in legal, forensic, and policy contexts. Before becoming a clinician, I spent over 15 years in the biotechnology, pharmaceutical, and medical device industries as a regulatory affairs executive, focusing on electronic data integrity, software quality assurance, regulatory strategy, privacy, and information security. I maintain a limited clinical practice through Existenz Psychotherapy.
 
-## RECENT ACCOMPLISHMENTS
+## SELECTED RECENT ACCOMPLISHMENTS
 
-Developed IP Mapper (Internal Perspective Mapper) — a privacy-first visual mapping tool for exploring internal components and their relationships, grounded in complex adaptive systems theory. No user accounts or cloud storage; all data remains local to the user’s device. Tech stack: React 19, TypeScript, Tailwind CSS, React Flow, deployed on Vercel.
-
-Developed IP Journal (Internal Perspective Journal) — a privacy-first web-based reflective tool using structured discovery prompts to support differentiated observation of internal experience, grounded in complex adaptive systems theory. No data collection; all work remains on the user’s device. Tech stack: React, TypeScript, Tailwind CSS, deployed on Vercel.
+- Developed [IP Mapper](https://ip-mapper.com), a privacy-first visual mapping tool for exploring internal components and their relationships through a complex adaptive systems framework. Built with React 19, TypeScript, Tailwind CSS, and React Flow; no accounts, cloud storage, or usage telemetry.
+- Developed [IP Journal](https://ip-journal.live), a privacy-first reflective tool using structured discovery prompts to support differentiated observation of internal experience. Built with React, TypeScript, and Tailwind CSS; no personal data or usage telemetry is collected.
 
 ## CORE COMPETENCIES
 
@@ -51,153 +50,120 @@ Developed IP Journal (Internal Perspective Journal) — a privacy-first web-base
 
 ## LEADERSHIP PRINCIPLES
 
-Ethical - Collegial- Communicative - Innovative - Data-driven - Accountable
+Ethical · Collegial · Communicative · Innovative · Data-driven · Accountable
 
 ## EDUCATION AND CERTIFICATIONS
 
-PhD Psychology (Clinical Psychology - APA accredited) 2020 Fielding Graduate University, Santa Barbara, CA
-
-MA (Clinical Psychology - APA accredited) 2017 Fielding Graduate University, Santa Barbara, CA
-
-JD (Law) 1991 The University of Michigan Law School, Ann Arbor, MI
+- **PhD, Clinical Psychology**, Fielding Graduate University, 2020 (APA-accredited program)
+- **MA, Clinical Psychology**, Fielding Graduate University, 2017 (APA-accredited program)
+- **JD**, University of Michigan Law School, 1991
 
 ## LICENSURE
 
-Oregon Psychologist License 3497 (Issued 22FEB2022; Expires 31OCT2026)
+Oregon Psychologist License 3497 (issued February 22, 2022; expires October 31, 2026)
 
 
-## PROFESSIONAL WORK EXPERIENCE
+## RESEARCH, TECHNICAL, AND REGULATORY EXPERIENCE
 
-Independent Contractor, micro1
-Jan 2026 - Feb 2026
+### Independent Contractor, micro1
+**January 2026 – February 2026**
 
-- Contributed to advanced human data initiatives at a leading AI lab, aimed at improving the safety of AI models on mental health-related questions.  Responsibilities included evaluating the accuracy and quality of model-generated responses and recommending improvements.
+- Contributed to advanced human-data initiatives at a leading AI laboratory focused on improving model safety for mental health-related questions.
+- Evaluated the accuracy and quality of model-generated responses and recommended improvements.
 
-Independent Consultant 
-(Intermittent) July 2009 - Present
+### Independent Consultant
+**July 2009 – Present (intermittent)**
 
-- Conducted audits of software vendors and contract research organizations (21 CFR 11, GxP and HIPPA).
+- Conducted audits of software vendors and contract research organizations for compliance with 21 CFR Part 11, GxP, and HIPAA requirements.
 - Mapped emerging IT-impacting regulations against existing control and privacy frameworks.
-- Assist start-up companies develop regulatory strategies for health information technologies.
+- Assisted start-up companies in developing regulatory strategies for health information technologies.
 
-Quality and Regulatory Management Executive 
-Dec 2010 - March 2014 GE Healthcare, Waukesha WI 
+### Quality and Regulatory Management Executive, GE Healthcare
+**December 2010 – March 2014 | Waukesha, Wisconsin**
 
-- Collaborated with software engineers on developing efficient processes to build in quality for medical device software.
+- Collaborated with software engineers to develop efficient processes for building quality into medical-device software.
 - Completed General Electric Management Development Course.
 - Supported implementation of Sunshine Act requirements across organizational QRM units.
 
-Senior Director, Worldwide Technology Policy and Information Security 
-Jan 2007 - June 2009 Pfizer, New York, NY
+### Senior Director, Worldwide Technology Policy and Information Security, Pfizer
+**January 2007 – June 2009 | New York, New York**
 
-- Developed and maintained IT policies, procedures, control frameworks (security, privacy, SDLC).
-- Information security program management (awareness, enforcement, information security officer network).
-- Proactively monitored IT-impacting regulations and best practices and inform executive management re risk.
+- Developed and maintained IT policies, procedures, and control frameworks addressing security, privacy, and the software development life cycle.
+- Managed information-security programs involving awareness, enforcement, and a network of information security officers.
+- Monitored IT-impacting regulations and best practices and advised executive management regarding risk.
 
-Licensed Psychologist (Solo practitioner and 1099 Contractor) 
-July 2022-present Existenz Psychotherapy, LLC Eugene Oregon
-(100% telehealth)
+## CLINICAL EXPERIENCE
 
-- Conduct intake assessments, determine DSM-diagnoses, and develop treatment plans for clients in outpatient setting.
+### Licensed Psychologist, Existenz Psychotherapy, LLC
+**July 2022 – Present | Eugene, Oregon | Telehealth**
 
-- Provide trauma-informed evidence based individual psychotherapy in outpatient setting.
+- Conduct intake assessments, determine DSM diagnoses, and develop outpatient treatment plans.
+- Provide trauma-informed, evidence-based individual psychotherapy.
+- Conduct readiness assessments for gender-affirming surgeries and author first- and second-referral letters.
 
-- Conduct readiness assessments for gender-affirming surgeries and author first and second referral letters.
+### Licensed Psychologist, LifeStance
+**February 2022 – June 2022 | Eugene, Oregon**
 
-Licensed Psychologist (W-2 Employee) 
-February 2022-June 2022 LifeStance (formerly Strong Integrated Behavioral Health), Eugene, Oregon
+- Conducted intake assessments, determined DSM diagnoses, and developed treatment plans in behavioral health and outpatient settings.
+- Provided brief and longer-term individual psychotherapy and conducted readiness assessments for gender-affirming surgeries.
+- Participated in consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
 
-- Conducted intake assessments, determined DSM-diagnosis, and developed treatment plans for clients in behavioral health and outpatient settings. 
+### Resident Psychologist, Strong Integrated Behavioral Health
+**October 2020 – January 2022 | Eugene, Oregon | 1,830 supervised hours**
 
-- Provided brief (8-16 sessions) and longer-term individual psychotherapy.  Conducted readiness assessments for gender-affirming surgeries and authored first and second referral letters.  
+- Conducted intake assessments, determined DSM diagnoses, and developed treatment plans.
+- Provided brief and longer-term individual psychotherapy.
+- Conducted readiness assessments for gender-affirming surgeries and authored referral letters.
+- Participated in consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
 
-- Participated in rotating weekly consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
+### APA-Accredited Psychology Internship, Oregon State University Counseling & Psychological Services
+**August 2019 – August 2020 | Corvallis, Oregon | 1,500 supervised hours**
 
-Resident Psychologist (1830 supervised hrs) 
-October 2020-January 2022 Strong Integrated Behavioral Health, Eugene, Oregon
+- Conducted intake assessments, case conceptualization, diagnosis, treatment planning, risk assessment, safety planning, and referral.
+- Provided brief and single-session psychotherapy to undergraduate and graduate students.
+- Co-facilitated an interpersonal process group and two drop-in support groups for transgender and gender-diverse students.
+- Conducted readiness assessments for gender-affirming surgeries and participated in interdisciplinary consultation.
 
-- Conducted intake assessments, determined DSM-diagnoses, and developed treatment plans for clients in behavioral health and outpatient settings. 
+### Clinical Practicum, Sydney Felker-Ross, PhD, LLC
+**June 2018 – May 2019 | Athens, Georgia | 161 supervised hours**
 
-- Provided brief (8-16 sessions) and longer-term individual psychotherapy. 
+- Conducted intake assessments, case conceptualization, and treatment planning for adult clients.
+- Provided individual and group psychotherapy.
+- Delivered outreach training to clinicians on canine-assisted therapy.
 
-- Conducted readiness assessments for gender-affirming surgeries and authored first and second referral letters.
+### Clinical Practicum, Piedmont College Counseling Center
+**August 2017 – May 2019 | Demorest, Georgia | 1,124 supervised hours**
 
-- Participated in rotating weekly consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
+- Conducted intake assessments, case conceptualization, treatment planning, and individual psychotherapy.
+- Consulted on diagnostic referrals and requests for emotional-support animals.
+- Developed and led a support group for transgender and gender-diverse students.
+- Served on the Transgender Inclusivity Committee, developing policies, procedures, and workflows.
 
-APA Internship (1500 supervised hours) 
-August 2019 - August 2020 OSU Counseling & Psych Svcs, Corvallis, Oregon
+### Clinical Practicum, North Central Behavioral Health
+**November 2016 – July 2017 | San Diego, California | 559 supervised hours**
 
-- Conducted intake assessments, formulated case conceptualizations, determined DSM-diagnoses, and developed treatment plans for undergraduate and graduate college students.
+- Conducted intake assessments, case conceptualization, and treatment planning in an urban county mental health clinic serving adults with serious mental illness and people experiencing homelessness.
+- Provided individual and group psychotherapy.
+- Developed and presented LGBTQ+ awareness training for medical and mental health professionals.
+- Participated in interdisciplinary consultation with psychiatric and medical providers.
 
-- Provided brief (1-16 sessions) and single-session psychotherapy in university counseling center.
+### Research Practicum, Fielding Graduate University
+**May 2015 – May 2019 | 200 direct hours**
 
-- Provided on-call triage consultations that included risk assessment, safety planning, case management, and referral to community resources if longer-term care was indicated.
-
-- Co-facilitated one interpersonal process group for graduate and non-traditional students.
-
-- Co-facilitated two drop-in support groups for transgender and gender diverse (TGD) students.
-
-- Conducted readiness assessments for gender-affirming surgeries and authored first and second referral letters for gender related surgical procedures.
-
-- Participated in regularly scheduled interdisciplinary consultation meetings with student health services psychiatrists, physician assistants, and nurse practitioners.
-
-Clinical Practicum (161 supervised hours) 
-June 2018 - May 2019 Sydney Felker-Ross, PhD LLC, Athens, GA
-
-- Conducted intake assessments, formulated case conceptualizations, and developed treatment plans for adult clients.
-
-- Provided individual psychotherapy for adults in outpatient setting.
-
-- Co-facilitated process-based therapy group for adults experiencing grief, anxiety, depression, and relationship issues.
-
-- Provided outreach training to local clinicians on Canine Assisted Therapy.
-
-Clinical Practicum (1124 supervised hours) 
-August 2017 - May 2019 Piedmont College Counseling Ctr, Demorest, GA
-
-- Conducted intake assessments, formulated case conceptualizations, and developed treatment plans.
-
-- Provided individual psychotherapy in a university counseling center.
-
-- Consulted with counseling staff on diagnosis-related referral questions and student requests for emotional service animals.
-
-- Developed and led a support group for TGD students.
-
-- Member of Transgender Inclusivity Committee tasked with developing policies, procedures, and workflows.
-
-Clinical Practicum (559 supervised hours) 
-November 2016 - July 2017 North Central Behavioral Health, San Diego, CA
-
-- Conducted intake assessments, formulated case conceptualizations, and developed treatment plans for adult clients in an urban county mental health clinic focusing on seriously mentally ill and homeless adult populations.
-
-- Provided individual psychotherapy in a county mental health center.
-
-- Co-facilitated group therapy sessions in Artistic Expression, Co-occurring Diagnoses and Depression.
-
-- Developed and presented LGBT awareness training sessions for medical and mental health professionals providing services in community health clinic settings.
-
-- Participated in interdisciplinary consultation meetings with psychiatrists, physician assistants, and nurse practitioners.
-
-Research Practicum (200 direct hours) 
-May 2015 - May 2019 Fielding Graduate University, Santa Barbara, CA
-
-- Reviewed literature addressing qualitative research methods, reflexivity and employment-related discrimination and stigma experienced by persons identifying as transgender or gender diverse.
-
-- Met with fellow researchers to reach consensus on common themes and reflexivity-related concerns.
-
-- Drafted language for sections of posters, presentations, and publications.
+- Reviewed literature addressing qualitative research methods, reflexivity, and employment-related discrimination and stigma affecting transgender and gender-diverse people.
+- Collaborated with researchers to reach consensus on themes and reflexivity concerns.
+- Drafted content for posters, presentations, and publications.
 
 ## TEACHING EXPERIENCE
 
-Adjunct Professor, Psychology 
-August 2017 - May 2019 Piedmont College, Demorest GA
+### Adjunct Professor of Psychology, Piedmont College
+**August 2017 – May 2019 | Demorest, Georgia**
 
-- Developed course syllabi, lectures, assignments and tests for undergraduate courses in Psychology of Childhood & Early Adolescence (Fall 2017), Cognitive Psychology (Fall 2017), Theories of Learning (Spring 2018), Personality (Spring 2018),Abnormal Psychology (Fall 2018), Human Growth and Development (Fall 2018), Human Sexuality (Spring 2019), and Introduction to Counseling (Spring 2019).
+- Developed syllabi, lectures, assignments, and assessments for undergraduate courses in childhood and adolescent psychology, cognitive psychology, learning theory, personality, abnormal psychology, human development, human sexuality, and counseling.
 
-- Developed online course structure, quizzes, assignments and links to external resources.
-- Created and delivered live classroom lectures (Psychology of Childhood & Early Adolescence, Cognitive Psychology, Theories of Learning, Personality, Abnormal Psychology, Human Sexuality, and Introduction to Counseling).
-- Created and delivered a hybrid course (Human Growth and Development).
-- Provided academic advising to undergraduate Psychology students.
+- Developed online and hybrid course structures, quizzes, assignments, and curated resources.
+- Created and delivered live classroom lectures.
+- Provided academic advising to undergraduate psychology students.
 - Completed student mid-term evaluations and submitted final grades.
 
 ## PUBLICATIONS
@@ -217,17 +183,14 @@ August 2017 - May 2019 Piedmont College, Demorest GA
 
 ## PROFESSIONAL MEMBERSHIPS AND CERTIFICATIONS
 
-Certified Clinical Trauma Professional Level 2 (CCTP-II) 
+- Certified Clinical Trauma Professional, Level 2 (CCTP-II)
+- American Psychological Association
+  - Division 44, Society for the Psychology of Sexual Orientation and Gender Diversity
+  - Division 32, Society for Humanistic Psychology
+- Oregon Psychological Association
+- Psi Chi International Honor Society in Psychology
 
-American Psychological Association
-- Division 44 (Society for the Psychology of Sexual Orientation and Gender Diversity)
-- Division 32 (Society for Humanistic Psychology)
-
-Oregon Psychological Association
-
-Psi Chi Honor Society
-
-## REFERENCES
+## SELECTED PROFESSIONAL ENDORSEMENTS
 
 *On regulatory strategy and health technology development:*
 Adam Hutchison | Founder, oVRcome
