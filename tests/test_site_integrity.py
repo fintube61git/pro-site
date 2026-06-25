@@ -67,11 +67,14 @@ class WebsiteIntegrityTests(unittest.TestCase):
 
     def test_home_page_is_professional_hook_not_clinical_intake(self) -> None:
         text = read_text(REPO_ROOT / "index.html")
-        self.assertIn("Research, Theory, and Applied Psychological Science", text)
+        self.assertIn("Interdisciplinary Empirical Researcher", text)
+        self.assertIn("human evaluation", text)
+        self.assertIn("sociotechnical research", text)
         self.assertIn("What I Work On", text)
         self.assertIn("Legal-Psychological Research", text)
         self.assertIn("Psychological Technology and Assessment Tools", text)
         self.assertIn("Clinical Practice", text)
+        self.assertIn('href="resume/"', text)
         self.assertNotIn("IFS-informed psychotherapy for complex trauma", text)
         self.assertNotIn("Licensed psychologist in Oregon (License #3497", text)
 
@@ -87,6 +90,23 @@ class WebsiteIntegrityTests(unittest.TestCase):
         text = read_text(REPO_ROOT / "practice" / "index.html")
         self.assertIn("https://member.psychologytoday.com/verified-seal.js", text)
         self.assertIn("/assets/img/zy32naec0wujz5cl8d2g.png", text)
+        self.assertIn("https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-eugene-or/944087", text)
+        self.assertIn("LGBTQIA+ affirming therapy", text)
+        self.assertIn("gender-affirming care", text)
+        self.assertIn("+15419201595", text)
+
+    def test_practice_pages_align_with_psychology_today_core_claims(self) -> None:
+        services = read_text(REPO_ROOT / "practice" / "services.html")
+        fees = read_text(REPO_ROOT / "practice" / "fees-policies.html")
+        faq = read_text(REPO_ROOT / "practice" / "faq.html")
+        approach = read_text(REPO_ROOT / "practice" / "approach.html")
+        self.assertIn("Couples Therapy", services)
+        self.assertIn("Couples psychotherapy", services)
+        self.assertIn("Couples therapy: $250 per session", fees)
+        self.assertIn("individual and couples psychotherapy", fees)
+        self.assertIn("individuals and couples", faq)
+        self.assertIn("Religious trauma", services)
+        self.assertIn("Trauma-Informed Stabilization Treatment", approach)
 
     def test_about_first_licensed_psychologist_mention_includes_license(self) -> None:
         text = read_text(REPO_ROOT / "about.html")
@@ -123,6 +143,7 @@ class WebsiteIntegrityTests(unittest.TestCase):
             "https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-eugene-or/944087",
             practice_contact,
         )
+        self.assertIn("+1 (541) 920-1595", practice_contact)
         self.assertNotIn("https://hushforms.com/existenzpsych", practice_contact)
 
     def test_main_contact_is_email_only_and_non_clinical(self) -> None:
@@ -152,6 +173,8 @@ class CvWorkflowTests(unittest.TestCase):
         self.assertTrue((REPO_ROOT / "cv.md").exists())
         self.assertTrue((REPO_ROOT / "cv" / "publications.md").exists())
         self.assertTrue((REPO_ROOT / "cv" / "presentations.md").exists())
+        self.assertTrue((REPO_ROOT / "resume.md").exists())
+        self.assertTrue((REPO_ROOT / "resume" / "index.html").exists())
 
     def test_generated_cv_artifacts_are_gitignored(self) -> None:
         text = read_text(REPO_ROOT / ".gitignore")
@@ -178,6 +201,45 @@ class CvWorkflowTests(unittest.TestCase):
         self.assertIn("Nothing has been committed or published.", preview_script)
         self.assertIn("Type PUBLISH", publish_script)
         self.assertIn("git @Arguments", publish_script)
+        self.assertIn("git ls-files --others --exclude-standard", publish_script)
+
+    def test_browser_native_cv_lists_and_resume(self) -> None:
+        cv_page = read_text(REPO_ROOT / "cv" / "index.html")
+        resume_page = read_text(REPO_ROOT / "resume" / "index.html")
+        resume_source = read_text(REPO_ROOT / "resume.md")
+        css = read_text(REPO_ROOT / "css" / "styles.v2.css")
+
+        self.assertIn('collapseLongSection(root, "publications", 5)', cv_page)
+        self.assertIn('collapseLongSection(root, "presentations", 5)', cv_page)
+        self.assertIn("View complete ", cv_page)
+        self.assertIn('fetch("/resume.md"', resume_page)
+        self.assertIn("window.print()", resume_page)
+        self.assertIn("ProfilePage", resume_page)
+        self.assertIn("human evaluation", resume_page)
+        self.assertIn('class="resume-page-break"', resume_source)
+        self.assertIn("break-before:page", css)
+        self.assertIn(
+            ".cv-collapsible-item[hidden]{display:list-item!important}", css
+        )
+
+    def test_no_pdf_links_in_cv_source(self) -> None:
+        cv_source = read_text(REPO_ROOT / "cv.md")
+        self.assertNotIn("Publications_Full.pdf", cv_source)
+        self.assertNotIn("Presentations_Full.pdf", cv_source)
+
+    def test_resume_is_discoverable_in_sitemap(self) -> None:
+        sitemap = read_text(REPO_ROOT / "sitemap.xml")
+        self.assertIn("https://www.tdawsonwoodrum.com/resume/", sitemap)
+
+    def test_clinical_site_is_indexable_but_not_promoted_from_home(self) -> None:
+        sitemap = read_text(REPO_ROOT / "sitemap.xml")
+        home = read_text(REPO_ROOT / "index.html")
+        practice = read_text(REPO_ROOT / "practice" / "index.html")
+        self.assertIn("https://www.tdawsonwoodrum.com/practice/", sitemap)
+        self.assertIn("Oregon telehealth psychotherapy", practice)
+        self.assertIn("Psychologist", practice)
+        self.assertNotIn('href="practice/', home)
+        self.assertNotIn('href="/practice/', home)
 
     def test_readme_and_agent_instructions_link_canonical_workflow(self) -> None:
         readme = read_text(REPO_ROOT / "README.md")

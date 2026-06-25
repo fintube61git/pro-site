@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two-page Research Resume | T. Dawson Woodrum, PhD, JD</title>
+  <meta name="description" content="Two-page research resume for T. Dawson Woodrum, PhD, JD: interdisciplinary empirical research, human evaluation, sociotechnical research, clinical psychology, law, and research technology.">
+  <link rel="canonical" href="https://www.tdawsonwoodrum.com/resume/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Two-page Research Resume | T. Dawson Woodrum, PhD, JD">
+  <meta property="og:description" content="Research resume emphasizing human evaluation, sociotechnical research, mixed methods, clinical psychology, law, and research technology.">
+  <meta property="og:url" content="https://www.tdawsonwoodrum.com/resume/">
+  <meta property="og:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Two-page Research Resume | T. Dawson Woodrum, PhD, JD">
+  <meta name="twitter:description" content="Research resume emphasizing human evaluation, sociotechnical research, mixed methods, clinical psychology, law, and research technology.">
+  <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
+  <link rel="stylesheet" href="../css/styles.v2.css?v=20260625">
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://www.tdawsonwoodrum.com/resume/#webpage",
+    "url": "https://www.tdawsonwoodrum.com/resume/",
+    "name": "Two-page Research Resume | T. Dawson Woodrum, PhD, JD",
+    "description": "Two-page research resume emphasizing interdisciplinary empirical research, human evaluation, sociotechnical research, clinical psychology, law, and research technology.",
+    "about": {
+      "@type": "Person",
+      "@id": "https://www.tdawsonwoodrum.com/#person",
+      "name": "T. Dawson Woodrum, PhD, JD",
+      "jobTitle": "Interdisciplinary Empirical Researcher",
+      "url": "https://www.tdawsonwoodrum.com/",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en",
+        "https://www.researchgate.net/profile/T-Dawson-Woodrum",
+        "https://orcid.org/0000-0002-6878-4257",
+        "http://www.linkedin.com/in/tdawsonwoodrum"
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="page-resume">
+  <main id="main" class="section">
+    <div class="container">
+      <nav class="resume-actions" aria-label="Resume actions">
+        <a href="/cv/">View full CV</a>
+        <button type="button" onclick="window.print()">Print or save as PDF</button>
+      </nav>
+      <article id="resume-content" aria-live="polite">Loading resume...</article>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (async function () {
+      const root = document.getElementById("resume-content");
+      try {
+        const response = await fetch("/resume.md", { cache: "no-store" });
+        if (!response.ok) throw new Error("Could not load resume source.");
+        marked.setOptions({ gfm: true, breaks: false });
+        root.innerHTML = marked.parse(await response.text());
+      } catch (err) {
+        root.textContent = "Could not load resume.";
+        console.error(err);
+      }
+    })();
+  </script>
+</body>
+</html>

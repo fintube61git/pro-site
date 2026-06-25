@@ -109,6 +109,117 @@ a:hover{text-decoration:underline}
 /* Typography */
 h1,h2,h3,h4,h5,h6{font-weight:600;line-height:1.25}
 
+/* Browser-native CV and resume controls */
+.cv-list-controls{margin:.75rem 0 1.5rem}
+.cv-list-toggle,
+.resume-actions button{
+  border:2px solid var(--accent);
+  border-radius:6px;
+  background:var(--bg);
+  color:var(--accent);
+  cursor:pointer;
+  font:inherit;
+  font-weight:700;
+  padding:.5rem .8rem;
+}
+.cv-list-toggle:hover,
+.cv-list-toggle:focus,
+.resume-actions button:hover,
+.resume-actions button:focus{
+  background:var(--accent);
+  color:var(--bg);
+  outline:3px solid var(--accent);
+  outline-offset:2px;
+}
+.resume-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:1rem;
+  margin-bottom:1.25rem;
+}
+.resume-actions a{align-self:center;font-weight:700}
+.page-resume .container{max-width:900px}
+.page-resume #resume-content{font-size:.95rem;line-height:1.42}
+.page-resume #resume-content > h1{
+  color:#122a42;
+  font-size:2rem;
+  margin-bottom:.15rem;
+  text-align:center;
+}
+.page-resume #resume-content > h1 + p{
+  color:#277a82;
+  font-weight:700;
+  margin:.2rem 0;
+  text-align:center;
+}
+.page-resume #resume-content > h1 + p + p{
+  color:var(--muted);
+  margin:.2rem 0 1rem;
+  text-align:center;
+}
+.page-resume h2{
+  background:#eaf2f5;
+  color:#122a42;
+  font-size:1.1rem;
+  margin:1rem 0 .4rem;
+  padding:.18rem .35rem;
+}
+.page-resume h3{
+  color:#122a42;
+  font-size:1rem;
+  margin:.6rem 0 .15rem;
+}
+.page-resume p{margin:.25rem 0 .6rem}
+.page-resume ul{margin:.2rem 0 .55rem;padding-left:1.45rem}
+.page-resume li{margin:.12rem 0}
+.resume-page-break{
+  border-top:2px dashed var(--border);
+  margin:2rem 0;
+  position:relative;
+}
+.resume-page-break::after{
+  background:var(--bg);
+  color:var(--muted);
+  content:"Page 2";
+  font-size:.8rem;
+  left:50%;
+  padding:0 .5rem;
+  position:absolute;
+  top:0;
+  transform:translate(-50%,-55%);
+}
+
+@media print{
+  @page{size:Letter portrait;margin:.55in .62in}
+  body{font-size:10pt;line-height:1.28}
+  .section{padding:0}
+  .container{max-width:none;padding:0}
+  .resume-actions,.cv-list-controls{display:none!important}
+  .cv-collapsible-item[hidden]{display:list-item!important}
+  .page-resume #resume-content{font-size:9.5pt;line-height:1.25}
+  .page-resume #resume-content > h1{font-size:20pt;margin-top:0}
+  .page-resume h2{
+    background:#eaf2f5!important;
+    font-size:11pt;
+    margin:.55rem 0 .18rem;
+    padding:.08rem .2rem;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact;
+  }
+  .page-resume h3{font-size:10pt;margin:.3rem 0 .08rem}
+  .page-resume p{margin:.1rem 0 .3rem}
+  .page-resume ul{margin:.08rem 0 .3rem}
+  .page-resume li{margin:.04rem 0}
+  .resume-page-break{
+    border:0;
+    break-before:page;
+    margin:0;
+    page-break-before:always;
+  }
+  .resume-page-break::after{display:none}
+  a{color:inherit;text-decoration:none}
+}
+
 /* === Dark theme support ================================================ */
 /* Base: use variables so colors flip without changing markup */
 :root {

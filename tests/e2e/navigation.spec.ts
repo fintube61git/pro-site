@@ -39,7 +39,7 @@ test("home links to cv sections", async ({ page }) => {
   await page.goto("/index.html");
 
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Research, Theory, and Applied Psychological Science",
+    "Interdisciplinary Empirical Researcher",
   );
   await expect(page.getByRole("heading", { level: 2, name: "What I Work On" })).toBeVisible();
   await expect(page.getByText("Legal-Psychological Research")).toBeVisible();
@@ -51,6 +51,10 @@ test("home links to cv sections", async ({ page }) => {
   await expect(cvLink).toHaveAttribute("href", "cv/#cv");
   await expect(cvLink).toHaveAttribute("target", "_blank");
 
+  const resumeLink = page.getByRole("link", { name: "Two-page Resume" });
+  await expect(resumeLink).toHaveAttribute("href", "resume/");
+  await expect(resumeLink).toHaveAttribute("target", "_blank");
+
   const publicationsLink = page.getByRole("link", { name: "Publications" });
   await expect(publicationsLink).toHaveAttribute("href", "cv/#publications");
   await expect(publicationsLink).toHaveAttribute("target", "_blank");
@@ -60,10 +64,10 @@ test("home links to cv sections", async ({ page }) => {
   await expect(presentationsLink).toHaveAttribute("target", "_blank");
 });
 
-test("home document links open cv route targets", async ({ page, context }) => {
+test("home document links open cv and resume route targets", async ({ page, context }) => {
   await page.goto("/index.html");
 
-  const popupFor = async (linkName: "Full CV" | "Publications" | "Presentations") => {
+  const popupFor = async (linkName: "Full CV" | "Two-page Resume" | "Publications" | "Presentations") => {
     const [popup] = await Promise.all([
       context.waitForEvent("page"),
       page.getByRole("link", { name: linkName }).click(),
@@ -75,6 +79,10 @@ test("home document links open cv route targets", async ({ page, context }) => {
   const cvPopup = await popupFor("Full CV");
   await expect(cvPopup).toHaveURL(/\/cv\/#cv$/);
   await cvPopup.close();
+
+  const resumePopup = await popupFor("Two-page Resume");
+  await expect(resumePopup).toHaveURL(/\/resume\/$/);
+  await resumePopup.close();
 
   const pubsPopup = await popupFor("Publications");
   await expect(pubsPopup).toHaveURL(/\/cv\/#publications$/);

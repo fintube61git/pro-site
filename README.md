@@ -22,7 +22,11 @@ Review the private local preview. After explicit approval:
 ```
 
 The canonical sources are `cv.md`, `cv/publications.md`, and
-`cv/presentations.md`. Previewing never publishes.
+`cv/presentations.md`. The browser-native two-page research resume is sourced
+from `resume.md` and rendered at `/resume/`. Previewing never publishes.
+
+Do not maintain generated CV, publication-list, presentation-list, or resume
+PDFs. Use the browser's Print/Save as PDF function when a PDF is needed.
 
 ## Quick Deploy (GitHub Pages)
 

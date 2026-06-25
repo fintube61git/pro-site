@@ -13,7 +13,26 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $allowedFiles = @(
     "cv.md",
     "cv/publications.md",
-    "cv/presentations.md"
+    "cv/presentations.md",
+    "cv/index.html",
+    "resume.md",
+    "resume/index.html",
+    "index.html",
+    "sitemap.xml",
+    "practice/index.html",
+    "practice/approach.html",
+    "practice/services.html",
+    "practice/fees-policies.html",
+    "practice/faq.html",
+    "practice/contact.html",
+    "practice/privacy.html",
+    "css/styles.v2.css",
+    "tests/test_site_integrity.py",
+    "tests/e2e/navigation.spec.ts",
+    "tools/publish_cv.ps1",
+    "docs/CV_UPDATE_WORKFLOW.md",
+    "README.md",
+    "AGENTS.md"
 )
 
 function Invoke-Git {
@@ -38,6 +57,7 @@ try {
     $trackedChanges = @(
         & git diff --name-only HEAD --
         & git diff --cached --name-only --
+        & git ls-files --others --exclude-standard --
     ) | Where-Object { $_ } | Sort-Object -Unique
 
     $disallowedChanges = @(
@@ -91,7 +111,7 @@ try {
         }
     }
 
-    Invoke-Git add -- $allowedFiles
+    Invoke-Git add -- @changedCvFiles
     & git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) {
         throw "No staged CV changes remain to commit."
