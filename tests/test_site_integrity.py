@@ -18,6 +18,13 @@ GA4_REQUIRED_PAGES = [
     "apps.html",
     "contact.html",
     "privacy.html",
+    "practice/index.html",
+    "practice/approach.html",
+    "practice/services.html",
+    "practice/fees-policies.html",
+    "practice/faq.html",
+    "practice/contact.html",
+    "practice/privacy.html",
 ]
 
 
