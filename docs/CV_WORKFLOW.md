@@ -1,8 +1,6 @@
-# CV Workflow (Non-Negotiable)
+# CV Workflow
 
-## Rules
+The canonical human-and-AI instructions are in
+[CV_UPDATE_WORKFLOW.md](CV_UPDATE_WORKFLOW.md).
 
-- Canonical CV is website-rendered Markdown.
-- Do NOT use pandoc or wkhtmltopdf as a CV PDF pipeline.
-- If a PDF is needed, open the CV page in a browser and use Print/Save as PDF.
-- Do not troubleshoot PDF toolchains unless Dawson explicitly reverses this decision in the current session.
+Do not use the retired Pandoc CV pipeline.

@@ -2,6 +2,28 @@
 
 This repo is a clean, static starter intended to deploy in minutes on GitHub Pages—no frameworks, no build step.
 
+## Updating the CV
+
+The CV has a verify-before-publish workflow designed for both humans and AI
+agents.
+
+Start with [docs/CV_UPDATE_WORKFLOW.md](docs/CV_UPDATE_WORKFLOW.md).
+
+The short version:
+
+```powershell
+.\tools\preview_cv.ps1
+```
+
+Review the private local preview. After explicit approval:
+
+```powershell
+.\tools\publish_cv.ps1
+```
+
+The canonical sources are `cv.md`, `cv/publications.md`, and
+`cv/presentations.md`. Previewing never publishes.
+
 ## Quick Deploy (GitHub Pages)
 
 1. Create a new **public** repo on GitHub (or private with Pages allowed).
