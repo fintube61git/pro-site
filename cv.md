@@ -6,214 +6,306 @@ Do NOT run pandoc directly on this file.
 Use tools/build_cv_html.ps1 to expand includes first.
 -->
 
-# T. Dawson Woodrum, PhD
+# T. Dawson Woodrum, PhD, JD
 
-**Professional inquiries:** [dawson@tdawsonwoodrum.com](mailto:dawson@tdawsonwoodrum.com) | [LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum)
+**Interdisciplinary Empirical Researcher | Human Evaluation & Sociotechnical Research**
 
-- [Google Scholar](https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en)
-- [ResearchGate](https://www.researchgate.net/profile/T-Dawson-Woodrum)
-- [ORCID](https://orcid.org/0000-0002-6878-4257)
-- [LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum)
+Pacific Northwest, United States | Remote preferred; open to West Coast or Northeast opportunities
+
+**Professional inquiries:** [dawson@tdawsonwoodrum.com](mailto:dawson@tdawsonwoodrum.com)
+
+[Google Scholar](https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en) |
+[ORCID](https://orcid.org/0000-0002-6878-4257) |
+[ResearchGate](https://www.researchgate.net/profile/T-Dawson-Woodrum) |
+[LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum) |
+[Two-page research resume](/resume/)
 
 ---
-I am a licensed psychologist, researcher, and legal-psychological theorist with doctoral training in clinical psychology and a JD from the University of Michigan Law School. My primary focus is developing formal, mechanism-level frameworks for analyzing coercive influence — integrating complex adaptive systems theory with behavioral science to generate evidentiary tools applicable in legal, forensic, and policy contexts. Before becoming a clinician, I spent over 15 years in the biotechnology, pharmaceutical, and medical device industries as a regulatory affairs executive, focusing on electronic data integrity, software quality assurance, regulatory strategy, privacy, and information security. I maintain a limited clinical practice through Existenz Psychotherapy.
 
-## SELECTED RECENT ACCOMPLISHMENTS
+## RESEARCH PROFILE
 
-- Developed [IP Mapper](https://ip-mapper.com), a privacy-first visual mapping tool for exploring internal components and their relationships through a complex adaptive systems framework. Built with React 19, TypeScript, Tailwind CSS, and React Flow; no accounts, cloud storage, or usage telemetry.
-- Developed [IP Journal](https://ip-journal.live), a privacy-first reflective tool using structured discovery prompts to support differentiated observation of internal experience. Built with React, TypeScript, and Tailwind CSS; no personal data or usage telemetry is collected.
+I am an interdisciplinary empirical researcher studying how constrained
+sociotechnical systems shape human agency, judgment, and behavior. I turn
+difficult human questions into defensible constructs, governed datasets,
+repeatable evaluation protocols, and auditable results.
 
-## CORE COMPETENCIES
+My work combines psychology and law with extensive experience in regulated
+health technology, software quality, privacy, security, and institutional
+risk. My current research uses provenance-controlled textual corpora,
+structured human evaluation, blinded coding, reliability analysis, and
+reproducible computational workflows to investigate how high-constraint
+environments alter perceived options and action.
 
-### Research, Legal, and Technical Competencies
-- Legal-psychological framework development and forensic application
-- Complex adaptive systems theory and behavioral science integration
-- Regulatory strategy and compliance (21 CFR 11, GxP, HIPAA)
-- IT policy, information security, and privacy framework development
-- Quantitative and qualitative data analysis (Excel, SAS, SPSS, R)
-- Survey design (Qualtrics)
-- Software development (React, TypeScript, Tailwind CSS, Vercel)
-- AI safety evaluation and model quality assessment
-- Risk analysis and policy development
+Open to research roles, consulting, and collaborations.
 
-### Clinical Competencies
-- Trauma Informed Stabilization Treatment
-- Internal Family Systems
-- Humanistic Existential Psychotherapy
-- Acceptance and Commitment Therapy
-- Mindfulness-based Therapy
-- Somatic Trauma Therapy
-- Solution-Focused Therapy
-- Motivational Interviewing
-- Gender-affirming care and surgical readiness assessment
-- Electronic health recordkeeping systems (TherapyNotes, AdvancedMD, Valant, Centricity, Cerner)
+## CURRENT RESEARCH PROGRAM
 
-## LEADERSHIP PRINCIPLES
+### Independent Researcher
+**August 2020 – Present**
 
-Ethical · Collegial · Communicative · Innovative · Data-driven · Accountable
+- Lead an interdisciplinary empirical program investigating how coercive and
+  high-constraint environments narrow perceived options, meaning, identity,
+  and action.
+- Design provenance-controlled narrative corpora, preregistered analysis
+  plans, falsification tests, benchmark and null-model gates, and reproducible
+  R workflows.
+- Develop blinded and multi-coder protocols incorporating structured coding,
+  adjudication, nominal Krippendorff's alpha, bootstrap confidence intervals,
+  and scripted manuscript generation.
+- Develop Agency-Space Theory as the associated mechanism-level framework
+  being operationalized and tested within the empirical program.
 
-## EDUCATION AND CERTIFICATIONS
+### Current Projects and Manuscripts
 
-- **PhD, Clinical Psychology**, Fielding Graduate University, 2020 (APA-accredited program)
-- **MA, Clinical Psychology**, Fielding Graduate University, 2017 (APA-accredited program)
-- **JD**, University of Michigan Law School, 1991
+1. **Reproducible text-analysis methods project** — empirical and methods
+   manuscript submitted to *Behavior Research Methods*. The project develops
+   provenance-controlled corpus construction, benchmark gating, falsification
+   logic, and reproducible analysis for first-person narratives of coercion and
+   undue influence.
+2. **Agency-Space Theory** — *Undue Influence as Dynamic Constraint of
+   Agency-Space: A Mechanism-Level Theory of Conscious Agency Under Control*,
+   submitted to *New Ideas in Psychology*. Manuscript and supporting OSF
+   materials are embargoed.
+3. **Agency constriction content-analysis project** — provenance-controlled
+   empirical study testing descriptive entailments of Agency-Space Theory in
+   first-person coercion and undue-influence narratives; in development.
 
-## LICENSURE
+## RESEARCH METHODS AND TECHNICAL CAPABILITIES
 
-Oregon Psychologist License 3497 (issued February 22, 2022; expires October 31, 2026)
+### Research Design and Evaluation
 
+- Human evaluation, annotation-rubric design, blinded review, adjudication, and
+  inter-rater reliability
+- Qualitative, quantitative, and mixed-methods research
+- Survey design, structured narrative coding, thematic analysis, and
+  reflexivity
+- Preregistration, statistical-analysis planning, falsification criteria,
+  benchmark and null-model comparisons, and power analysis
+- Research involving sensitive populations, high-stakes narratives, privacy,
+  anonymity, consent, and source-provenance controls
 
-## RESEARCH, TECHNICAL, AND REGULATORY EXPERIENCE
+### Analysis and Reproducibility
 
-### Independent Contractor, micro1
+- Reproducible R pipelines using `targets`, `renv`, Quarto, and `papaja`
+- Nominal Krippendorff's alpha, bootstrap confidence intervals, and
+  consensus/adjudication procedures
+- Provenance-controlled corpus construction and structured text analysis
+- Version-controlled analysis, dependency locking, executable pipelines, and
+  scripted manuscript generation
+- Additional analytical tools: Python, SPSS, SAS, Excel, and Qualtrics
+
+### Software and Research Technology
+
+- React 19, TypeScript, Python, Streamlit, typed schemas, and runtime validation
+- Browser-local storage, IndexedDB, versioned JSON/HTML exchange, and
+  import/export integrity testing
+- Guarded on-device language-model inference and human review controls
+- Accessible interface engineering, keyboard navigation, semantic controls,
+  and automated WCAG checks
+- Automated unit, integration, cross-browser, security, and release-quality
+  gates
+
+## SELECTED RESEARCH TECHNOLOGY
+
+### [IP Journal](https://ip-journal.live) and [IP Mapper](https://ip-mapper.com)
+**Designer and Developer**
+
+- Designed companion privacy-first applications that translate an
+  interdisciplinary construct model into structured first-person data capture
+  and deterministic relationship visualization.
+- Built a shared React/TypeScript architecture with typed schemas, runtime
+  validation, IndexedDB persistence, versioned exchange, accessible
+  cross-browser interfaces, security controls, and automated quality gates.
+- Integrated optional on-device language-model reflection with tentative,
+  nonclinical language constraints, output screening, and user acceptance or
+  editing.
+- Implemented the applications without accounts, cloud synchronization,
+  behavioral analytics, or storage of user reflections outside the local
+  browser.
+
+IP Journal and IP Mapper translate an earlier complex-adaptive-systems model
+of internal experience into privacy-first software for structured reflection
+and relationship mapping. This earlier modeling work contributed to the
+intellectual development that later produced Agency-Space Theory, but the
+applications do not implement or validate AST.
+
+### [Clinical AI Evaluator Training Prototype](https://github.com/fintube61git/MH_AI_trainer)
+**Developer**
+
+- Developed a Streamlit prototype for training human evaluators to recognize
+  safety failures in mental-health AI responses.
+- Designed structured scenarios and explanatory feedback addressing missed
+  risk, false alarms, fabrication, diagnostic overreach, unsafe validation,
+  scope boundaries, and contextual interpretation.
+
+## SELECTED RESEARCH AND EVALUATION EXPERIENCE
+
+### Independent Human Evaluator | Leading AI Laboratory
 **January 2026 – February 2026**
 
-- Contributed to advanced human-data initiatives at a leading AI laboratory focused on improving model safety for mental health-related questions.
-- Evaluated the accuracy and quality of model-generated responses and recommended improvements.
+- Evaluated the accuracy, quality, safety, and appropriateness of
+  model-generated responses involving mental-health questions.
+- Identified response weaknesses and recommended improvements using clinical,
+  ethical, and contextual judgment.
 
-### Independent Consultant
-**July 2009 – Present (intermittent)**
+### Research Practicum | Fielding Graduate University
+**May 2015 – May 2019 | 200 direct hours**
 
-- Conducted audits of software vendors and contract research organizations for compliance with 21 CFR Part 11, GxP, and HIPAA requirements.
-- Mapped emerging IT-impacting regulations against existing control and privacy frameworks.
-- Assisted start-up companies in developing regulatory strategies for health information technologies.
+- Reviewed literature and analyzed qualitative material concerning workplace
+  stigma, discrimination, reflexivity, and transgender and gender-diverse
+  experience.
+- Collaborated with researchers to reach consensus on themes and reflexivity
+  concerns.
+- Contributed to posters, presentations, book chapters, and peer-reviewed
+  publications.
 
-### Quality and Regulatory Management Executive, GE Healthcare
+## SOCIOTECHNICAL RISK, REGULATION, AND GOVERNANCE
+
+### Independent Consultant | Selected Engagements
+**2009 – Present (intermittent)**
+
+- Conduct audits of software vendors and contract research organizations for
+  compliance with 21 CFR Part 11, GxP, HIPAA, privacy, and data-integrity
+  requirements.
+- Map emerging technology regulation against existing control, privacy,
+  security, and quality frameworks.
+- Advise startup companies on regulatory strategy for health-information
+  technologies.
+
+### Quality and Regulatory Management Executive | GE Healthcare
 **December 2010 – March 2014 | Waukesha, Wisconsin**
 
-- Collaborated with software engineers to develop efficient processes for building quality into medical-device software.
-- Completed General Electric Management Development Course.
-- Supported implementation of Sunshine Act requirements across organizational QRM units.
+- Collaborated with software engineers to integrate efficient quality and
+  regulatory controls into medical-device software development.
+- Supported implementation of health-technology compliance requirements
+  across quality and regulatory units.
+- Completed the General Electric Management Development Course.
 
-### Senior Director, Worldwide Technology Policy and Information Security, Pfizer
+### Senior Director, Worldwide Technology Policy and Information Security | Pfizer
 **January 2007 – June 2009 | New York, New York**
 
-- Developed and maintained IT policies, procedures, and control frameworks addressing security, privacy, and the software development life cycle.
-- Managed information-security programs involving awareness, enforcement, and a network of information security officers.
-- Monitored IT-impacting regulations and best practices and advised executive management regarding risk.
+- Developed and maintained global policies, procedures, and control frameworks
+  addressing security, privacy, records, risk, and the software-development
+  life cycle.
+- Managed multidisciplinary information-security governance involving
+  awareness, enforcement, and a network of information-security officers.
+- Monitored emerging technology regulation and advised executive management on
+  institutional risk.
 
 ## CLINICAL EXPERIENCE
 
-### Licensed Psychologist, Existenz Psychotherapy, LLC
+### Licensed Psychologist | Existenz Psychotherapy, LLC
 **July 2022 – Present | Eugene, Oregon | Telehealth**
 
-- Conduct intake assessments, determine DSM diagnoses, and develop outpatient treatment plans.
-- Provide trauma-informed, evidence-based individual psychotherapy.
-- Conduct readiness assessments for gender-affirming surgeries and author first- and second-referral letters.
+- Maintain a limited outpatient practice providing trauma-informed,
+  evidence-based psychotherapy and assessment.
+- Conduct intake, diagnosis, treatment planning, risk assessment, and
+  readiness evaluations for gender-affirming care.
+- Apply high-stakes interviewing, ethical judgment, privacy safeguards, and
+  culturally responsive interpretation with sensitive populations.
 
-### Licensed Psychologist, LifeStance
+### Licensed Psychologist | LifeStance
 **February 2022 – June 2022 | Eugene, Oregon**
 
-- Conducted intake assessments, determined DSM diagnoses, and developed treatment plans in behavioral health and outpatient settings.
-- Provided brief and longer-term individual psychotherapy and conducted readiness assessments for gender-affirming surgeries.
-- Participated in consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
+- Provided brief and longer-term individual psychotherapy, intake assessment,
+  diagnosis, treatment planning, and readiness assessment.
+- Participated in consultation groups addressing transgender care, pain, EMDR,
+  and dissociative disorders.
 
-### Resident Psychologist, Strong Integrated Behavioral Health
+### Resident Psychologist | Strong Integrated Behavioral Health
 **October 2020 – January 2022 | Eugene, Oregon | 1,830 supervised hours**
 
-- Conducted intake assessments, determined DSM diagnoses, and developed treatment plans.
-- Provided brief and longer-term individual psychotherapy.
-- Conducted readiness assessments for gender-affirming surgeries and authored referral letters.
-- Participated in consultation groups focused on transgender care, pain, EMDR, and dissociative disorders.
+- Conducted intake, diagnosis, treatment planning, psychotherapy, and
+  gender-affirming readiness assessment.
+- Participated in interdisciplinary consultation concerning complex clinical
+  and behavioral-health needs.
 
-### APA-Accredited Psychology Internship, Oregon State University Counseling & Psychological Services
+### APA-Accredited Psychology Internship | Oregon State University Counseling & Psychological Services
 **August 2019 – August 2020 | Corvallis, Oregon | 1,500 supervised hours**
 
-- Conducted intake assessments, case conceptualization, diagnosis, treatment planning, risk assessment, safety planning, and referral.
-- Provided brief and single-session psychotherapy to undergraduate and graduate students.
-- Co-facilitated an interpersonal process group and two drop-in support groups for transgender and gender-diverse students.
-- Conducted readiness assessments for gender-affirming surgeries and participated in interdisciplinary consultation.
+- Conducted assessment, case conceptualization, diagnosis, treatment planning,
+  risk assessment, safety planning, psychotherapy, and referral.
+- Co-facilitated an interpersonal process group and support groups for
+  transgender and gender-diverse students.
+- Participated in interdisciplinary consultation and conducted readiness
+  assessments for gender-affirming surgery.
 
-### Clinical Practicum, Sydney Felker-Ross, PhD, LLC
+### Clinical Practicum | Sydney Felker-Ross, PhD, LLC
 **June 2018 – May 2019 | Athens, Georgia | 161 supervised hours**
 
-- Conducted intake assessments, case conceptualization, and treatment planning for adult clients.
-- Provided individual and group psychotherapy.
-- Delivered outreach training to clinicians on canine-assisted therapy.
+- Conducted adult intake, case conceptualization, treatment planning, and
+  individual and group psychotherapy.
+- Delivered clinician outreach training concerning canine-assisted therapy.
 
-### Clinical Practicum, Piedmont College Counseling Center
+### Clinical Practicum | Piedmont College Counseling Center
 **August 2017 – May 2019 | Demorest, Georgia | 1,124 supervised hours**
 
-- Conducted intake assessments, case conceptualization, treatment planning, and individual psychotherapy.
-- Consulted on diagnostic referrals and requests for emotional-support animals.
-- Developed and led a support group for transgender and gender-diverse students.
-- Served on the Transgender Inclusivity Committee, developing policies, procedures, and workflows.
+- Conducted assessment, case conceptualization, treatment planning, and
+  individual psychotherapy.
+- Developed and led a support group for transgender and gender-diverse
+  students.
+- Served on the Transgender Inclusivity Committee, developing policies,
+  procedures, and workflows.
 
-### Clinical Practicum, North Central Behavioral Health
+### Clinical Practicum | North Central Behavioral Health
 **November 2016 – July 2017 | San Diego, California | 559 supervised hours**
 
-- Conducted intake assessments, case conceptualization, and treatment planning in an urban county mental health clinic serving adults with serious mental illness and people experiencing homelessness.
-- Provided individual and group psychotherapy.
-- Developed and presented LGBTQ+ awareness training for medical and mental health professionals.
-- Participated in interdisciplinary consultation with psychiatric and medical providers.
-
-### Research Practicum, Fielding Graduate University
-**May 2015 – May 2019 | 200 direct hours**
-
-- Reviewed literature addressing qualitative research methods, reflexivity, and employment-related discrimination and stigma affecting transgender and gender-diverse people.
-- Collaborated with researchers to reach consensus on themes and reflexivity concerns.
-- Drafted content for posters, presentations, and publications.
+- Provided assessment, treatment planning, and individual and group
+  psychotherapy in an urban county mental-health clinic.
+- Worked with adults experiencing serious mental illness and homelessness.
+- Developed LGBTQ+ awareness training and participated in interdisciplinary
+  consultation with psychiatric and medical providers.
 
 ## TEACHING EXPERIENCE
 
-### Adjunct Professor of Psychology, Piedmont College
+### Adjunct Professor of Psychology | Piedmont College
 **August 2017 – May 2019 | Demorest, Georgia**
 
-- Developed syllabi, lectures, assignments, and assessments for undergraduate courses in childhood and adolescent psychology, cognitive psychology, learning theory, personality, abnormal psychology, human development, human sexuality, and counseling.
+- Developed and taught undergraduate courses in cognitive, developmental,
+  personality, abnormal, learning, counseling, and sexuality psychology.
+- Designed classroom, online, and hybrid curricula, assignments, assessments,
+  and curated learning resources.
+- Advised students and evaluated academic performance.
 
-- Developed online and hybrid course structures, quizzes, assignments, and curated resources.
-- Created and delivered live classroom lectures.
-- Provided academic advising to undergraduate psychology students.
-- Completed student mid-term evaluations and submitted final grades.
+## EDUCATION
 
-## PUBLICATIONS
+- **PhD, Psychology, emphasis in Clinical Psychology**, Fielding Graduate
+  University, 2020
+
+  Dissertation: *Demoralization, Community Connectedness, and Well-Being Among
+  Transgender and Gender Diverse Individuals*
+- **JD**, University of Michigan Law School, 1991
+- **MA, Psychology, emphasis in Clinical Psychology**, Fielding Graduate
+  University, 2017
+- **Master of Interdisciplinary Studies**, Eastern Michigan University, 1988
+- **BS, Psychology**, Eastern Michigan University, 1985
+
+## SELECTED PUBLICATIONS
 
 {{< include cv/publications.md >}}
 
-## PRESENTATIONS
+## SELECTED PRESENTATIONS
 
 {{< include cv/presentations.md >}}
 
+## LICENSURE
+
+- Oregon Psychologist License 3497, issued February 22, 2022; current
+  expiration listed as October 31, 2026
+
 ## PROFESSIONAL DEVELOPMENT
 
-- Internal Family Systems (IFS) Level 1 Training, IFS Institute (completed March 2026)
-- Gottman Method Couples Therapy - Level 1 Clinical Training (2018)
-- Collaborative Assessment & Management of Suicidality (CAMS) - Book & Online Course (2019, 2022)
-- White Ally Toolkit Training - Dr. David Campt, PhD (2019)
+- Internal Family Systems Level 1 Training, IFS Institute, completed March 2026
+- Collaborative Assessment and Management of Suicidality, 2019 and 2022
+- Gottman Method Couples Therapy, Level 1, 2018
+- White Ally Toolkit Training, 2019
 
 ## PROFESSIONAL MEMBERSHIPS AND CERTIFICATIONS
 
-- Certified Clinical Trauma Professional, Level 2 (CCTP-II)
+- Certified Clinical Trauma Professional, Level 2
 - American Psychological Association
-  - Division 44, Society for the Psychology of Sexual Orientation and Gender Diversity
+  - Division 44, Society for the Psychology of Sexual Orientation and Gender
+    Diversity
   - Division 32, Society for Humanistic Psychology
 - Oregon Psychological Association
 - Psi Chi International Honor Society in Psychology
-
-## SELECTED PROFESSIONAL ENDORSEMENTS
-
-*On regulatory strategy and health technology development:*
-Adam Hutchison | Founder, oVRcome
-"Dawson and I connected while we were exploring regulatory requirements for our virtual reality exposure therapy product in the USA. Dawson has been extremely helpful as his unique skill set provides several different perspectives, not only as a psychologist, but also as a software developer and quality assurance professional."
-
-*On clinical-forensic consultation and specialized knowledge:*
-Zia Sichi, PsyD | Psychologist and Holistic Health Coach
-"I was consistently impressed with Dawson's authoritative knowledge and excellent consultation skills regarding dissociative disorders and religious trauma. I have benefited many times from his ability to listen for complexities, ask insightful questions, and offer suggestions that furthered my own thinking about a challenging clinical question or dilemma."
-
-*On evidence-based clinical practice and client outcomes:*
-Marceline Bamba, PhD | Associate Director of Clinical Services, Oregon State University CAPS
-"Dawson connected well with his clients and provided excellent care using evidence-based interventions in support of their therapeutic journey and goals. Dawson also provided animal-assisted therapy (canine) based on each client's needs and comfort level."
-
-*On integrative practice and therapeutic environment:*
-Fernando Frias, PsyD | Licensed Psychologist, Oregon State University CAPS
-"Dawson masterfully weaves together the art and science of psychotherapy, fostering a counseling environment of authenticity, empathy, and trust that is palpable."
-
-
-
-
-
-
-
-
-
-

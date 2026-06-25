@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV | T. Dawson Woodrum, PhD</title>
-  <meta name="description" content="Curriculum vitae for T. Dawson Woodrum, PhD, including publications and presentations.">
+  <title>Research CV | T. Dawson Woodrum, PhD, JD</title>
+  <meta name="description" content="Research CV for T. Dawson Woodrum, PhD, JD: interdisciplinary empirical research, human evaluation, sociotechnical research, clinical psychology, law, coercive influence, publications, and presentations.">
   <link rel="canonical" href="https://www.tdawsonwoodrum.com/cv/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="CV | T. Dawson Woodrum, PhD">
-  <meta property="og:description" content="Curriculum vitae including publications and presentations.">
+  <meta property="og:title" content="Research CV | T. Dawson Woodrum, PhD, JD">
+  <meta property="og:description" content="Interdisciplinary empirical research CV with publications, presentations, methods, human evaluation, sociotechnical research, clinical psychology, and law.">
   <meta property="og:url" content="https://www.tdawsonwoodrum.com/cv/">
   <meta property="og:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CV | T. Dawson Woodrum, PhD">
-  <meta name="twitter:description" content="Curriculum vitae including publications and presentations.">
+  <meta name="twitter:title" content="Research CV | T. Dawson Woodrum, PhD, JD">
+  <meta name="twitter:description" content="Interdisciplinary empirical research CV with publications, presentations, methods, human evaluation, sociotechnical research, clinical psychology, and law.">
   <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
-  <link rel="stylesheet" href="../css/styles.v2.css">
+  <link rel="stylesheet" href="../css/styles.v2.css?v=20260625">
   <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -55,8 +55,12 @@
         const headings = root.querySelectorAll("h1, h2, h3, h4, h5, h6");
         headings.forEach(function (h) {
           const t = (h.textContent || "").trim().toLowerCase();
-          if (t === "publications") h.id = "publications";
-          if (t === "presentations") h.id = "presentations";
+          if (t === "publications" || t === "selected publications") {
+            h.id = "publications";
+          }
+          if (t === "presentations" || t === "selected presentations") {
+            h.id = "presentations";
+          }
         });
       }
 
@@ -65,6 +69,50 @@
         const id = decodeURIComponent(location.hash.slice(1));
         const target = document.getElementById(id);
         if (target) target.scrollIntoView();
+      }
+
+      function collapseLongSection(root, headingId, visibleCount) {
+        const heading = root.querySelector("#" + headingId);
+        if (!heading) return;
+
+        let list = heading.nextElementSibling;
+        while (list && list.tagName !== "UL" && list.tagName !== "OL") {
+          list = list.nextElementSibling;
+        }
+        if (!list) return;
+
+        const items = Array.from(list.children).filter(function (item) {
+          return item.tagName === "LI";
+        });
+        if (items.length <= visibleCount) return;
+
+        items.slice(visibleCount).forEach(function (item) {
+          item.classList.add("cv-collapsible-item");
+          item.hidden = true;
+        });
+
+        const controls = document.createElement("p");
+        controls.className = "cv-list-controls";
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "cv-list-toggle";
+        button.setAttribute("aria-expanded", "false");
+        button.textContent = "View complete " + headingId + " list";
+
+        button.addEventListener("click", function () {
+          const expanding = button.getAttribute("aria-expanded") !== "true";
+          items.slice(visibleCount).forEach(function (item) {
+            item.hidden = !expanding;
+          });
+          button.setAttribute("aria-expanded", String(expanding));
+          button.textContent = expanding
+            ? "Show only the five most recent"
+            : "View complete " + headingId + " list";
+        });
+
+        controls.appendChild(button);
+        list.insertAdjacentElement("afterend", controls);
       }
 
       async function renderCv() {
@@ -113,6 +161,8 @@
           root.innerHTML = marked.parse(expandedMd);
           applyHeadingIds(root);
           applyKnownSectionIds(root);
+          collapseLongSection(root, "publications", 5);
+          collapseLongSection(root, "presentations", 5);
           scrollToHash();
           setTimeout(scrollToHash, 120);
         } catch (err) {

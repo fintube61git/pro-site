@@ -19,6 +19,14 @@ Edit only the source file that owns the content:
 - `cv/publications.md` — publication entries only; do not add a section heading
 - `cv/presentations.md` — presentation entries only; do not add a section
   heading
+- `resume.md` — browser-native two-page research resume
+
+The CV initially displays the five most recent publications and presentations.
+The complete canonical lists remain in the Markdown include files and can be
+expanded in the browser. Printed CV output includes the complete lists.
+
+The research resume is rendered at `/resume/`, uses an explicit print page
+break, and is intended to be printed or saved as PDF from the browser.
 
 The live page at `cv/index.html` loads these Markdown sources in the browser.
 
@@ -32,8 +40,9 @@ Do not hand-edit or commit generated CV artifacts, including:
 - PDFs generated from the CV
 
 The old Pandoc build path is retired. Do not run Pandoc or wkhtmltopdf for the
-CV. If a PDF is needed, open the rendered CV page and use the browser's
-Print/Save as PDF command.
+CV or resume. If a PDF is needed, open the rendered browser page and use
+Print/Save as PDF. Do not generate or maintain separate publication,
+presentation, CV, or resume PDFs.
 
 ## Human workflow
 
