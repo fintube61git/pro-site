@@ -159,7 +159,7 @@ applications do not implement or validate AST.
 - Contributed to posters, presentations, book chapters, and peer-reviewed
   publications.
 
-## SOCIOTECHNICAL RISK, REGULATION, AND GOVERNANCE
+## APPLIED, RISK, AND GOVERNANCE EXPERIENCE
 
 ### Independent Consultant | Selected Engagements
 **2009 – Present (intermittent)**
@@ -192,13 +192,14 @@ applications do not implement or validate AST.
 - Monitored emerging technology regulation and advised executive management on
   institutional risk.
 
-## CLINICAL EXPERIENCE
+## APPLIED CLINICAL EXPERIENCE
 
 ### Licensed Psychologist | Existenz Psychotherapy, LLC
 **July 2022 – Present | Eugene, Oregon | Telehealth**
 
-- Maintain a limited outpatient practice providing trauma-informed,
-  evidence-based psychotherapy and assessment.
+- Maintain a limited Oregon telehealth practice requiring high-stakes clinical
+  judgment, risk assessment, privacy, documentation, and ethical handling of
+  sensitive narratives.
 - Conduct intake, diagnosis, treatment planning, risk assessment, and
   readiness evaluations for gender-affirming care.
 - Apply high-stakes interviewing, ethical judgment, privacy safeguards, and
