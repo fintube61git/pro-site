@@ -26,7 +26,7 @@ The canonical sources are `cv.md`, `cv/publications.md`, and
 from `resume.md` and rendered at `/resume/`. Previewing never publishes.
 
 Do not maintain generated CV, publication-list, presentation-list, or resume
-PDFs. Use the browser's Print/Save as PDF function when a PDF is needed.
+PDFs. Use the browser's built-in print command when printed output is needed.
 
 ## Quick Deploy (GitHub Pages)
 

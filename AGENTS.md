@@ -13,8 +13,8 @@
 - Never stage or commit local preview artifacts.
 - Do NOT use pandoc or wkhtmltopdf as a CV PDF pipeline.
 - The browser-native two-page resume is `resume.md` rendered at `/resume/`.
-- If a PDF is needed, open the CV or resume page in a browser and use
-  Print/Save as PDF.
+- If printed output is needed, open the CV or resume page in a browser and use
+  the browser's built-in print command.
 - Do not troubleshoot PDF toolchains unless Dawson explicitly reverses this decision in the current session.
 
 ## Deployment Preference (Dawson)

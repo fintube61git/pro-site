@@ -26,7 +26,7 @@ The complete canonical lists remain in the Markdown include files and can be
 expanded in the browser. Printed CV output includes the complete lists.
 
 The research resume is rendered at `/resume/`, uses an explicit print page
-break, and is intended to be printed or saved as PDF from the browser.
+break, and is intended to be printed from the browser.
 
 The live page at `cv/index.html` loads these Markdown sources in the browser.
 
@@ -40,9 +40,9 @@ Do not hand-edit or commit generated CV artifacts, including:
 - PDFs generated from the CV
 
 The old Pandoc build path is retired. Do not run Pandoc or wkhtmltopdf for the
-CV or resume. If a PDF is needed, open the rendered browser page and use
-Print/Save as PDF. Do not generate or maintain separate publication,
-presentation, CV, or resume PDFs.
+CV or resume. If printed output is needed, open the rendered browser page and
+use the browser's built-in print command. Do not generate or maintain separate
+publication, presentation, CV, or resume PDFs.
 
 ## Human workflow
 
