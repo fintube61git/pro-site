@@ -52,15 +52,14 @@
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../js/markdown.js"></script>
   <script>
     (async function () {
       const root = document.getElementById("resume-content");
       try {
         const response = await fetch("/resume.md", { cache: "no-store" });
         if (!response.ok) throw new Error("Could not load resume source.");
-        marked.setOptions({ gfm: true, breaks: false });
-        root.innerHTML = marked.parse(await response.text());
+        root.innerHTML = window.TdwMarkdown.render(await response.text());
       } catch (err) {
         root.textContent = "Could not load resume.";
         console.error(err);

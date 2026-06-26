@@ -3,6 +3,14 @@
 This is the canonical workflow for updating the CV published at
 <https://www.tdawsonwoodrum.com/cv/>.
 
+For any CV/resume change that also affects public claims, profile metadata,
+publication status, project evidence, roles, credentials, or links, also run
+the CAREER workspace profile sweep:
+
+```text
+C:\Users\Dawson\dev\CAREER\04_PROFILES\cv_profile_sweep_workflow.md
+```
+
 The governing sequence is:
 
 > Edit → Test → Preview → Human approval → Commit → Push → Verify live
