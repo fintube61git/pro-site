@@ -1,3 +1,4 @@
+- Woodrum, T. D. (2026). *Undue influence as dynamic constraint of agency-space: A mechanism-level theory of conscious agency under control* [Preprint]. PsyArXiv. <https://osf.io/preprints/psyarxiv/hjwp3>
 - Daniolos, P., & Woodrum, T. D. (2024). Gay Fathers. In *Fatherhood Scenarios* (pp. 235-254). Routledge.
 - Woodrum, T. D., Mizock, L., Vivian, J., Ormerod, A. J., & dickey, l. m. (2024). Demoralization among TGD individuals: Distinctness from depression and associations with community connectedness and well-being. *Stigma and Health, 9*(1), 39–47. <https://doi.org/10.1037/sah0000311>
 - Woodrum, T. D., Owens, T., & Mizock, L. (2020). Culture, transgender individuals, and mental health. In Moodley, R. & Lee, E. (Eds.), *The Routledge International Handbook of Race, Culture and Mental Health*. Routledge. <https://doi.org/10.4324/9781315276168>

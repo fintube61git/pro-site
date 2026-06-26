@@ -64,8 +64,8 @@ Open to research roles, consulting, and collaborations.
    undue influence.
 2. **Agency-Space Theory** — *Undue Influence as Dynamic Constraint of
    Agency-Space: A Mechanism-Level Theory of Conscious Agency Under Control*,
-   submitted to *New Ideas in Psychology*. Manuscript and supporting OSF
-   materials are embargoed.
+   public PsyArXiv preprint; journal submission pending at *New Ideas in
+   Psychology*.
 3. **Agency constriction content-analysis project** — provenance-controlled
    empirical study testing descriptive entailments of Agency-Space Theory in
    first-person coercion and undue-influence narratives; in development.
