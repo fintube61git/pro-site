@@ -21,11 +21,15 @@
 <body>
   <main id="main" class="section">
     <div class="container">
+      <nav class="cv-actions" aria-label="CV actions">
+        <a href="/resume/">View two-page resume</a>
+        <button type="button" onclick="window.print()">Print CV</button>
+      </nav>
       <article id="cv-content" aria-live="polite">Loading CV...</article>
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../js/markdown.js"></script>
   <script>
     (function () {
       function slugify(text) {
@@ -157,8 +161,7 @@
           }
 
           const expandedMd = expanded.join("\n");
-          marked.setOptions({ gfm: true, breaks: false });
-          root.innerHTML = marked.parse(expandedMd);
+          root.innerHTML = window.TdwMarkdown.render(expandedMd);
           applyHeadingIds(root);
           applyKnownSectionIds(root);
           collapseLongSection(root, "publications", 5);
