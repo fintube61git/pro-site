@@ -83,7 +83,13 @@ sociotechnical systems shape human agency, judgment, and behavior.
   missed risk, false alarms, fabrication, diagnostic overreach, unsafe
   validation, scope failures, and contextual misinterpretation.
 
-## SELECTED SOCIOTECHNICAL RISK AND GOVERNANCE EXPERIENCE
+## SELECTED APPLIED, RISK, AND GOVERNANCE EXPERIENCE
+
+### Licensed Psychologist | Clinical Practice | July 2022–Present
+
+- Maintain an Oregon telehealth practice requiring high-stakes clinical
+  judgment, risk assessment, privacy, documentation, and ethical handling of
+  sensitive narratives.
 
 ### Independent Consultant | Selected Engagements | 2009–Present, intermittent
 

@@ -221,6 +221,8 @@ class CvWorkflowTests(unittest.TestCase):
         self.assertIn("View complete ", cv_page)
         self.assertIn('fetch("/resume.md"', resume_page)
         self.assertIn("window.print()", resume_page)
+        self.assertIn("Print resume", resume_page)
+        self.assertNotIn("Print or save as PDF", resume_page)
         self.assertIn("ProfilePage", resume_page)
         self.assertIn("human evaluation", resume_page)
         self.assertIn('class="resume-page-break"', resume_source)
