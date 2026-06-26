@@ -1,3 +1,4 @@
+import json
 import re
 import unittest
 from pathlib import Path
@@ -224,6 +225,18 @@ class CvWorkflowTests(unittest.TestCase):
         self.assertIn("Print resume", resume_page)
         self.assertNotIn("Print or save as PDF", resume_page)
         self.assertIn("ProfilePage", resume_page)
+        json_ld = re.search(
+            r'<script type="application/ld\+json">\s*(\{.*?\})\s*</script>',
+            resume_page,
+            re.DOTALL,
+        )
+        self.assertIsNotNone(json_ld)
+        profile_data = json.loads(json_ld.group(1))
+        self.assertEqual(profile_data["@type"], "ProfilePage")
+        self.assertIn("mainEntity", profile_data)
+        self.assertNotIn("about", profile_data)
+        self.assertEqual(profile_data["mainEntity"]["@type"], "Person")
+        self.assertEqual(profile_data["mainEntity"]["name"], "T. Dawson Woodrum, PhD, JD")
         self.assertIn("human evaluation", resume_page)
         self.assertIn('class="resume-page-break"', resume_source)
         self.assertIn("break-before:page", css)
