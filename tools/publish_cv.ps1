@@ -32,6 +32,7 @@ $allowedFiles = @(
     "tests/e2e/application-export.spec.ts",
     "tests/e2e/navigation.spec.ts",
     "tools/publish_cv.ps1",
+    "tools/cv-tool.ps1",  # Add new tool to allowed files
     "docs/CV_UPDATE_WORKFLOW.md",
     "README.md",
     "AGENTS.md"

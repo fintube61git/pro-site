@@ -54,7 +54,26 @@ publication, presentation, CV, or resume PDFs.
 
 ## Human workflow
 
-From the repository root:
+Use the unified `cv-tool` for most operations:
+
+```powershell
+# Edit CV content
+.\tools\cv-tool.ps1 edit cv
+.\tools\cv-tool.ps1 edit pubs
+.\tools\cv-tool.ps1 edit pres
+
+# Preview changes
+.\tools\cv-tool.ps1 preview
+
+# Publish approved changes
+.\tools\cv-tool.ps1 publish
+
+# Update common fields (phone, license)
+.\tools\cv-tool.ps1 phone
+.\tools\cv-tool.ps1 license
+```
+
+Alternatively, you can use the original manual workflow:
 
 1. Edit the appropriate Markdown source file.
 2. Run:
@@ -84,7 +103,17 @@ it.
 
 ## AI-agent workflow
 
-An AI agent working on the CV must:
+An AI agent working on the CV should use the `cv-tool` when possible:
+
+```powershell
+# After making edits
+.\tools\cv-tool.ps1 preview
+
+# After approval
+.\tools\cv-tool.ps1 publish
+```
+
+For full compliance, agents must:
 
 1. Read this file and `AGENTS.md` before editing.
 2. Inspect the current Git status and preserve unrelated work.
