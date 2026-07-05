@@ -3,6 +3,9 @@
 This is the canonical workflow for updating the CV published at
 <https://www.tdawsonwoodrum.com/cv/>.
 
+For quick human reminders about common website updates, start with
+`START_HERE.md`.
+
 For any CV/resume change that also affects public claims, profile metadata,
 publication status, project evidence, roles, credentials, or links, also run
 the CAREER workspace profile sweep:
@@ -67,10 +70,6 @@ Use the unified `cv-tool` for most operations:
 
 # Publish approved changes
 .\tools\cv-tool.ps1 publish
-
-# Update common fields (phone, license)
-.\tools\cv-tool.ps1 phone
-.\tools\cv-tool.ps1 license
 ```
 
 Alternatively, you can use the original manual workflow:
@@ -121,7 +120,9 @@ For full compliance, agents must:
 4. Run `python run_tests.py`.
 5. Run `.\tools\preview_cv.ps1` and present the preview for human review.
 6. Stop and wait for explicit publication approval.
-7. After approval, run `.\tools\publish_cv.ps1 -ConfirmPublish`.
+7. After approval, run `.\tools\cv-tool.ps1 publish` or
+   `.\tools\publish_cv.ps1`, then type `PUBLISH` only when the reviewed diff is
+   correct.
 8. Verify that local `HEAD` and `origin/main` match and confirm the updated
    source exists on GitHub.
 9. Verify the public CV after GitHub Pages has refreshed.
@@ -176,8 +177,7 @@ The publish command:
 - runs all repository tests;
 - fetches `origin/main` and refuses divergent or stale branch state;
 - shows the exact CV diff;
-- requires the human to type `PUBLISH`, unless `-ConfirmPublish` was supplied
-  by an agent after explicit approval;
+- requires the human to type `PUBLISH`;
 - stages only the authoritative CV source files;
 - commits and pushes directly to `origin/main`.
 

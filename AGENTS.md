@@ -9,7 +9,8 @@
 - Use `tools/preview_cv.ps1` for tests and human review.
 - Editing or previewing is not permission to publish.
 - Stop after preview and wait for explicit publication approval.
-- Only after explicit approval, use `tools/publish_cv.ps1 -ConfirmPublish`.
+- Only after explicit approval, use `tools/publish_cv.ps1` or
+  `tools/cv-tool.ps1 publish`, and require the typed `PUBLISH` confirmation.
 - Never stage or commit local preview artifacts.
 - Do NOT use pandoc or wkhtmltopdf as a CV PDF pipeline.
 - The browser-native two-page resume is `resume.md` rendered at `/resume/`.
