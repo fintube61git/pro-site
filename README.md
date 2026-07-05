@@ -2,12 +2,19 @@
 
 This repo is a clean, static starter intended to deploy in minutes on GitHub Pages—no frameworks, no build step.
 
+## Small Updates
+
+Start with [START_HERE.md](START_HERE.md). It lists the common edits, the file
+to change, the tests to run, and the reminder that nothing goes live until
+`main` is pushed.
+
 ## Updating the CV
 
 The CV has a verify-before-publish workflow designed for both humans and AI
 agents.
 
-Start with [docs/CV_UPDATE_WORKFLOW.md](docs/CV_UPDATE_WORKFLOW.md).
+Start with [START_HERE.md](START_HERE.md), then use
+[docs/CV_UPDATE_WORKFLOW.md](docs/CV_UPDATE_WORKFLOW.md) for the full CV rules.
 
 The short version:
 
