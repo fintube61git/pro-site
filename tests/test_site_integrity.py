@@ -1,6 +1,7 @@
 import json
 import re
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -277,6 +278,49 @@ class CvWorkflowTests(unittest.TestCase):
         self.assertIn("docs/CV_UPDATE_WORKFLOW.md", readme)
         self.assertIn("docs/CV_UPDATE_WORKFLOW.md", agents)
         self.assertIn("wait for explicit publication approval", agents)
+
+
+class SeoIndexingTests(unittest.TestCase):
+    def test_sitemap_lists_only_canonical_indexable_urls(self) -> None:
+        sitemap = ET.parse(REPO_ROOT / "sitemap.xml")
+        namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        locs = [node.text for node in sitemap.findall(".//sm:loc", namespace)]
+
+        self.assertGreater(len(locs), 0)
+        for loc in locs:
+            with self.subTest(loc=loc):
+                self.assertTrue(loc.startswith("https://www.tdawsonwoodrum.com/"))
+                self.assertNotIn("/index.html", loc)
+                self.assertNotEqual(loc, "https://www.tdawsonwoodrum.com/services.html")
+                self.assertNotIn("/cv.html", loc)
+
+    def test_legacy_services_stub_points_crawlers_to_canonical_page(self) -> None:
+        text = read_text(REPO_ROOT / "services.html")
+
+        self.assertIn('<meta name="robots" content="noindex,follow">', text)
+        self.assertIn(
+            '<link rel="canonical" href="https://www.tdawsonwoodrum.com/practice/services.html">',
+            text,
+        )
+        self.assertIn('url=practice/services.html', text)
+        self.assertIn('location.replace("practice/services.html")', text)
+
+    def test_practice_landing_remains_searchable_for_legacy_clinical_domain(self) -> None:
+        sitemap = read_text(REPO_ROOT / "sitemap.xml")
+        practice = read_text(REPO_ROOT / "practice" / "index.html")
+
+        self.assertIn("https://www.tdawsonwoodrum.com/practice/", sitemap)
+        self.assertIn('<link rel="canonical" href="https://www.tdawsonwoodrum.com/practice/">', practice)
+        self.assertNotRegex(practice, r'<meta\s+name="robots"\s+content="[^"]*noindex')
+        self.assertIn("Existenz Psych", practice)
+        self.assertIn("Oregon telehealth psychotherapy", practice)
+
+    def test_robots_allows_retired_urls_to_be_crawled_for_cleanup(self) -> None:
+        text = read_text(REPO_ROOT / "robots.txt")
+
+        self.assertIn("Allow: /", text)
+        self.assertNotIn("Disallow: /cv.html", text)
+        self.assertIn("Sitemap: https://www.tdawsonwoodrum.com/sitemap.xml", text)
 
 
 if __name__ == "__main__":
