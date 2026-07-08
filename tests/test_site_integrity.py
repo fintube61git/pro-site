@@ -112,6 +112,8 @@ class WebsiteIntegrityTests(unittest.TestCase):
         self.assertIn("Couples Therapy", services)
         self.assertIn("Couples psychotherapy", services)
         self.assertIn("Couples therapy: $250 per session", fees)
+        self.assertIn("Payment accepted: credit card only", fees)
+        self.assertNotIn("Payment accepted: cash, check", fees)
         self.assertIn("individual and couples psychotherapy", fees)
         self.assertIn("individuals and couples", faq)
         self.assertIn("Religious trauma", services)
