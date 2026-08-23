@@ -1,3 +1,4 @@
+- Woodrum, T. D. (2026). *A pre-registered, benchmark-tested method for finding structure in first-person narratives, and its mostly negative results in accounts of coercion and undue influence.* SSRN. <https://doi.org/10.2139/ssrn.7037918>
 - Woodrum, T. D. (2026). *Undue influence as dynamic constraint of agency-space: A mechanism-level theory of conscious agency under control* [Preprint]. PsyArXiv. <https://osf.io/preprints/psyarxiv/hjwp3>
 - Daniolos, P., & Woodrum, T. D. (2024). Gay Fathers. In *Fatherhood Scenarios* (pp. 169-188). Routledge. <https://doi.org/10.4324/9781003474579-15>
 - Woodrum, T. D., Mizock, L., Vivian, J., Ormerod, A. J., & dickey, l. m. (2024). Demoralization among TGD individuals: Distinctness from depression and associations with community connectedness and well-being. *Stigma and Health, 9*(1), 39–47. <https://doi.org/10.1037/sah0000311>

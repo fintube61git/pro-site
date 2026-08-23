@@ -57,8 +57,7 @@ Open to research roles, consulting, and collaborations.
 
 ### Current Projects and Manuscripts
 
-1. **Reproducible text-analysis methods project** — empirical and methods
-   manuscript submitted to *Behavior Research Methods*. The project develops
+1. **Reproducible text-analysis methods paper** — *A pre-registered, benchmark-tested method for finding structure in first-person narratives, and its mostly negative results in accounts of coercion and undue influence*, published on SSRN. The paper develops
    provenance-controlled corpus construction, benchmark gating, falsification
    logic, and reproducible analysis for first-person narratives of coercion and
    undue influence.

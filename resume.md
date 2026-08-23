@@ -49,8 +49,9 @@ sociotechnical systems shape human agency, judgment, and behavior.
   adjudication, nominal Krippendorff's alpha, bootstrap confidence intervals,
   and scripted manuscript generation.
 - Developed Agency-Space Theory as the mechanism-level framework being
-  operationalized and tested; posted public PsyArXiv theory preprint and
-  submitted methods manuscript to *Behavior Research Methods*.
+  operationalized and tested; posted a public PsyArXiv theory preprint and
+  published a pre-registered, benchmark-tested text-analysis methods paper on
+  SSRN.
 
 ### Independent Human Evaluator | Leading AI Laboratory | January–February 2026
 
@@ -111,8 +112,8 @@ sociotechnical systems shape human agency, judgment, and behavior.
 
 ## SELECTED PUBLICATIONS AND MANUSCRIPTS
 
-- Reproducible text-analysis methods manuscript. Submitted to *Behavior
-  Research Methods*.
+- Woodrum, T. D. (2026). *A pre-registered, benchmark-tested method for finding structure in first-person narratives, and its mostly negative results in accounts of coercion and undue influence.* SSRN.
+  <https://doi.org/10.2139/ssrn.7037918>
 - Woodrum, T. D. (2026). *Undue influence as dynamic constraint of
   agency-space: A mechanism-level theory of conscious agency under control*.
   PsyArXiv preprint. https://osf.io/preprints/psyarxiv/hjwp3
