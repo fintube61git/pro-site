@@ -57,15 +57,18 @@ Open to research roles, consulting, and collaborations.
 
 ### Current Projects and Manuscripts
 
-1. **Reproducible text-analysis methods paper** — *A pre-registered, benchmark-tested method for finding structure in first-person narratives, and its mostly negative results in accounts of coercion and undue influence*, published on SSRN. The paper develops
+1. **Predatory publishing study** — *Platform-Era Predatory Publishing in Psychology: Distinguishing Solicitation Exposure From Post-Rejection Susceptibility*, a preprint posted on SSRN. The study examines the
+   distinction between exposure to predatory-journal solicitations and
+   susceptibility following manuscript rejection.
+2. **Reproducible text-analysis methods paper** — *A pre-registered, benchmark-tested method for finding structure in first-person narratives, and its mostly negative results in accounts of coercion and undue influence*, a preprint posted on SSRN. The paper develops
    provenance-controlled corpus construction, benchmark gating, falsification
    logic, and reproducible analysis for first-person narratives of coercion and
    undue influence.
-2. **Agency-Space Theory** — *Undue Influence as Dynamic Constraint of
+3. **Agency-Space Theory** — *Undue Influence as Dynamic Constraint of
    Agency-Space: A Mechanism-Level Theory of Conscious Agency Under Control*,
    public PsyArXiv preprint; journal submission pending at *New Ideas in
    Psychology*.
-3. **Agency constriction content-analysis project** — provenance-controlled
+4. **Agency constriction content-analysis project** — provenance-controlled
    empirical study testing descriptive entailments of Agency-Space Theory in
    first-person coercion and undue-influence narratives; in development.
 
