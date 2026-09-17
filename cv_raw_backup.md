@@ -42,7 +42,7 @@ JD (Law) 1991 The University of Michigan Law School, Ann Arbor, MI
 
 LICENSURE
 
-Oregon Psychologist License 3497 (Issued 22FEB2022; Expires 31OCT2026)
+Oregon Psychologist License 3497 (Issued 02FEB2022; Expires 31OCT2028)
 
 NPI: 1154872562
 
@@ -324,7 +324,7 @@ White Ally Toolkit Training – Dr. David Campt, PhD (2019)
 
 PROFESSIONAL MEMBERSHIPS AND CERTIFICATIONS
 
-Certified Clinical Trauma Professional Level 2 (CCTP-II) Certification
+Certified Clinical Trauma Professional Level 2 (CCTP-II), Evergreen Certifications, certification 640798; expires August 18, 2028
 American Psychological Association
 • Division 44 (Society for the Psychology of Sexual Orientation and Gender Diversity)
 • Division 32 (Society for Humanistic Psychology)
