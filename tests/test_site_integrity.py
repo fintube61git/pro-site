@@ -133,7 +133,7 @@ class WebsiteIntegrityTests(unittest.TestCase):
             text,
         )
         self.assertIn(
-            "Oregon License #3497, exp. 10/31/26",
+            "Oregon License #3497, exp. 10/31/28",
             text,
         )
 

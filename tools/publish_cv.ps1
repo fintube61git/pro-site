@@ -12,6 +12,7 @@ $ErrorActionPreference = "Stop"
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $allowedFiles = @(
     "cv.md",
+    "cv_raw_backup.md",
     "cv/publications.md",
     "cv/presentations.md",
     "cv/index.html",

@@ -293,8 +293,8 @@ applications do not implement or validate AST.
 
 ## LICENSURE
 
-- Oregon Psychologist License 3497, issued February 22, 2022; current
-  expiration listed as October 31, 2026
+- Oregon Psychologist License 3497, issued February 2, 2022;
+  expires October 31, 2028
 
 ## PROFESSIONAL DEVELOPMENT
 
@@ -305,7 +305,8 @@ applications do not implement or validate AST.
 
 ## PROFESSIONAL MEMBERSHIPS AND CERTIFICATIONS
 
-- Certified Clinical Trauma Professional, Level 2
+- Certified Clinical Trauma Professional, Level 2 (CCTP-II), Evergreen
+  Certifications, certification 640798; expires August 18, 2028
 - American Psychological Association
   - Division 44, Society for the Psychology of Sexual Orientation and Gender
     Diversity
