@@ -29,6 +29,10 @@ sociotechnical systems shape human agency, judgment, and behavior. I turn
 difficult human questions into defensible constructs, governed datasets,
 repeatable evaluation protocols, and auditable results.
 
+I am an Institute for Social Innovation Fellow at Fielding Graduate University,
+where my project examines agency constraints during and after membership in
+controlling groups.
+
 My work combines psychology and law with extensive experience in regulated
 health technology, software quality, privacy, security, and institutional
 risk. My current research uses provenance-controlled textual corpora,
@@ -39,6 +43,20 @@ environments alter perceived options and action.
 Open to research roles, consulting, and collaborations.
 
 ## CURRENT RESEARCH PROGRAM
+
+### Institute for Social Innovation Fellow at Fielding Graduate University
+**October 2026–Present**
+
+One-year renewable research appointment.
+
+Project: *From Control Practices to Agency-Space: Measuring What Controlling Groups Do Inside a Person*
+
+- Develop and test a new measure of how membership in a controlling group
+  narrows what a person can see, bear, and act on, including whether those
+  constraints persist after leaving.
+- Design an anonymous online survey of approximately 300 former group members
+  to examine whether the new measure contributes information beyond existing
+  measures of group conduct and post-exit difficulties.
 
 ### Independent Researcher
 **August 2020 – Present**
@@ -66,8 +84,7 @@ Open to research roles, consulting, and collaborations.
    undue influence.
 3. **Agency-Space Theory** — *Undue Influence as Dynamic Constraint of
    Agency-Space: A Mechanism-Level Theory of Conscious Agency Under Control*,
-   public PsyArXiv preprint; journal submission pending at *New Ideas in
-   Psychology*.
+   public PsyArXiv preprint.
 4. **Agency constriction content-analysis project** — provenance-controlled
    empirical study testing descriptive entailments of Agency-Space Theory in
    first-person coercion and undue-influence narratives; in development.
@@ -308,8 +325,5 @@ applications do not implement or validate AST.
 - Certified Clinical Trauma Professional, Level 2 (CCTP-II), Evergreen
   Certifications, certification 640798; expires August 18, 2028
 - American Psychological Association
-  - Division 44, Society for the Psychology of Sexual Orientation and Gender
-    Diversity
-  - Division 32, Society for Humanistic Psychology
 - Oregon Psychological Association
 - Psi Chi International Honor Society in Psychology

@@ -37,6 +37,13 @@ sociotechnical systems shape human agency, judgment, and behavior.
 
 ## SELECTED RESEARCH AND EVALUATION EXPERIENCE
 
+### Institute for Social Innovation Fellow at Fielding Graduate University
+**October 2026–Present**
+
+- Develop and test a new measure of agency constraints during and after
+  membership in controlling groups, using a planned anonymous survey of
+  approximately 300 former members.
+
 ### Independent Researcher | August 2020–Present
 
 - Lead an interdisciplinary empirical program investigating how coercive and
