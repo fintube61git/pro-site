@@ -4,7 +4,8 @@
 
 **Interdisciplinary Empirical Researcher | Human Evaluation & Sociotechnical Research**
 
-Pacific Northwest, United States | Remote preferred; open to West Coast or Northeast opportunities  
+Pacific Northwest, United States | Remote preferred; open to West Coast or Northeast opportunities
+
 [Email](mailto:dawson@tdawsonwoodrum.com) |
 [Website](https://tdawsonwoodrum.com) |
 [LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum) |
