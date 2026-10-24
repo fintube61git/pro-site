@@ -44,7 +44,7 @@ test("home links to cv sections", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 2, name: "What I Work On" })).toBeVisible();
   await expect(page.getByText("Legal-Psychological Research")).toBeVisible();
   await expect(page.getByText("Psychological Technology and Assessment Tools")).toBeVisible();
-  await expect(page.getByText("Clinical Practice")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Clinical Practice", exact: true })).toBeVisible();
   await expect(page.getByText("IFS-informed psychotherapy for complex trauma")).toHaveCount(0);
 
   const cvLink = page.getByRole("link", { name: "Full CV" });
@@ -55,7 +55,7 @@ test("home links to cv sections", async ({ page }) => {
   await expect(resumeLink).toHaveAttribute("href", "resume/");
   await expect(resumeLink).toHaveAttribute("target", "_blank");
 
-  const publicationsLink = page.getByRole("link", { name: "Publications" });
+  const publicationsLink = page.getByRole("link", { name: "Publications", exact: true });
   await expect(publicationsLink).toHaveAttribute("href", "cv/#publications");
   await expect(publicationsLink).toHaveAttribute("target", "_blank");
 
@@ -70,7 +70,7 @@ test("home document links open cv and resume route targets", async ({ page, cont
   const popupFor = async (linkName: "Full CV" | "Two-page Resume" | "Publications" | "Presentations") => {
     const [popup] = await Promise.all([
       context.waitForEvent("page"),
-      page.getByRole("link", { name: linkName }).click(),
+      page.getByRole("link", { name: linkName, exact: true }).click(),
     ]);
     await popup.waitForLoadState("domcontentloaded");
     return popup;
