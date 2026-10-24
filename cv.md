@@ -12,12 +12,12 @@ Use tools/build_cv_html.ps1 to expand includes first.
 
 Pacific Northwest, United States | Remote preferred; open to West Coast or Northeast opportunities
 
-**Professional inquiries:** [dawson@tdawsonwoodrum.com](mailto:dawson@tdawsonwoodrum.com)
-
+[Email](mailto:dawson@tdawsonwoodrum.com) |
+[Website](https://tdawsonwoodrum.com) |
+[LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum) |
 [Google Scholar](https://scholar.google.com/citations?user=OvUOZvUAAAAJ&hl=en) |
 [ORCID](https://orcid.org/0000-0002-6878-4257) |
 [ResearchGate](https://www.researchgate.net/profile/T-Dawson-Woodrum) |
-[LinkedIn](https://www.linkedin.com/in/tdawsonwoodrum) |
 [Two-page research resume](/resume/)
 
 ---
