@@ -127,7 +127,7 @@ sociotechnical systems shape human agency, judgment, and behavior.
 - Woodrum, T. D., Mizock, L., Vivian, J., Ormerod, A. J., & dickey, l. m.
   (2024). Demoralization among TGD individuals: Distinctness from depression
   and associations with community connectedness and well-being. *Stigma and
-  Health, 9*(1), 39–47. https://doi.org/10.1037/sah0000311
+  Health, 9*(1), 39–47. <https://doi.org/10.1037/sah0000311>
 
 ## EDUCATION AND CREDENTIAL
 
