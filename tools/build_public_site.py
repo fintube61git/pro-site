@@ -33,7 +33,7 @@ def public_files(root: Path) -> list[str]:
         if parts[0] not in {"assets", "css", "js", "cv", "resume", "practice"} and path not in {
             ".nojekyll", "404.html", "CNAME", "about.html", "apps.html", "contact.html",
             "cv.md", "index.html", "privacy.html", "resume.md", "robots.txt",
-            "services.html", "sitemap.xml"
+            "services.html", "sitemap.xml", "research.html"
         }:
             raise ValueError(f"Nonpublic path: {path}")
         source = root / path

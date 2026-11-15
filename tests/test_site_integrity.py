@@ -2,6 +2,7 @@ import json
 import re
 import unittest
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -9,6 +10,7 @@ HTML_FILES = sorted(REPO_ROOT.glob("*.html"))
 PRIMARY_PAGES = [
     "index.html",
     "about.html",
+    "research.html",
     "apps.html",
     "contact.html",
     "privacy.html",
@@ -17,6 +19,7 @@ PRIMARY_PAGES = [
 PROFESSIONAL_ANALYTICS_PAGES = [
     "index.html",
     "about.html",
+    "research.html",
     "apps.html",
     "contact.html",
     "privacy.html",
@@ -91,7 +94,8 @@ class WebsiteIntegrityTests(unittest.TestCase):
         text = read_text(REPO_ROOT / "privacy.html")
         self.assertIn("Professional Contact", text)
         self.assertIn("dawson@tdawsonwoodrum.com", text)
-        self.assertIn("Psychology Today", text)
+        self.assertNotIn("Psychology Today", text)
+        self.assertNotIn("/practice/", text)
         self.assertNotIn("Contact Form", text)
         self.assertNotIn("web forms", text)
 
@@ -167,10 +171,8 @@ class WebsiteIntegrityTests(unittest.TestCase):
         self.assertNotIn("Private pay", main_contact)
         self.assertNotIn("Insurance (Neuvoa Counseling)", main_contact)
         self.assertNotIn("https://hushforms.com/existenzpsych", main_contact)
-        self.assertIn(
-            "https://www.psychologytoday.com/us/therapists/t-dawson-woodrum-eugene-or/944087",
-            main_contact,
-        )
+        self.assertIn('href="https://existenzpsych.com/"', main_contact)
+        self.assertNotIn("psychologytoday.com", main_contact)
 
     def test_cv_contact_line_has_no_phone_number(self) -> None:
         cv_source = read_text(REPO_ROOT / "cv.md")
@@ -257,11 +259,11 @@ class CvWorkflowTests(unittest.TestCase):
         sitemap = read_text(REPO_ROOT / "sitemap.xml")
         self.assertIn("https://www.tdawsonwoodrum.com/resume/", sitemap)
 
-    def test_clinical_site_is_indexable_but_not_promoted_from_home(self) -> None:
+    def test_clinical_site_stays_accessible_outside_professional_sitemap(self) -> None:
         sitemap = read_text(REPO_ROOT / "sitemap.xml")
         home = read_text(REPO_ROOT / "index.html")
         practice = read_text(REPO_ROOT / "practice" / "index.html")
-        self.assertIn("https://www.tdawsonwoodrum.com/practice/", sitemap)
+        self.assertNotIn("/practice/", sitemap)
         self.assertIn("Oregon telehealth psychotherapy", practice)
         self.assertIn("Psychologist", practice)
         self.assertNotIn('href="practice/', home)
@@ -269,6 +271,44 @@ class CvWorkflowTests(unittest.TestCase):
 
 
 class SeoIndexingTests(unittest.TestCase):
+    def test_professional_links_have_one_explicit_clinical_exception(self) -> None:
+        class URLs(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.values = []
+
+            def handle_starttag(self, tag, attrs):
+                self.values.extend(value for name, value in attrs if name in {"href", "src", "action"} and value)
+
+        clinical_links = []
+        pages = PRIMARY_PAGES + ["cv/index.html", "resume/index.html"]
+        for name in pages:
+            text = read_text(REPO_ROOT / name)
+            parser = URLs()
+            parser.feed(text)
+            for url in parser.values:
+                if any(term in url.lower() for term in ["/practice/", "practice/", "psychologytoday.com", "hushforms.com", "existenzpsych.com"]):
+                    clinical_links.append((name, url))
+            # Structured-data referrals are also links, even when not visible.
+            for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
+                self.assertIsInstance(json.loads(raw), dict)
+                self.assertNotRegex(raw, r"practice/|psychologytoday\.com|existenzpsych\.com")
+        self.assertEqual(clinical_links, [("contact.html", "https://existenzpsych.com/")])
+
+    def test_professional_metadata_and_research_discovery(self) -> None:
+        descriptions = []
+        for name in PROFESSIONAL_ANALYTICS_PAGES:
+            text = read_text(REPO_ROOT / name)
+            description = re.search(r'<meta name="description" content="([^"]+)"', text)[1]
+            descriptions.append(description)
+            self.assertIn('href="research.html"', text)
+            self.assertEqual(len(re.findall(r'<h1[ >]', text)), 1)
+            self.assertIn('https://www.tdawsonwoodrum.com/' + (name if name != "index.html" else ""), text)
+        self.assertEqual(len(set(descriptions)), len(descriptions))
+        sitemap = read_text(REPO_ROOT / "sitemap.xml")
+        self.assertIn("https://www.tdawsonwoodrum.com/research.html", sitemap)
+        self.assertNotIn("/practice/", sitemap)
+
     def test_sitemap_lists_only_canonical_indexable_urls(self) -> None:
         sitemap = ET.parse(REPO_ROOT / "sitemap.xml")
         namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -297,7 +337,7 @@ class SeoIndexingTests(unittest.TestCase):
         sitemap = read_text(REPO_ROOT / "sitemap.xml")
         practice = read_text(REPO_ROOT / "practice" / "index.html")
 
-        self.assertIn("https://www.tdawsonwoodrum.com/practice/", sitemap)
+        self.assertNotIn("/practice/", sitemap)
         self.assertIn('<link rel="canonical" href="https://www.tdawsonwoodrum.com/practice/">', practice)
         self.assertNotRegex(practice, r'<meta\s+name="robots"\s+content="[^"]*noindex')
         self.assertIn("Existenz Psych", practice)
