@@ -198,13 +198,6 @@ class CvWorkflowTests(unittest.TestCase):
         include_count = len(re.findall(r"\{\{<\s*include\s+[^>]+>\}\}", text))
         self.assertGreaterEqual(include_count, 2)
 
-    def test_canonical_cv_workflow_is_documented(self) -> None:
-        workflow = read_text(REPO_ROOT / "docs" / "CV_UPDATE_WORKFLOW.md")
-        self.assertIn("Edit → Test → Preview → Human approval → Commit → Push → Verify live", workflow)
-        self.assertIn("cv/publications.md", workflow)
-        self.assertIn("cv/presentations.md", workflow)
-        self.assertIn("explicit publication approval", workflow)
-
     def test_cv_workflow_scripts_exist(self) -> None:
         preview_script = read_text(REPO_ROOT / "tools" / "preview_cv.ps1")
         publish_script = read_text(REPO_ROOT / "tools" / "publish_cv.ps1")
@@ -273,13 +266,6 @@ class CvWorkflowTests(unittest.TestCase):
         self.assertIn("Psychologist", practice)
         self.assertNotIn('href="practice/', home)
         self.assertNotIn('href="/practice/', home)
-
-    def test_readme_and_agent_instructions_link_canonical_workflow(self) -> None:
-        readme = read_text(REPO_ROOT / "README.md")
-        agents = read_text(REPO_ROOT / "AGENTS.md")
-        self.assertIn("docs/CV_UPDATE_WORKFLOW.md", readme)
-        self.assertIn("docs/CV_UPDATE_WORKFLOW.md", agents)
-        self.assertIn("wait for explicit publication approval", agents)
 
 
 class SeoIndexingTests(unittest.TestCase):

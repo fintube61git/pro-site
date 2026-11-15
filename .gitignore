@@ -18,3 +18,13 @@ test-results/
 # Local tooling artifacts (do not commit)
 tools/existenz-*.html
 
+# Private local instructions and retired source backups
+AGENTS.md
+START_HERE.md
+docs/
+cv_raw_backup.md
+
+# Public build output
+_site/
+.public-build-*/
+

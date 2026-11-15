@@ -12,7 +12,6 @@ $ErrorActionPreference = "Stop"
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $allowedFiles = @(
     "cv.md",
-    "cv_raw_backup.md",
     "cv/publications.md",
     "cv/presentations.md",
     "cv/index.html",
@@ -34,9 +33,8 @@ $allowedFiles = @(
     "tests/e2e/navigation.spec.ts",
     "tools/publish_cv.ps1",
     "tools/cv-tool.ps1",  # Add new tool to allowed files
-    "docs/CV_UPDATE_WORKFLOW.md",
     "README.md",
-    "AGENTS.md"
+    "public-files.json"
 )
 
 function Invoke-Git {
