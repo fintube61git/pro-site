@@ -1,11 +1,5 @@
 <a id="cv"></a>
 
-<!--
-IMPORTANT:
-Do NOT run pandoc directly on this file.
-Use tools/build_cv_html.ps1 to expand includes first.
--->
-
 # T. Dawson Woodrum, PhD, JD
 
 **Interdisciplinary Empirical Researcher | Human Evaluation & Sociotechnical Research**

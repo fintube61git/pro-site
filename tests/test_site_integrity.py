@@ -14,19 +14,12 @@ PRIMARY_PAGES = [
     "privacy.html",
     "404.html",
 ]
-GA4_REQUIRED_PAGES = [
+PROFESSIONAL_ANALYTICS_PAGES = [
     "index.html",
     "about.html",
     "apps.html",
     "contact.html",
     "privacy.html",
-    "practice/index.html",
-    "practice/approach.html",
-    "practice/services.html",
-    "practice/fees-policies.html",
-    "practice/faq.html",
-    "practice/contact.html",
-    "practice/privacy.html",
 ]
 
 
@@ -60,13 +53,20 @@ class WebsiteIntegrityTests(unittest.TestCase):
             with self.subTest(page=page):
                 self.assertIn('src="js/main.js"', text, f"{page} missing js/main.js")
 
-    def test_ga4_config_has_privacy_options(self) -> None:
-        for page in GA4_REQUIRED_PAGES:
+    def test_professional_pages_load_only_the_local_consent_controller(self) -> None:
+        for page in PROFESSIONAL_ANALYTICS_PAGES:
             text = read_text(REPO_ROOT / page)
             with self.subTest(page=page):
-                self.assertIn("G-1TZ12XRFQ9", text, f"{page} missing GA4 measurement ID")
-                self.assertIn("anonymize_ip: true", text, f"{page} missing anonymize_ip")
-                self.assertIn("send_page_view: true", text, f"{page} missing send_page_view")
+                self.assertIn('src="/js/analytics.js" defer', text)
+                self.assertNotIn("googletagmanager.com", text)
+
+    def test_practice_pages_do_not_load_analytics(self) -> None:
+        for page in (REPO_ROOT / "practice").glob("*.html"):
+            text = read_text(page)
+            with self.subTest(page=page.name):
+                self.assertNotIn("googletagmanager.com", text)
+                self.assertNotIn("G-1TZ12XRFQ9", text)
+                self.assertNotIn('src="/js/analytics.js"', text)
 
     def test_about_page_is_professional_only(self) -> None:
         text = read_text(REPO_ROOT / "about.html")

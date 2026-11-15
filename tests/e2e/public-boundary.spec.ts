@@ -11,6 +11,7 @@ test("the public package excludes internal instructions backups and tooling", as
     "/backup_html/apps.html.working", "/backup_html/404.html", "/backup_html/contact.html",
     "/backup_html/privacy.html", "/backup_html/services.html", "/backup_html/payments-insurance.html",
     "/tools/publish_cv.ps1", "/tools/build_public_site.py", "/public-files.json", "/.git/config",
+    "/assets/documents/cctp-ii-certificate-exp-2028.pdf",
   ]) {
     expect((await request.get(path)).status(), path).toBe(404);
   }

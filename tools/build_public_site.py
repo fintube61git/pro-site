@@ -14,10 +14,12 @@ def public_files(root: Path) -> list[str]:
         raise ValueError("Duplicate public paths")
     required = {"index.html", "404.html", "cv.md", "resume.md", "cv/index.html",
                 "cv/publications.md", "cv/presentations.md", "resume/index.html",
-                "js/markdown.js", "CNAME", "robots.txt", "sitemap.xml"}
+                "js/markdown.js", "js/analytics.js", "CNAME", "robots.txt", "sitemap.xml"}
     if not required.issubset(paths):
         raise ValueError("The manifest omits a required public page or browser source")
     for path in paths:
+        if path == "assets/documents/cctp-ii-certificate-exp-2028.pdf":
+            raise ValueError("Private credential certificates must not be published")
         parts = PurePosixPath(path).parts
         if (not parts or path != PurePosixPath(path).as_posix()
                 or PurePosixPath(path).is_absolute() or ".." in parts
@@ -59,10 +61,20 @@ def build(root: Path) -> Path:
         actual = {p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file()}
         if actual != set(paths):
             raise ValueError("Public package does not match the manifest")
-        if output.exists():
-            # Only this fixed, checkout-local build directory can be replaced.
-            shutil.rmtree(output)
-        staging.rename(output)
+        output.mkdir(exist_ok=True)
+        # Keep the directory itself: a Windows preview server holds its working
+        # directory open. Only replace contents of this fixed checkout-local path.
+        if output.resolve() != root / "_site":
+            raise ValueError("Public output escapes the checkout")
+        for existing in output.iterdir():
+            if not existing.resolve().is_relative_to(output):
+                raise ValueError(f"Public output contains an escaping link: {existing.name}")
+            if existing.is_dir() and not existing.is_symlink():
+                shutil.rmtree(existing)
+            else:
+                existing.unlink()
+        for entry in staging.iterdir():
+            entry.rename(output / entry.name)
     return output
 
 

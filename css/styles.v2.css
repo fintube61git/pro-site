@@ -1,5 +1,14 @@
 /* styles.v2.css — unified layout, gutters, footer wrap, emergency callout */
 
+.analytics-choice-panel{padding-block:1rem;border-bottom:1px solid var(--border)}
+.analytics-choice-panel[hidden]{display:none}
+.analytics-choice-panel h2{font-size:1.1rem;margin:0 0 .35rem}
+.analytics-choice-panel p{margin:.25rem 0;max-width:75ch}
+.analytics-choice-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.75rem}
+.analytics-choice-actions button,.analytics-settings{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.5rem .8rem;cursor:pointer}
+.analytics-choice-actions button:focus-visible,.analytics-settings:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.analytics-settings{margin:.5rem 0}
+
 :root{
   --bg:#ffffff; --text:#111827; --muted:#4b5563;
   --accent:#2563eb; --surface:#f3f4f6; --border:#4b5563;
@@ -423,7 +432,8 @@ html[data-theme="dark"] .site-footer {
 /* Theme toggle: compact on small screens */
 @media (max-width: 640px) {
   .theme-toggle { padding: .3rem .5rem; }
-  .theme-toggle .label { display: none; } /* icon-only on mobile */
+  .theme-toggle .label { display: inline; }
+  .theme-toggle { min-height: 44px; }
 }
 
 /* === Neutral slate button (matches Neuvoa style) ======================= */

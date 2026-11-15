@@ -2,9 +2,7 @@
 param(
     [string]$CommitMessage = "Update professional CV",
 
-    [switch]$DryRun,
-
-    [switch]$ConfirmPublish
+    [switch]$DryRun
 )
 
 $ErrorActionPreference = "Stop"
@@ -18,6 +16,10 @@ $allowedFiles = @(
     "resume.md",
     "resume/index.html",
     "index.html",
+    "about.html",
+    "apps.html",
+    "contact.html",
+    "privacy.html",
     "sitemap.xml",
     "practice/index.html",
     "practice/approach.html",
@@ -28,13 +30,24 @@ $allowedFiles = @(
     "practice/privacy.html",
     "css/styles.v2.css",
     "js/markdown.js",
+    "js/analytics.js",
     "tests/test_site_integrity.py",
     "tests/e2e/application-export.spec.ts",
     "tests/e2e/navigation.spec.ts",
+    "tests/e2e/public-boundary.spec.ts",
+    "tests/e2e/analytics-consent.spec.ts",
+    "tests/test_public_packaging.py",
+    "tools/build_public_site.py",
+    "tools/check_public_site.py",
+    "tools/preview_cv.ps1",
     "tools/publish_cv.ps1",
     "tools/cv-tool.ps1",  # Add new tool to allowed files
     "README.md",
     "public-files.json"
+)
+$allowedDeletions = @(
+    "tools/build_cv_html.ps1",
+    "assets/documents/cctp-ii-certificate-exp-2028.pdf"
 )
 
 function Invoke-Git {
@@ -63,14 +76,22 @@ try {
     ) | Where-Object { $_ } | Sort-Object -Unique
 
     $disallowedChanges = @(
-        $trackedChanges | Where-Object { $allowedFiles -notcontains $_ }
+        $trackedChanges | Where-Object {
+            $allowedFiles -notcontains $_ -and -not (
+                $allowedDeletions -contains $_ -and -not (Test-Path -LiteralPath (Join-Path $repoRoot $_))
+            )
+        }
     )
     if ($disallowedChanges.Count -gt 0) {
         throw "Refusing to publish with tracked changes outside the CV sources: $($disallowedChanges -join ', ')"
     }
 
     $changedCvFiles = @(
-        $trackedChanges | Where-Object { $allowedFiles -contains $_ }
+        $trackedChanges | Where-Object {
+            $allowedFiles -contains $_ -or (
+                $allowedDeletions -contains $_ -and -not (Test-Path -LiteralPath (Join-Path $repoRoot $_))
+            )
+        }
     )
     if ($changedCvFiles.Count -eq 0) {
         throw "No CV source changes were found."
@@ -81,6 +102,10 @@ try {
     if ($LASTEXITCODE -ne 0) {
         throw "Repository tests failed. Nothing was published."
     }
+    & python tools/build_public_site.py
+    if ($LASTEXITCODE -ne 0) { throw "Public packaging failed. Nothing was published." }
+    & python tools/check_public_site.py
+    if ($LASTEXITCODE -ne 0) { throw "Public package verification failed. Nothing was published." }
 
     Write-Host "Refreshing origin/main..."
     Invoke-Git fetch origin main
@@ -97,8 +122,8 @@ try {
     Write-Host "CV files that will be published:"
     $changedCvFiles | ForEach-Object { Write-Host "  $_" }
     Write-Host ""
-    & git diff -- $allowedFiles
-    & git diff --cached -- $allowedFiles
+    & git diff -- $changedCvFiles
+    & git diff --cached -- $changedCvFiles
 
     if ($DryRun) {
         Write-Host ""
@@ -106,14 +131,18 @@ try {
         return
     }
 
-    if (-not $ConfirmPublish) {
-        $confirmation = Read-Host "Type PUBLISH to commit and push these CV changes to the public site"
-        if ($confirmation -cne "PUBLISH") {
-            throw "Publication cancelled. Nothing was committed or pushed."
-        }
+    $confirmation = Read-Host "Type PUBLISH to commit and push these CV changes to the public site"
+    if ($confirmation -cne "PUBLISH") {
+        throw "Publication cancelled. Nothing was committed or pushed."
     }
 
-    Invoke-Git add -- @changedCvFiles
+    # Already staged deletions have no remaining index entry for git add.
+    $indexFiles = @(& git ls-files)
+    if ($LASTEXITCODE -ne 0) { throw "Unable to inspect the publication index." }
+    $filesToStage = @($changedCvFiles | Where-Object {
+        (Test-Path -LiteralPath (Join-Path $repoRoot $_)) -or $indexFiles -contains $_
+    })
+    if ($filesToStage.Count -gt 0) { Invoke-Git add -- @filesToStage }
     & git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) {
         throw "No staged CV changes remain to commit."
@@ -123,7 +152,7 @@ try {
     }
 
     Invoke-Git commit -m $CommitMessage
-    Invoke-Git push origin main
+    Invoke-Git push
 
     $head = (& git rev-parse --short HEAD).Trim()
     Write-Host ""

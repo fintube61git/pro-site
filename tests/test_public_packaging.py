@@ -45,7 +45,8 @@ class PublicPackagingTests(unittest.TestCase):
         self.assertTrue((output / "marker").exists())
 
     def test_internal_markdown_and_path_traversal_are_rejected(self):
-        for path in ["AGENTS.md", "docs/DOMAIN_AUTHORITY_MAP.md", "assets/private.md", "../private.txt"]:
+        for path in ["AGENTS.md", "docs/DOMAIN_AUTHORITY_MAP.md", "assets/private.md", "../private.txt",
+                     "assets/documents/cctp-ii-certificate-exp-2028.pdf"]:
             with self.subTest(path=path):
                 self.write_manifest(self.paths + [path])
                 with self.assertRaises(ValueError):

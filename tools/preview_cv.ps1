@@ -9,6 +9,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$publicRoot = Join-Path $repoRoot "_site"
 $cvUrl = "http://127.0.0.1:$Port/cv/#cv"
 $healthUrl = "http://127.0.0.1:$Port/cv/"
 
@@ -20,6 +21,11 @@ try {
         throw "Repository tests failed. Preview was not opened."
     }
 
+    & python tools/build_public_site.py
+    if ($LASTEXITCODE -ne 0) { throw "Public packaging failed. Preview was not opened." }
+    & python tools/check_public_site.py
+    if ($LASTEXITCODE -ne 0) { throw "Public package verification failed. Preview was not opened." }
+
     $existingServer = $false
     try {
         $response = Invoke-WebRequest -UseBasicParsing -Uri $healthUrl -TimeoutSec 2
@@ -30,6 +36,18 @@ try {
     }
 
     if ($existingServer) {
+        foreach ($privatePath in @("AGENTS.md", "public-files.json")) {
+            $privateStatus = 0
+            try {
+                $privateResponse = Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:$Port/$privatePath" -TimeoutSec 2
+                $privateStatus = [int]$privateResponse.StatusCode
+            }
+            catch {
+                if ($_.Exception.Response) { $privateStatus = [int]$_.Exception.Response.StatusCode }
+                else { throw "Unable to verify the restricted preview on port ${Port}: $($_.Exception.Message)" }
+            }
+            if ($privateStatus -ne 404) { throw "Port $Port is not serving a restricted public package. Choose another preview port." }
+        }
         Write-Host "Using an existing local server at $healthUrl"
     }
     else {
@@ -37,7 +55,7 @@ try {
         $server = Start-Process `
             -FilePath $python `
             -ArgumentList @("-m", "http.server", $Port, "--bind", "127.0.0.1") `
-            -WorkingDirectory $repoRoot `
+            -WorkingDirectory $publicRoot `
             -WindowStyle Hidden `
             -PassThru
 
