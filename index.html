@@ -99,7 +99,7 @@
     .theme-toggle:focus{outline:3px solid var(--accent);outline-offset:2px}
     .theme-toggle .icon{font-size:1rem;line-height:1}
     .work-grid{display:grid;gap:.75rem;margin-top:.4rem}
-    @media (min-width:760px){.work-grid{grid-template-columns:1fr 1fr 1fr}}
+    @media (min-width:760px){.work-grid{grid-template-columns:1fr 1fr 1fr}.selected-work-grid{grid-template-columns:1fr 1fr}}
     .work-card{background:var(--feature-surface);border:2px solid var(--feature-border);border-radius:10px;padding:.75rem .9rem}
     .work-card h3{margin:0 0 .25rem}
     .work-status{font-size:.9rem;color:var(--muted);font-weight:600;margin:0 0 .4rem}
@@ -187,7 +187,7 @@
         </div>
 
         <h2 id="documents">Selected Work</h2>
-        <div class="work-grid" aria-label="Selected research and tools">
+        <div class="work-grid selected-work-grid" aria-label="Selected research and tools">
           <article class="work-card">
             <p class="work-status">Theoretical preprint · 2026</p>
             <h3>Agency-Space Theory</h3>
@@ -206,6 +206,12 @@
             <h3>IP Journal and IP Mapper</h3>
             <p>Companion tools for reflecting on internal experience and mapping relationships among perspectives. They support self-directed exploration and do not provide therapy, diagnosis, or clinical guidance.</p>
             <p><a href="apps.html">Explore IP Journal and IP Mapper</a></p>
+          </article>
+          <article class="work-card">
+            <p class="work-status">SSRN preprint · Survey proposed</p>
+            <h3>Unsolicited Scholarly Invitations</h3>
+            <p>A review and proposed survey of how mental health clinicians and researchers encounter invitations, assess their claims, and report actions and consequences across digital and in-person settings.</p>
+            <p><a href="research.html#scholarly-invitations">Explore the preprint and proposed survey</a></p>
           </article>
         </div>
         <p>For the complete publications and presentations lists and full credentials, see:</p>

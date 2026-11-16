@@ -14,7 +14,7 @@ test("research navigation, sections, and professional links work", async ({ page
   await page.getByRole("link", { name: "Fielding study below", exact: true }).click();
   await expect(page).toHaveURL(/#fielding-project$/);
   await expect(page.locator("#fielding-project")).toBeInViewport();
-  await expect(page.getByText("The survey is planned research.", { exact: false })).toBeVisible();
+  await expect(page.locator('section[aria-labelledby="fielding-project"]')).toContainText("The survey is planned research.");
   await page.getByRole("link", { name: "contact me professionally" }).click();
   await expect(page).toHaveURL(/contact\.html$/);
   await expect(page.getByRole("link", { name: "Existenz Psych (existenzpsych.com)", exact: true })).toHaveAttribute("href", "https://existenzpsych.com/");
@@ -55,4 +55,31 @@ test("research analytics follow the existing consent choice", async ({ page }) =
   await page.getByRole("button", { name: "Analytics choices", exact: true }).click();
   await page.getByRole("button", { name: "Allow analytics", exact: true }).click();
   await expect.poll(() => requests).toBe(1);
+});
+
+
+test("revised SSRN preprint and separate proposed survey are discoverable", async ({ page }) => {
+  const doi = "https://doi.org/10.2139/ssrn.7405538";
+  const title = "Unsolicited scholarly invitations to mental health clinicians and researchers";
+  for (const route of ["/about.html", "/cv/", "/resume/"]) {
+    await page.goto(route);
+    await expect(page.locator("main")).toContainText(new RegExp(title, "i"));
+    await expect(page.locator(`main a[href="${doi}"]`)).toHaveCount(1);
+    await expect(page.locator("main")).not.toContainText("Platform-Era");
+  }
+  await page.goto("/");
+  const cards = page.getByLabel("Selected research and tools").locator("article");
+  await expect(cards).toHaveCount(4);
+  await expect(cards.first()).toContainText("Agency-Space Theory");
+  await cards.last().getByRole("link").click();
+  await expect(page).toHaveURL(/research\.html#scholarly-invitations$/);
+  await expect(page.locator("#scholarly-invitations")).toBeInViewport();
+  const survey = page.locator('section[aria-labelledby="scholarly-invitations"]');
+  await expect(survey).toContainText("one-time U.S. survey of recalled experience");
+  await expect(survey).toContainText("separate developing project");
+  await expect(survey).toContainText("no participant findings are reported");
+  await expect(survey.locator(`a[href="${doi}"]`)).toHaveCount(1);
+  await expect(page.locator('section[aria-labelledby="fielding-project"]')).not.toContainText("scholarly invitations");
+  await page.getByLabel("On this page").getByRole("link", { name: "Unsolicited Scholarly Invitations", exact: true }).click();
+  await expect(page.locator("#scholarly-invitations")).toBeInViewport();
 });

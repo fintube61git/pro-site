@@ -69,9 +69,7 @@ Project: *From Control Practices to Agency-Space: Measuring What Controlling Gro
 
 ### Current Projects and Manuscripts
 
-1. **Predatory publishing study** — *Platform-Era Predatory Publishing in Psychology: Distinguishing Solicitation Exposure From Post-Rejection Susceptibility*, a preprint posted on SSRN. The study examines the
-   distinction between exposure to predatory-journal solicitations and
-   susceptibility following manuscript rejection.
+1. **Unsolicited scholarly invitations** — *Unsolicited Scholarly Invitations to Mental Health Clinicians and Researchers*, an SSRN preprint reviewing scholarly invitations and proposing a one-time U.S. survey of recalled exposure, judgments, actions, and reported consequences among mental health clinicians and researchers. Survey planned; no participant findings reported.
 2. **Reproducible text-analysis methods paper** — *A pre-registered, benchmark-tested method for finding structure in first-person narratives, and its mostly negative results in accounts of coercion and undue influence*, a preprint posted on SSRN. The paper develops
    provenance-controlled corpus construction, benchmark gating, falsification
    logic, and reproducible analysis for first-person narratives of coercion and
