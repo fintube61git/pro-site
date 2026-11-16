@@ -54,7 +54,7 @@ class WebsiteIntegrityTests(unittest.TestCase):
         for page in PRIMARY_PAGES:
             text = read_text(REPO_ROOT / page)
             with self.subTest(page=page):
-                self.assertIn('src="js/main.js"', text, f"{page} missing js/main.js")
+                self.assertRegex(text, r'src="/?js/main\.js"', f"{page} missing js/main.js")
 
     def test_professional_pages_load_only_the_local_consent_controller(self) -> None:
         for page in PROFESSIONAL_ANALYTICS_PAGES:

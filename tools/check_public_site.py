@@ -14,6 +14,10 @@ class Links(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         self.urls.extend(value for name, value in attrs if name in {"src", "href"} and value)
+        for name, value in attrs:
+            if name in {"srcset", "imagesrcset"} and value:
+                self.urls.extend(candidate.strip().split()[0]
+                                 for candidate in value.split(",") if candidate.strip())
 
 
 def check(root: Path) -> None:

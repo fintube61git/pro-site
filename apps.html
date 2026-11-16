@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Apps — IP Journal and IP Mapper">
   <meta name="twitter:description" content="Tools for psychological exploration and self-understanding. Free, web-based, and intentionally self-directed.">
   <meta name="twitter:image" content="https://www.tdawsonwoodrum.com/assets/img/og-default.png">
-  <link rel="preload" as="image" href="assets/img/apps-tools-hero.png">
+  <link rel="preload" as="image" type="image/webp" href="assets/img/apps-tools-hero-960.webp" imagesrcset="assets/img/apps-tools-hero-480.webp 480w, assets/img/apps-tools-hero-960.webp 960w, assets/img/apps-tools-hero-1536.webp 1536w" imagesizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1000px) 87vw, 870px">
   <script src="/js/analytics.js" defer></script>
 
   <!-- JSON-LD Structured Data -->
@@ -172,7 +172,10 @@
           <p class="lead">IP Journal and IP Mapper are companion tools: one for moment-to-moment reflection, one for system-level visibility.</p>
 
           <figure class="app-hero">
-            <img src="assets/img/apps-tools-hero.png" alt="A notebook and tablet connected by circular light trails, representing movement between moment-level reflection and system-level mapping." width="500" height="333" fetchpriority="high" decoding="async">
+            <picture>
+              <source type="image/webp" srcset="assets/img/apps-tools-hero-480.webp 480w, assets/img/apps-tools-hero-960.webp 960w, assets/img/apps-tools-hero-1536.webp 1536w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1000px) 87vw, 870px">
+              <img src="assets/img/apps-tools-hero.png" alt="A notebook and tablet connected by circular light trails, representing movement between moment-level reflection and system-level mapping." width="500" height="333" fetchpriority="high" decoding="async">
+            </picture>
             <figcaption class="app-caption">IP Journal and IP Mapper are designed as companion tools: one for direct contact, one for system visibility.</figcaption>
           </figure>
 

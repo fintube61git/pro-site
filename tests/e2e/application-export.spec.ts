@@ -47,3 +47,20 @@ test.describe("application submission exports", () => {
     expect(fs.statSync(pdfPath).size).toBeGreaterThan(10_000);
   });
 });
+
+
+test("multiline citation emphasis renders without changing citation links", async ({ page }) => {
+  await page.goto("/cv/");
+  const project = page.locator("#cv-content li").filter({ hasText: "Agency-Space Theory —" });
+  await expect(project.locator("em")).toContainText("A Mechanism-Level Theory of Conscious Agency Under Control");
+  await expect(project).not.toContainText("*");
+  await page.goto("/resume/");
+  const ast = page.locator("#resume-content li").filter({ hasText: "Undue influence as dynamic constraint" });
+  await expect(ast.locator("em")).toContainText("conscious agency under control");
+  await expect(ast).not.toContainText("*");
+  await expect(ast.getByRole("link")).toHaveAttribute("href", "https://doi.org/10.31234/osf.io/hjwp3_v1");
+  const article = page.locator("#resume-content li").filter({ hasText: "Demoralization among TGD individuals" });
+  await expect(article.locator("em")).toHaveText("Stigma and Health, 9");
+  await expect(article).not.toContainText("*");
+  await expect(article.getByRole("link")).toHaveAttribute("href", "https://doi.org/10.1037/sah0000311");
+});

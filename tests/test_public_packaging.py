@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("public_builder", ROOT / "tools/build_public_site.py")
 builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
+sys.path.insert(0, str(ROOT / "tools"))
+from check_public_site import check
 
 
 class PublicPackagingTests(unittest.TestCase):
@@ -56,6 +59,16 @@ class PublicPackagingTests(unittest.TestCase):
         self.write_manifest([p for p in self.paths if p != "cv.md"])
         with self.assertRaises(ValueError):
             builder.build(self.root)
+
+    def test_missing_responsive_image_destination_is_rejected(self):
+        for tag, attribute in [("source", "srcset"), ("link", "imagesrcset")]:
+            with self.subTest(attribute=attribute):
+                (self.root / "index.html").write_text(
+                    f'<{tag} {attribute}="assets/missing.webp 480w">', encoding="utf-8"
+                )
+                builder.build(self.root)
+                with self.assertRaisesRegex(ValueError, "assets/missing.webp"):
+                    check(self.root)
 
 
 if __name__ == "__main__":

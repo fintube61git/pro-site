@@ -83,3 +83,37 @@ test("revised SSRN preprint and separate proposed survey are discoverable", asyn
   await page.getByLabel("On this page").getByRole("link", { name: "Unsolicited Scholarly Invitations", exact: true }).click();
   await expect(page.locator("#scholarly-invitations")).toBeInViewport();
 });
+
+
+test("404 assets and recovery navigation work at a nested missing URL", async ({ page, request }) => {
+  // Python's preview server has its own error body; serve the site's 404 template
+  // at a missing path to reproduce GitHub Pages' custom-error behavior.
+  const template = await request.get("/404.html");
+  await page.route("**/missing-audit/nested-page", async route => route.fulfill({
+    status: 404, contentType: "text/html", body: await template.text(),
+  }));
+  const response = await page.goto("/missing-audit/nested-page");
+  expect(response?.status()).toBe(404);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("404 — Page Not Found");
+  await expect(page.locator("link[rel=stylesheet]")).toHaveAttribute("href", "/css/styles.v2.css");
+  expect((await request.get("/css/styles.v2.css")).ok()).toBe(true);
+  await expect(page.locator(".brand")).toHaveText("T. Dawson Woodrum, PhD, JD");
+  await expect(page.locator('[aria-current="page"]')).toHaveCount(0);
+  await page.getByRole("link", { name: "Go to Home", exact: true }).click();
+  await expect(page).toHaveURL(/\/index\.html$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Interdisciplinary Empirical Researcher");
+});
+
+test("Apps loads one responsive WebP hero with its accessible description", async ({ page }) => {
+  const images: string[] = [];
+  page.on("request", request => {
+    if (request.url().includes("apps-tools-hero")) images.push(request.url());
+  });
+  await page.goto("/apps.html");
+  const hero = page.locator(".app-hero img");
+  await expect(hero).toHaveAttribute("alt", /notebook and tablet/);
+  await expect.poll(() => hero.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
+  const selected = await hero.evaluate((img: HTMLImageElement) => img.currentSrc);
+  expect(selected).toMatch(/apps-tools-hero-(480|960|1536)\.webp$/);
+  expect(images).toEqual([selected]);
+});

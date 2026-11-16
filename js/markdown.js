@@ -40,7 +40,15 @@
       || /^<div\s+class="resume-page-break"\s+aria-hidden="true"><\/div>$/i.test(line);
   }
 
+  function flushListItem(state, html) {
+    if (state.listItem.length) {
+      html.push("<li>" + renderInline(state.listItem.join(" ")) + "</li>");
+      state.listItem = [];
+    }
+  }
+
   function closeList(state, html) {
+    flushListItem(state, html);
     if (state.listType) {
       html.push("</" + state.listType + ">");
       state.listType = null;
@@ -57,7 +65,7 @@
   function renderMarkdown(markdown) {
     const lines = markdown.replace(/\r\n/g, "\n").split("\n");
     const html = [];
-    const state = { inComment: false, listType: null, paragraph: [] };
+    const state = { inComment: false, listType: null, listItem: [], paragraph: [] };
 
     for (const rawLine of lines) {
       const line = rawLine.trim();
@@ -110,24 +118,19 @@
       if (unordered || ordered) {
         flushParagraph(state, html);
         const listType = ordered ? "ol" : "ul";
+        flushListItem(state, html);
         if (state.listType !== listType) {
           closeList(state, html);
           html.push("<" + listType + ">");
           state.listType = listType;
         }
-        html.push("<li>" + renderInline((unordered || ordered)[1]) + "</li>");
+        state.listItem.push((unordered || ordered)[1]);
         continue;
       }
 
       if (state.listType) {
-        const previous = html[html.length - 1];
-        if (previous && /^<li>/.test(previous)) {
-          html[html.length - 1] = previous.replace(
-            /<\/li>$/,
-            " " + renderInline(line) + "</li>",
-          );
-          continue;
-        }
+        state.listItem.push(line);
+        continue;
       }
 
       closeList(state, html);
