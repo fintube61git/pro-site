@@ -34,7 +34,12 @@ for (const savedConsent of [false, true]) {
     expect(errors).toEqual([]);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
     expect(await page.locator("main p").first().evaluate(element => parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThanOrEqual(18);
-    await expect(page.getByRole("link", { name: "Privacy Policy", exact: true })).toBeVisible();
+    expect(await page.locator("a").evaluateAll(links => links.map(link => link.getAttribute("href")))).toEqual([
+      "#main",
+      "mailto:dawson@tdawsonwoodrum.com",
+    ]);
+    await expect(page.locator("header .brand")).toHaveText("T. Dawson Woodrum, PhD, JD");
+    expect(await page.locator("header a, footer a, nav").count()).toBe(0);
     await page.emulateMedia({ colorScheme: "dark" });
     await expect(page.locator("body")).toHaveCSS("background-color", "rgb(11, 15, 20)");
   });
